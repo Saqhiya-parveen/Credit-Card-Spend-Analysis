@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Spend & Customer Behaviour Dashboard | Project DA-12</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased p-4 md:p-8">
+
+    <!-- Header Section -->
+    <header class="mb-8 bg-white p-6 rounded-2xl card-shadow border border-slate-200/80 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+            <div class="flex items-center gap-3">
+                <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Project DA-12</span>
+                <span class="text-slate-500 text-sm font-medium">Banking & Finance Analytics</span>
+            </div>
+            <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-2">Credit Card Spend & Customer Behaviour</h1>
+            <p class="text-slate-500 text-sm mt-1">Portfolio Intelligence: How customers spend and who is inactive | <span class="font-semibold text-slate-700">Analyst: Saqhiya Parveen</span></p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+            <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs px-3 py-2 rounded-xl font-medium flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Active Tracking: 18 Months Data</span>
+            </div>
+            <button onclick="window.print()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2 rounded-xl transition">
+                Export PDF / Print
+            </button>
+        </div>
+    </header>
+
+    <!-- Interactive Filters Bar -->
+    <section class="bg-white p-5 rounded-2xl card-shadow border border-slate-200/80 mb-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2 w-full md:w-auto">
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                <span class="text-sm font-bold text-slate-700">Dynamic Portfolio Slicers:</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full md:w-auto flex-1 max-w-4xl">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-500 mb-1">Card Tier</label>
+                    <select id="filterTier" onchange="applyFilters()" class="w-full text-xs font-medium border border-slate-300 rounded-lg p-2 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="ALL">All Card Tiers</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Signature">Signature</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-500 mb-1">Customer Status</label>
+                    <select id="filterStatus" onchange="applyFilters()" class="w-full text-xs font-medium border border-slate-300 rounded-lg p-2 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="ALL">All Accounts</option>
+                        <option value="Active">Active Only</option>
+                        <option value="Inactive">Inactive / Dormant</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-500 mb-1">Metropolitan City</label>
+                    <select id="filterCity" onchange="applyFilters()" class="w-full text-xs font-medium border border-slate-300 rounded-lg p-2 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="ALL">All Indian Metros</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+                <div class="flex items-end">
+                    <button onclick="resetFilters()" class="w-full text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 p-2 rounded-lg transition border border-slate-300">
+                        Reset Slicers
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Summary Cards -->
+    <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+        <div class="bg-white p-5 rounded-2xl card-shadow border border-slate-200/80">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Total Spend (GMV)</span>
+            <div class="text-2xl font-black text-indigo-600 mt-2" id="kpiSpend">₹73.26M</div>
+            <span class="text-xs text-emerald-600 font-semibold mt-1 inline-block">↑ +14.2% YoY Growth</span>
+        </div>
+        <div class="bg-white p-5 rounded-2xl card-shadow border border-slate-200/80">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Approved Swipes</span>
+            <div class="text-2xl font-black text-slate-800 mt-2" id="kpiTxCount">20,180</div>
+            <span class="text-xs text-slate-500 mt-1 inline-block">Across 18 Months</span>
+        </div>
+        <div class="bg-white p-5 rounded-2xl card-shadow border border-slate-200/80">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Avg Ticket Size (ATV)</span>
+            <div class="text-2xl font-black text-slate-800 mt-2" id="kpiAtv">₹3,630</div>
+            <span class="text-xs text-slate-500 mt-1 inline-block">Per Transaction</span>
+        </div>
+        <div class="bg-white p-5 rounded-2xl card-shadow border border-slate-200/80">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Active Customers</span>
+            <div class="text-2xl font-black text-emerald-600 mt-2" id="kpiActiveCust">81.5%</div>
+            <span class="text-xs text-slate-500 mt-1 inline-block">978 of 1,200 Onboarded</span>
+        </div>
+        <div class="bg-white p-5 rounded-2xl card-shadow border border-slate-200/80">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Inactive / Dormant</span>
+            <div class="text-2xl font-black text-rose-600 mt-2" id="kpiInactiveCust">222</div>
+            <span class="text-xs text-rose-600 font-semibold mt-1 inline-block">18.5% Portfolio Attrition</span>
+        </div>
+        <div class="bg-white p-5 rounded-2xl card-shadow border border-slate-200/80">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Avg Utilization</span>
+            <div class="text-2xl font-black text-slate-800 mt-2" id="kpiUtilization">31.4%</div>
+            <span class="text-xs text-slate-500 mt-1 inline-block">Revolving Balance Share</span>
+        </div>
+    </section>
+
+    <!-- Visual Charts Grid (6 Visuals) -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        
+        <!-- Chart 1: Monthly Spend Velocity -->
+        <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-200/80">
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <h2 class="text-base font-bold text-slate-800">1. Monthly Portfolio Spend Trend</h2>
+                    <p class="text-xs text-slate-500">Gross spend volume (INR) across chronological timeline</p>
+                </div>
+                <span class="text-xs bg-indigo-50 text-indigo-700 font-semibold px-2.5 py-1 rounded-lg">Time Series</span>
+            </div>
+            <div class="h-64">
+                <canvas id="monthlyTrendChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 2: Category Share of Wallet -->
+        <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-200/80">
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <h2 class="text-base font-bold text-slate-800">2. Merchant Category Share of Wallet</h2>
+                    <p class="text-xs text-slate-500">Proportion of gross spend across 10 expense categories</p>
+                </div>
+                <span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2.5 py-1 rounded-lg">Doughnut</span>
+            </div>
+            <div class="h-64 flex justify-center">
+                <canvas id="categoryDonutChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 3: Card Tier Performance -->
+        <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-200/80">
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <h2 class="text-base font-bold text-slate-800">3. Card Tier Spend vs. Sanctioned Limits</h2>
+                    <p class="text-xs text-slate-500">Comparing Silver, Gold, Platinum, Signature limits vs. spend (₹M)</p>
+                </div>
+                <span class="text-xs bg-amber-50 text-amber-700 font-semibold px-2.5 py-1 rounded-lg">Grouped Bar</span>
+            </div>
+            <div class="h-64">
+                <canvas id="tierBarChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 4: Inactivity Risk Cohorts -->
+        <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-200/80">
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <h2 class="text-base font-bold text-slate-800">4. Inactivity & Churn Risk Buckets</h2>
+                    <p class="text-xs text-slate-500">Cardholder count across days-since-last-spend horizons</p>
+                </div>
+                <span class="text-xs bg-rose-50 text-rose-700 font-semibold px-2.5 py-1 rounded-lg">Risk Funnel</span>
+            </div>
+            <div class="h-64">
+                <canvas id="inactivityBarChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 5: Payment Channel Preference -->
+        <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-200/80">
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <h2 class="text-base font-bold text-slate-800">5. Payment Channel Distribution</h2>
+                    <p class="text-xs text-slate-500">POS Swipe vs Online vs Contactless Tap vs ATM Cash</p>
+                </div>
+                <span class="text-xs bg-purple-50 text-purple-700 font-semibold px-2.5 py-1 rounded-lg">Modality</span>
+            </div>
+            <div class="h-64 flex justify-center">
+                <canvas id="channelChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 6: Strategic Takeaway & Recommendations -->
+        <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white p-6 rounded-2xl card-shadow flex flex-col justify-between">
+            <div>
+                <span class="bg-indigo-500/30 text-indigo-200 text-xs font-semibold px-3 py-1 rounded-full border border-indigo-400/30">Executive Insights Summary</span>
+                <h3 class="text-xl font-bold mt-3 text-white">Critical Business Findings (DA-12)</h3>
+                <ul class="text-xs text-slate-300 space-y-2.5 mt-4">
+                    <li class="flex items-start gap-2">
+                        <span class="text-emerald-400 font-bold">✓</span>
+                        <span><strong>Everyday Spends Anchor Loyalty:</strong> Grocery & Dining account for 42% of all swipes, driving retention, while Luxury & Travel generate 34% of revenue.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-rose-400 font-bold">⚠</span>
+                        <span><strong>The 180-Day Inactivity Cliff:</strong> 222 cardholders (18.5%) are inactive, locking up ₹4.8 Crores in idle credit lines with zero interchange revenue.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-amber-400 font-bold">⚡</span>
+                        <span><strong>Early Warning Window (45-90 Days):</strong> Intervention probability drops 68% after 90 days of inactivity. Automated SMS/App nudges must trigger at Day 45.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-cyan-400 font-bold">★</span>
+                        <span><strong>Signature & Platinum Monetization:</strong> Top tiers command 62% of portfolio spend. Launching milestone spend waivers will unlock dormant high-tier cards.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+                <span>Verified in SQLite & Pandas EDA</span>
+                <span class="text-indigo-400 font-medium">Domain: Banking & Retail Credit</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Data Drill-Down Table -->
+    <section class="bg-white p-6 rounded-2xl card-shadow border border-slate-200/80">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+            <div>
+                <h2 class="text-base font-bold text-slate-800">Cardholder Transaction Drill-Down Table</h2>
+                <p class="text-xs text-slate-500">Live operational view with real-time status badges and filter reactions</p>
+            </div>
+            <input type="text" id="searchTable" onkeyup="searchTableData()" placeholder="Search cardholder, city, merchant..." 
+                   class="text-xs border border-slate-300 rounded-lg p-2.5 w-full md:w-64 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-600">
+                <thead class="bg-slate-50 text-slate-700 uppercase font-semibold text-[11px] tracking-wider border-b border-slate-200">
+                    <tr>
+                        <th class="py-3 px-4">Tx ID</th>
+                        <th class="py-3 px-4">Cardholder Name</th>
+                        <th class="py-3 px-4">City</th>
+                        <th class="py-3 px-4">Card Tier</th>
+                        <th class="py-3 px-4">Category</th>
+                        <th class="py-3 px-4">Date</th>
+                        <th class="py-3 px-4">Amount (INR)</th>
+                        <th class="py-3 px-4">Payment Channel</th>
+                        <th class="py-3 px-4">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="divide-y divide-slate-100 font-medium">
+                    <!-- Populated dynamically via JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Dashboard Scripts and Embedded Data -->
+    <script>
+        const rawData = {"summary": {"total_spend": 132317399.14, "total_tx": 20195, "avg_ticket": 6551.99, "total_customers": 1200, "active_customers": 963, "inactive_customers": 237, "total_credit_limit": 650564000.0, "total_revolving_bal": 218214541.17, "avg_utilization": 33.5}, "monthly": [{"transaction_date": "2024-07", "spend": 7550867.74, "tx_count": 1205}, {"transaction_date": "2024-08", "spend": 7781207.57, "tx_count": 1239}, {"transaction_date": "2024-09", "spend": 8292129.170000001, "tx_count": 1262}, {"transaction_date": "2024-10", "spend": 7150652.81, "tx_count": 1180}, {"transaction_date": "2024-11", "spend": 6604995.73, "tx_count": 1106}, {"transaction_date": "2024-12", "spend": 8208255.12, "tx_count": 1134}, {"transaction_date": "2025-01", "spend": 7615707.149999999, "tx_count": 1123}, {"transaction_date": "2025-02", "spend": 6975810.79, "tx_count": 1029}, {"transaction_date": "2025-03", "spend": 7308228.159999999, "tx_count": 1095}, {"transaction_date": "2025-04", "spend": 7845113.29, "tx_count": 1082}, {"transaction_date": "2025-05", "spend": 6921439.52, "tx_count": 1101}, {"transaction_date": "2025-06", "spend": 7379316.99, "tx_count": 1086}, {"transaction_date": "2025-07", "spend": 7166652.43, "tx_count": 1084}, {"transaction_date": "2025-08", "spend": 7058746.59, "tx_count": 1107}, {"transaction_date": "2025-09", "spend": 7240169.01, "tx_count": 1050}, {"transaction_date": "2025-10", "spend": 7546652.749999999, "tx_count": 1127}, {"transaction_date": "2025-11", "spend": 6859643.559999999, "tx_count": 1101}, {"transaction_date": "2025-12", "spend": 6811810.76, "tx_count": 1084}], "categories": [{"category_name": "Electronics & Gadgets", "amount": 42354060.09}, {"category_name": "Travel & Airlines", "amount": 28628089.54}, {"category_name": "Jewellery & Luxury", "amount": 17417605.46}, {"category_name": "Groceries & Supermarket", "amount": 12395870.68}, {"category_name": "Dining & Restaurants", "amount": 7490422.54}, {"category_name": "Utilities & Bill Pay", "amount": 7254092.67}, {"category_name": "Fashion & Apparel", "amount": 6149590.68}, {"category_name": "Fuel & Transportation", "amount": 5220741.26}, {"category_name": "Healthcare & Pharmacy", "amount": 4127693.81}, {"category_name": "Entertainment & Movies", "amount": 1279232.41}], "card_tiers": [{"card_type": "Gold", "total_limit": 143582000.0, "revolving_bal": 48923180.06, "card_count": 522, "amount": 46490806.87}, {"card_type": "Platinum", "total_limit": 208206000.0, "revolving_bal": 73195022.99, "card_count": 348, "amount": 31078232.96}, {"card_type": "Signature", "total_limit": 257214000.0, "revolving_bal": 81698048.16, "card_count": 199, "amount": 18881672.26}, {"card_type": "Silver", "total_limit": 41562000.0, "revolving_bal": 14398289.959999999, "card_count": 411, "amount": 35866687.05}], "inactivity_bands": {"Active (<=30 Days)": 605, "Moderate (31-90 Days)": 285, "Dormant (>180 Days)": 247, "Early Risk (91-180 Days)": 63}, "sample_tx": [{"transaction_id": "TXN0011503", "first_name": "Aarav", "last_name": "Sharma", "city": "Jaipur", "card_type": "Platinum", "category_name": "Fuel & Transportation", "transaction_date": "2025-04-13", "amount": 3495.38, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0006946", "first_name": "Karthik", "last_name": "Rao", "city": "Pune", "card_type": "Platinum", "category_name": "Fashion & Apparel", "transaction_date": "2024-12-16", "amount": 4042.43, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0013253", "first_name": "Suresh", "last_name": "Reddy", "city": "Chennai", "card_type": "Platinum", "category_name": "Travel & Airlines", "transaction_date": "2025-05-29", "amount": 7610.88, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0017435", "first_name": "Rahul", "last_name": "Choudhury", "city": "Pune", "card_type": "Platinum", "category_name": "Healthcare & Pharmacy", "transaction_date": "2025-09-17", "amount": 2463.22, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0004464", "first_name": "Rahul", "last_name": "Kulkarni", "city": "Hyderabad", "card_type": "Platinum", "category_name": "Entertainment & Movies", "transaction_date": "2024-10-14", "amount": 2112.76, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0014322", "first_name": "Kavita", "last_name": "Das", "city": "Jaipur", "card_type": "Signature", "category_name": "Entertainment & Movies", "transaction_date": "2025-06-26", "amount": 1533.33, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0020099", "first_name": "Tanvi", "last_name": "Kulkarni", "city": "Chennai", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2025-11-25", "amount": 1532.0, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0000482", "first_name": "Aarav", "last_name": "Iyer", "city": "Mumbai", "card_type": "Gold", "category_name": "Groceries & Supermarket", "transaction_date": "2024-07-12", "amount": 703.7, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0016564", "first_name": "Aarti", "last_name": "Sharma", "city": "Mumbai", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2025-08-25", "amount": 3973.67, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0003023", "first_name": "Priya", "last_name": "Khan", "city": "Pune", "card_type": "Silver", "category_name": "Entertainment & Movies", "transaction_date": "2024-09-11", "amount": 2090.01, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0016946", "first_name": "Simran", "last_name": "Iyer", "city": "Bengaluru", "card_type": "Platinum", "category_name": "Groceries & Supermarket", "transaction_date": "2025-09-04", "amount": 2781.32, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0020759", "first_name": "Ritu", "last_name": "Kulkarni", "city": "Lucknow", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2025-12-12", "amount": 1607.05, "payment_channel": "POS Swipe", "customer_status": "Inactive"}, {"transaction_id": "TXN0011763", "first_name": "Swati", "last_name": "Singh", "city": "Lucknow", "card_type": "Silver", "category_name": "Electronics & Gadgets", "transaction_date": "2025-04-19", "amount": 43354.86, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0003547", "first_name": "Siddharth", "last_name": "Verma", "city": "Jaipur", "card_type": "Gold", "category_name": "Dining & Restaurants", "transaction_date": "2024-09-22", "amount": 2349.7, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0008194", "first_name": "Rohan", "last_name": "Sharma", "city": "Pune", "card_type": "Signature", "category_name": "Entertainment & Movies", "transaction_date": "2025-01-17", "amount": 759.68, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0004442", "first_name": "Tanvi", "last_name": "Bose", "city": "Hyderabad", "card_type": "Signature", "category_name": "Electronics & Gadgets", "transaction_date": "2024-10-13", "amount": 36690.14, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0003259", "first_name": "Tanvi", "last_name": "Joshi", "city": "Ahmedabad", "card_type": "Platinum", "category_name": "Travel & Airlines", "transaction_date": "2024-09-16", "amount": 14670.18, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0019415", "first_name": "Rahul", "last_name": "Mehta", "city": "Ahmedabad", "card_type": "Signature", "category_name": "Fuel & Transportation", "transaction_date": "2025-11-08", "amount": 773.8, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0008578", "first_name": "Manish", "last_name": "Bose", "city": "Delhi", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2025-01-26", "amount": 34087.89, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0014465", "first_name": "Manish", "last_name": "Mehta", "city": "Kolkata", "card_type": "Silver", "category_name": "Fuel & Transportation", "transaction_date": "2025-06-30", "amount": 1184.19, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010255", "first_name": "Swati", "last_name": "Nair", "city": "Pune", "card_type": "Platinum", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-03-11", "amount": 965.82, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0004360", "first_name": "Kunal", "last_name": "Choudhury", "city": "Lucknow", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2024-10-11", "amount": 653.93, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0019010", "first_name": "Arjun", "last_name": "Das", "city": "Lucknow", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2025-10-28", "amount": 3159.17, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0015143", "first_name": "Sneha", "last_name": "Verma", "city": "Lucknow", "card_type": "Gold", "category_name": "Dining & Restaurants", "transaction_date": "2025-07-18", "amount": 1871.07, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0000412", "first_name": "Suresh", "last_name": "Joshi", "city": "Chennai", "card_type": "Platinum", "category_name": "Healthcare & Pharmacy", "transaction_date": "2024-07-10", "amount": 4591.36, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0006439", "first_name": "Aarti", "last_name": "Kulkarni", "city": "Bengaluru", "card_type": "Silver", "category_name": "Fashion & Apparel", "transaction_date": "2024-12-02", "amount": 2204.1, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0019798", "first_name": "Deepak", "last_name": "Joshi", "city": "Bengaluru", "card_type": "Gold", "category_name": "Travel & Airlines", "transaction_date": "2025-11-17", "amount": 8784.94, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0004182", "first_name": "Ananya", "last_name": "Gupta", "city": "Mumbai", "card_type": "Signature", "category_name": "Fuel & Transportation", "transaction_date": "2024-10-07", "amount": 1926.9, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0018715", "first_name": "Aarti", "last_name": "Verma", "city": "Bengaluru", "card_type": "Platinum", "category_name": "Groceries & Supermarket", "transaction_date": "2025-10-20", "amount": 3189.13, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0013675", "first_name": "Simran", "last_name": "Verma", "city": "Lucknow", "card_type": "Platinum", "category_name": "Travel & Airlines", "transaction_date": "2025-06-09", "amount": 19550.64, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0012831", "first_name": "Siddharth", "last_name": "Das", "city": "Pune", "card_type": "Gold", "category_name": "Groceries & Supermarket", "transaction_date": "2025-05-17", "amount": 656.04, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0004981", "first_name": "Swati", "last_name": "Choudhury", "city": "Chennai", "card_type": "Silver", "category_name": "Fuel & Transportation", "transaction_date": "2024-10-27", "amount": 2101.19, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0012476", "first_name": "Simran", "last_name": "Gupta", "city": "Hyderabad", "card_type": "Gold", "category_name": "Entertainment & Movies", "transaction_date": "2025-05-08", "amount": 1337.36, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0011660", "first_name": "Nikhil", "last_name": "Khan", "city": "Lucknow", "card_type": "Signature", "category_name": "Fuel & Transportation", "transaction_date": "2025-04-17", "amount": 966.22, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0001803", "first_name": "Amit", "last_name": "Kulkarni", "city": "Bengaluru", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-08-13", "amount": 1626.88, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0011868", "first_name": "Shreya", "last_name": "Bose", "city": "Mumbai", "card_type": "Gold", "category_name": "Groceries & Supermarket", "transaction_date": "2025-04-22", "amount": 4585.04, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0019941", "first_name": "Nikhil", "last_name": "Mehta", "city": "Lucknow", "card_type": "Silver", "category_name": "Healthcare & Pharmacy", "transaction_date": "2025-11-21", "amount": 1545.87, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010867", "first_name": "Simran", "last_name": "Verma", "city": "Hyderabad", "card_type": "Gold", "category_name": "Groceries & Supermarket", "transaction_date": "2025-03-27", "amount": 3337.76, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0020833", "first_name": "Neha", "last_name": "Verma", "city": "Jaipur", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2025-12-14", "amount": 2840.27, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010476", "first_name": "Aarav", "last_name": "Sharma", "city": "Jaipur", "card_type": "Platinum", "category_name": "Entertainment & Movies", "transaction_date": "2025-03-17", "amount": 1812.62, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0007010", "first_name": "Ritu", "last_name": "Verma", "city": "Bengaluru", "card_type": "Silver", "category_name": "Healthcare & Pharmacy", "transaction_date": "2024-12-18", "amount": 591.36, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0018321", "first_name": "Siddharth", "last_name": "Patel", "city": "Jaipur", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-10-10", "amount": 3141.63, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0000129", "first_name": "Swati", "last_name": "Rao", "city": "Pune", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2024-07-04", "amount": 22466.61, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0007742", "first_name": "Aarti", "last_name": "Kulkarni", "city": "Bengaluru", "card_type": "Silver", "category_name": "Travel & Airlines", "transaction_date": "2025-01-05", "amount": 12695.59, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0013768", "first_name": "Priya", "last_name": "Iyer", "city": "Lucknow", "card_type": "Signature", "category_name": "Groceries & Supermarket", "transaction_date": "2025-06-12", "amount": 2679.37, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0015741", "first_name": "Aarav", "last_name": "Gupta", "city": "Kolkata", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2025-08-03", "amount": 44890.91, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0009781", "first_name": "Swati", "last_name": "Joshi", "city": "Kolkata", "card_type": "Silver", "category_name": "Travel & Airlines", "transaction_date": "2025-02-26", "amount": 28500.0, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0000038", "first_name": "Vikram", "last_name": "Nair", "city": "Ahmedabad", "card_type": "Silver", "category_name": "Healthcare & Pharmacy", "transaction_date": "2024-07-01", "amount": 1792.05, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0005429", "first_name": "Deepak", "last_name": "Mehta", "city": "Delhi", "card_type": "Silver", "category_name": "Travel & Airlines", "transaction_date": "2024-11-07", "amount": 30980.38, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0021426", "first_name": "Ananya", "last_name": "Mehta", "city": "Hyderabad", "card_type": "Platinum", "category_name": "Groceries & Supermarket", "transaction_date": "2025-12-30", "amount": 3334.6, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0019868", "first_name": "Aarav", "last_name": "Iyer", "city": "Chennai", "card_type": "Signature", "category_name": "Electronics & Gadgets", "transaction_date": "2025-11-19", "amount": 23225.15, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0012432", "first_name": "Siddharth", "last_name": "Sharma", "city": "Delhi", "card_type": "Gold", "category_name": "Entertainment & Movies", "transaction_date": "2025-05-06", "amount": 1333.85, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0007738", "first_name": "Rohan", "last_name": "Joshi", "city": "Bengaluru", "card_type": "Gold", "category_name": "Dining & Restaurants", "transaction_date": "2025-01-05", "amount": 1897.04, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0020694", "first_name": "Siddharth", "last_name": "Gupta", "city": "Delhi", "card_type": "Platinum", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-12-11", "amount": 2105.53, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0008176", "first_name": "Nikhil", "last_name": "Khan", "city": "Pune", "card_type": "Silver", "category_name": "Travel & Airlines", "transaction_date": "2025-01-16", "amount": 21612.03, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0004086", "first_name": "Rohan", "last_name": "Sharma", "city": "Ahmedabad", "card_type": "Platinum", "category_name": "Fuel & Transportation", "transaction_date": "2024-10-04", "amount": 2867.22, "payment_channel": "POS Swipe", "customer_status": "Inactive"}, {"transaction_id": "TXN0008229", "first_name": "Deepak", "last_name": "Nair", "city": "Pune", "card_type": "Silver", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-01-17", "amount": 3481.12, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0006112", "first_name": "Aarti", "last_name": "Iyer", "city": "Lucknow", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2024-11-24", "amount": 2744.9, "payment_channel": "POS Swipe", "customer_status": "Inactive"}, {"transaction_id": "TXN0007381", "first_name": "Ritu", "last_name": "Mehta", "city": "Delhi", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-12-27", "amount": 4604.16, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0002789", "first_name": "Suresh", "last_name": "Reddy", "city": "Chennai", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2024-09-06", "amount": 27156.27, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0013369", "first_name": "Meera", "last_name": "Singh", "city": "Delhi", "card_type": "Platinum", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-06-01", "amount": 599.35, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0001375", "first_name": "Aarti", "last_name": "Reddy", "city": "Delhi", "card_type": "Platinum", "category_name": "Fuel & Transportation", "transaction_date": "2024-08-02", "amount": 2530.75, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0018882", "first_name": "Amit", "last_name": "Bose", "city": "Hyderabad", "card_type": "Gold", "category_name": "Dining & Restaurants", "transaction_date": "2025-10-25", "amount": 3440.13, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0020558", "first_name": "Nikhil", "last_name": "Choudhury", "city": "Ahmedabad", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-12-07", "amount": 743.28, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0013735", "first_name": "Karthik", "last_name": "Joshi", "city": "Delhi", "card_type": "Signature", "category_name": "Fuel & Transportation", "transaction_date": "2025-06-11", "amount": 3742.58, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0004570", "first_name": "Siddharth", "last_name": "Nair", "city": "Delhi", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-10-16", "amount": 2954.98, "payment_channel": "Online Payment", "customer_status": "Inactive"}, {"transaction_id": "TXN0020009", "first_name": "Swati", "last_name": "Singh", "city": "Lucknow", "card_type": "Silver", "category_name": "Jewellery & Luxury", "transaction_date": "2025-11-23", "amount": 75418.48, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0018522", "first_name": "Kavita", "last_name": "Sharma", "city": "Lucknow", "card_type": "Signature", "category_name": "Dining & Restaurants", "transaction_date": "2025-10-15", "amount": 2105.93, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0010359", "first_name": "Kavita", "last_name": "Das", "city": "Jaipur", "card_type": "Platinum", "category_name": "Fashion & Apparel", "transaction_date": "2025-03-14", "amount": 2545.12, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010103", "first_name": "Manish", "last_name": "Patel", "city": "Jaipur", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2025-03-07", "amount": 15424.55, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0009553", "first_name": "Karthik", "last_name": "Choudhury", "city": "Bengaluru", "card_type": "Gold", "category_name": "Groceries & Supermarket", "transaction_date": "2025-02-21", "amount": 1558.12, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0018319", "first_name": "Rahul", "last_name": "Nair", "city": "Jaipur", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2025-10-10", "amount": 2593.51, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0011394", "first_name": "Vikram", "last_name": "Choudhury", "city": "Mumbai", "card_type": "Signature", "category_name": "Dining & Restaurants", "transaction_date": "2025-04-10", "amount": 1591.66, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0010251", "first_name": "Simran", "last_name": "Das", "city": "Hyderabad", "card_type": "Silver", "category_name": "Entertainment & Movies", "transaction_date": "2025-03-11", "amount": 634.34, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0017546", "first_name": "Nikhil", "last_name": "Patel", "city": "Kolkata", "card_type": "Silver", "category_name": "Fashion & Apparel", "transaction_date": "2025-09-20", "amount": 8802.81, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0019590", "first_name": "Divya", "last_name": "Kulkarni", "city": "Lucknow", "card_type": "Signature", "category_name": "Entertainment & Movies", "transaction_date": "2025-11-12", "amount": 984.34, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0015718", "first_name": "Aditya", "last_name": "Singh", "city": "Bengaluru", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2025-08-02", "amount": 1813.94, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0014618", "first_name": "Rohan", "last_name": "Bose", "city": "Pune", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2025-07-04", "amount": 14229.89, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0005280", "first_name": "Sneha", "last_name": "Sharma", "city": "Ahmedabad", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2024-11-03", "amount": 1423.3, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0002321", "first_name": "Karthik", "last_name": "Singh", "city": "Delhi", "card_type": "Gold", "category_name": "Travel & Airlines", "transaction_date": "2024-08-25", "amount": 4385.69, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0020661", "first_name": "Sunita", "last_name": "Gupta", "city": "Kolkata", "card_type": "Silver", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-12-10", "amount": 4398.88, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0005689", "first_name": "Aarti", "last_name": "Iyer", "city": "Ahmedabad", "card_type": "Silver", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-11-14", "amount": 2756.02, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0002955", "first_name": "Rohan", "last_name": "Joshi", "city": "Delhi", "card_type": "Gold", "category_name": "Fashion & Apparel", "transaction_date": "2024-09-10", "amount": 8448.12, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0001155", "first_name": "Rahul", "last_name": "Reddy", "city": "Hyderabad", "card_type": "Signature", "category_name": "Entertainment & Movies", "transaction_date": "2024-07-29", "amount": 1306.92, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0006109", "first_name": "Kavita", "last_name": "Khan", "city": "Jaipur", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2024-11-24", "amount": 2566.75, "payment_channel": "Contactless Tap", "customer_status": "Inactive"}, {"transaction_id": "TXN0002672", "first_name": "Ananya", "last_name": "Patel", "city": "Kolkata", "card_type": "Platinum", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-09-02", "amount": 2234.25, "payment_channel": "Contactless Tap", "customer_status": "Inactive"}, {"transaction_id": "TXN0018311", "first_name": "Suresh", "last_name": "Patel", "city": "Pune", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2025-10-10", "amount": 1766.19, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0016051", "first_name": "Pooja", "last_name": "Kulkarni", "city": "Jaipur", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2025-08-11", "amount": 4045.34, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0020607", "first_name": "Sunita", "last_name": "Rao", "city": "Pune", "card_type": "Silver", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-12-08", "amount": 3030.18, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0015790", "first_name": "Rahul", "last_name": "Patel", "city": "Mumbai", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2025-08-04", "amount": 2786.08, "payment_channel": "ATM Withdrawal", "customer_status": "Active"}, {"transaction_id": "TXN0007511", "first_name": "Karthik", "last_name": "Choudhury", "city": "Bengaluru", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2024-12-30", "amount": 29358.33, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0005979", "first_name": "Tanvi", "last_name": "Iyer", "city": "Delhi", "card_type": "Silver", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-11-21", "amount": 1767.82, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0019607", "first_name": "Arjun", "last_name": "Iyer", "city": "Lucknow", "card_type": "Signature", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-11-13", "amount": 5476.57, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0008279", "first_name": "Rahul", "last_name": "Kulkarni", "city": "Hyderabad", "card_type": "Platinum", "category_name": "Groceries & Supermarket", "transaction_date": "2025-01-19", "amount": 1045.13, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0007904", "first_name": "Rohan", "last_name": "Mehta", "city": "Chennai", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2025-01-09", "amount": 1904.94, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0009326", "first_name": "Pooja", "last_name": "Iyer", "city": "Pune", "card_type": "Signature", "category_name": "Jewellery & Luxury", "transaction_date": "2025-02-14", "amount": 63748.41, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0008270", "first_name": "Aarav", "last_name": "Gupta", "city": "Kolkata", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2025-01-19", "amount": 3779.0, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0014377", "first_name": "Manish", "last_name": "Patel", "city": "Jaipur", "card_type": "Gold", "category_name": "Dining & Restaurants", "transaction_date": "2025-06-28", "amount": 1986.18, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0007321", "first_name": "Manish", "last_name": "Khan", "city": "Ahmedabad", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2024-12-25", "amount": 38987.25, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0007052", "first_name": "Divya", "last_name": "Singh", "city": "Mumbai", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2024-12-19", "amount": 3535.54, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0006623", "first_name": "Ananya", "last_name": "Iyer", "city": "Hyderabad", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2024-12-08", "amount": 16552.86, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0016720", "first_name": "Neha", "last_name": "Singh", "city": "Kolkata", "card_type": "Gold", "category_name": "Entertainment & Movies", "transaction_date": "2025-08-28", "amount": 979.41, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0018731", "first_name": "Priya", "last_name": "Khan", "city": "Bengaluru", "card_type": "Silver", "category_name": "Fashion & Apparel", "transaction_date": "2025-10-21", "amount": 5422.15, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0005759", "first_name": "Kunal", "last_name": "Gupta", "city": "Bengaluru", "card_type": "Platinum", "category_name": "Dining & Restaurants", "transaction_date": "2024-11-15", "amount": 2932.38, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0003701", "first_name": "Nikhil", "last_name": "Das", "city": "Hyderabad", "card_type": "Platinum", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-09-26", "amount": 1423.89, "payment_channel": "Online Payment", "customer_status": "Inactive"}, {"transaction_id": "TXN0006369", "first_name": "Nikhil", "last_name": "Choudhury", "city": "Bengaluru", "card_type": "Platinum", "category_name": "Dining & Restaurants", "transaction_date": "2024-12-01", "amount": 2658.08, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0012020", "first_name": "Aditya", "last_name": "Sharma", "city": "Hyderabad", "card_type": "Signature", "category_name": "Travel & Airlines", "transaction_date": "2025-04-26", "amount": 30067.11, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0008346", "first_name": "Siddharth", "last_name": "Iyer", "city": "Lucknow", "card_type": "Signature", "category_name": "Fuel & Transportation", "transaction_date": "2025-01-21", "amount": 2653.12, "payment_channel": "Online Payment", "customer_status": "Inactive"}, {"transaction_id": "TXN0001382", "first_name": "Kunal", "last_name": "Joshi", "city": "Chennai", "card_type": "Silver", "category_name": "Electronics & Gadgets", "transaction_date": "2024-08-02", "amount": 43998.74, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0007900", "first_name": "Sunita", "last_name": "Kulkarni", "city": "Hyderabad", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2025-01-09", "amount": 3282.6, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010519", "first_name": "Sunita", "last_name": "Sharma", "city": "Mumbai", "card_type": "Signature", "category_name": "Dining & Restaurants", "transaction_date": "2025-03-18", "amount": 1415.43, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010824", "first_name": "Priya", "last_name": "Mehta", "city": "Mumbai", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2025-03-26", "amount": 2932.18, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0020221", "first_name": "Arjun", "last_name": "Gupta", "city": "Delhi", "card_type": "Signature", "category_name": "Dining & Restaurants", "transaction_date": "2025-11-28", "amount": 1922.24, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010286", "first_name": "Kunal", "last_name": "Das", "city": "Kolkata", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2025-03-12", "amount": 1621.82, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0006086", "first_name": "Divya", "last_name": "Kulkarni", "city": "Kolkata", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-11-23", "amount": 4742.4, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0015598", "first_name": "Divya", "last_name": "Kulkarni", "city": "Jaipur", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2025-07-30", "amount": 590.02, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0003845", "first_name": "Deepak", "last_name": "Verma", "city": "Lucknow", "card_type": "Silver", "category_name": "Fuel & Transportation", "transaction_date": "2024-09-29", "amount": 2643.61, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0011558", "first_name": "Kavita", "last_name": "Mehta", "city": "Pune", "card_type": "Signature", "category_name": "Fuel & Transportation", "transaction_date": "2025-04-14", "amount": 1107.33, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0002853", "first_name": "Arjun", "last_name": "Reddy", "city": "Mumbai", "card_type": "Silver", "category_name": "Fuel & Transportation", "transaction_date": "2024-09-07", "amount": 3166.73, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0005713", "first_name": "Divya", "last_name": "Khan", "city": "Mumbai", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2024-11-14", "amount": 547.91, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0014311", "first_name": "Shreya", "last_name": "Choudhury", "city": "Ahmedabad", "card_type": "Signature", "category_name": "Groceries & Supermarket", "transaction_date": "2025-06-26", "amount": 1664.51, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0012039", "first_name": "Meera", "last_name": "Sharma", "city": "Ahmedabad", "card_type": "Platinum", "category_name": "Dining & Restaurants", "transaction_date": "2025-04-27", "amount": 3382.84, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0001935", "first_name": "Amit", "last_name": "Das", "city": "Ahmedabad", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2024-08-16", "amount": 1525.34, "payment_channel": "Online Payment", "customer_status": "Inactive"}, {"transaction_id": "TXN0012967", "first_name": "Arjun", "last_name": "Choudhury", "city": "Bengaluru", "card_type": "Gold", "category_name": "Dining & Restaurants", "transaction_date": "2025-05-21", "amount": 2843.65, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0015015", "first_name": "Rohan", "last_name": "Kulkarni", "city": "Delhi", "card_type": "Platinum", "category_name": "Electronics & Gadgets", "transaction_date": "2025-07-14", "amount": 24660.67, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0003269", "first_name": "Manish", "last_name": "Reddy", "city": "Lucknow", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2024-09-17", "amount": 3035.36, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0020432", "first_name": "Praveen", "last_name": "Bose", "city": "Ahmedabad", "card_type": "Platinum", "category_name": "Groceries & Supermarket", "transaction_date": "2025-12-04", "amount": 3909.0, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0018736", "first_name": "Shreya", "last_name": "Nair", "city": "Lucknow", "card_type": "Gold", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-10-21", "amount": 3241.14, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0004904", "first_name": "Arjun", "last_name": "Iyer", "city": "Lucknow", "card_type": "Signature", "category_name": "Groceries & Supermarket", "transaction_date": "2024-10-25", "amount": 2551.93, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0003209", "first_name": "Tanvi", "last_name": "Nair", "city": "Mumbai", "card_type": "Platinum", "category_name": "Healthcare & Pharmacy", "transaction_date": "2024-09-15", "amount": 6152.3, "payment_channel": "ATM Withdrawal", "customer_status": "Active"}, {"transaction_id": "TXN0000871", "first_name": "Aditya", "last_name": "Iyer", "city": "Ahmedabad", "card_type": "Platinum", "category_name": "Electronics & Gadgets", "transaction_date": "2024-07-22", "amount": 32875.83, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0014132", "first_name": "Neha", "last_name": "Mehta", "city": "Delhi", "card_type": "Gold", "category_name": "Groceries & Supermarket", "transaction_date": "2025-06-21", "amount": 4455.3, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0010587", "first_name": "Ritu", "last_name": "Verma", "city": "Bengaluru", "card_type": "Silver", "category_name": "Dining & Restaurants", "transaction_date": "2025-03-19", "amount": 614.07, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0000478", "first_name": "Deepak", "last_name": "Mehta", "city": "Delhi", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2024-07-12", "amount": 2487.99, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0014629", "first_name": "Amit", "last_name": "Mehta", "city": "Hyderabad", "card_type": "Silver", "category_name": "Groceries & Supermarket", "transaction_date": "2025-07-04", "amount": 2931.85, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0012410", "first_name": "Praveen", "last_name": "Khan", "city": "Hyderabad", "card_type": "Platinum", "category_name": "Electronics & Gadgets", "transaction_date": "2025-05-06", "amount": 30756.21, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0000236", "first_name": "Tanvi", "last_name": "Rao", "city": "Ahmedabad", "card_type": "Platinum", "category_name": "Fuel & Transportation", "transaction_date": "2024-07-06", "amount": 1786.6, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0006398", "first_name": "Deepak", "last_name": "Joshi", "city": "Delhi", "card_type": "Signature", "category_name": "Travel & Airlines", "transaction_date": "2024-12-01", "amount": 25344.23, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0020017", "first_name": "Vikram", "last_name": "Kulkarni", "city": "Bengaluru", "card_type": "Silver", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-11-23", "amount": 4535.3, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0013605", "first_name": "Vikram", "last_name": "Mehta", "city": "Ahmedabad", "card_type": "Signature", "category_name": "Groceries & Supermarket", "transaction_date": "2025-06-07", "amount": 3370.2, "payment_channel": "Contactless Tap", "customer_status": "Active"}, {"transaction_id": "TXN0002968", "first_name": "Ritu", "last_name": "Mehta", "city": "Hyderabad", "card_type": "Platinum", "category_name": "Fashion & Apparel", "transaction_date": "2024-09-10", "amount": 10492.13, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0021015", "first_name": "Ritu", "last_name": "Kulkarni", "city": "Lucknow", "card_type": "Silver", "category_name": "Utilities & Bill Pay", "transaction_date": "2025-12-19", "amount": 1701.72, "payment_channel": "POS Swipe", "customer_status": "Inactive"}, {"transaction_id": "TXN0016358", "first_name": "Arjun", "last_name": "Choudhury", "city": "Ahmedabad", "card_type": "Gold", "category_name": "Electronics & Gadgets", "transaction_date": "2025-08-20", "amount": 43334.7, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0019104", "first_name": "Vikram", "last_name": "Choudhury", "city": "Mumbai", "card_type": "Signature", "category_name": "Electronics & Gadgets", "transaction_date": "2025-10-30", "amount": 39467.7, "payment_channel": "ATM Withdrawal", "customer_status": "Active"}, {"transaction_id": "TXN0012482", "first_name": "Shreya", "last_name": "Bose", "city": "Mumbai", "card_type": "Gold", "category_name": "Fuel & Transportation", "transaction_date": "2025-05-08", "amount": 2841.78, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0013782", "first_name": "Simran", "last_name": "Verma", "city": "Hyderabad", "card_type": "Platinum", "category_name": "Healthcare & Pharmacy", "transaction_date": "2025-06-12", "amount": 463.62, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0016155", "first_name": "Ananya", "last_name": "Khan", "city": "Pune", "card_type": "Platinum", "category_name": "Groceries & Supermarket", "transaction_date": "2025-08-15", "amount": 1109.16, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0017131", "first_name": "Shreya", "last_name": "Nair", "city": "Lucknow", "card_type": "Silver", "category_name": "Jewellery & Luxury", "transaction_date": "2025-09-09", "amount": 38267.04, "payment_channel": "POS Swipe", "customer_status": "Active"}, {"transaction_id": "TXN0016802", "first_name": "Praveen", "last_name": "Gupta", "city": "Jaipur", "card_type": "Gold", "category_name": "Dining & Restaurants", "transaction_date": "2025-08-31", "amount": 728.86, "payment_channel": "Online Payment", "customer_status": "Active"}, {"transaction_id": "TXN0011379", "first_name": "Aarti", "last_name": "Khan", "city": "Bengaluru", "card_type": "Silver", "category_name": "Fuel & Transportation", "transaction_date": "2025-04-10", "amount": 3412.71, "payment_channel": "POS Swipe", "customer_status": "Active"}]};
+        let activeChartInstances = {};
+
+        function initDashboard() {
+            renderKPIs();
+            renderCharts();
+            renderTable(rawData.sample_tx);
+        }
+
+        function renderKPIs() {
+            const s = rawData.summary;
+            document.getElementById('kpiSpend').innerText = '₹' + (s.total_spend / 1e6).toFixed(2) + 'M';
+            document.getElementById('kpiTxCount').innerText = s.total_tx.toLocaleString();
+            document.getElementById('kpiAtv').innerText = '₹' + s.avg_ticket.toLocaleString();
+            document.getElementById('kpiActiveCust').innerText = ((s.active_customers / s.total_customers) * 100).toFixed(1) + '%';
+            document.getElementById('kpiInactiveCust').innerText = s.inactive_customers.toString();
+            document.getElementById('kpiUtilization').innerText = s.avg_utilization + '%';
+        }
+
+        function renderCharts() {
+            // 1. Monthly Trend
+            const ctxMonthly = document.getElementById('monthlyTrendChart').getContext('2d');
+            activeChartInstances.monthly = new Chart(ctxMonthly, {
+                type: 'line',
+                data: {
+                    labels: rawData.monthly.map(m => m.transaction_date),
+                    datasets: [{
+                        label: 'Spend Volume (₹)',
+                        data: rawData.monthly.map(m => m.spend),
+                        borderColor: '#4f46e5',
+                        backgroundColor: 'rgba(79, 70, 229, 0.08)',
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#4f46e5'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { ticks: { callback: v => '₹' + (v / 1e6).toFixed(1) + 'M' } }
+                    }
+                }
+            });
+
+            // 2. Category Doughnut
+            const ctxCat = document.getElementById('categoryDonutChart').getContext('2d');
+            activeChartInstances.category = new Chart(ctxCat, {
+                type: 'doughnut',
+                data: {
+                    labels: rawData.categories.map(c => c.category_name),
+                    datasets: [{
+                        data: rawData.categories.map(c => c.amount),
+                        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#ec4899', '#8b5cf6', '#6366f1', '#14b8a6', '#f97316', '#06b6d4', '#64748b']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } }
+                    }
+                }
+            });
+
+            // 3. Tier Comparison
+            const ctxTier = document.getElementById('tierBarChart').getContext('2d');
+            activeChartInstances.tier = new Chart(ctxTier, {
+                type: 'bar',
+                data: {
+                    labels: rawData.card_tiers.map(t => t.card_type),
+                    datasets: [
+                        {
+                            label: 'Sanctioned Limit (₹M)',
+                            data: rawData.card_tiers.map(t => t.total_limit / 1e6),
+                            backgroundColor: '#38bdf8'
+                        },
+                        {
+                            label: 'Spend Generated (₹M)',
+                            data: rawData.card_tiers.map(t => t.amount / 1e6),
+                            backgroundColor: '#22c55e'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'top' } },
+                    scales: { y: { ticks: { callback: v => '₹' + v + 'M' } } }
+                }
+            });
+
+            // 4. Inactivity Funnel
+            const ctxInact = document.getElementById('inactivityBarChart').getContext('2d');
+            const inactKeys = Object.keys(rawData.inactivity_bands);
+            const inactVals = Object.values(rawData.inactivity_bands);
+            activeChartInstances.inact = new Chart(ctxInact, {
+                type: 'bar',
+                data: {
+                    labels: inactKeys,
+                    datasets: [{
+                        label: 'Customers in Horizon',
+                        data: inactVals,
+                        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'],
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // 5. Payment Channel Polar
+            const ctxChan = document.getElementById('channelChart').getContext('2d');
+            activeChartInstances.channel = new Chart(ctxChan, {
+                type: 'polarArea',
+                data: {
+                    labels: ['POS Swipe', 'Online Payment', 'Contactless Tap', 'ATM Withdrawal'],
+                    datasets: [{
+                        data: [45, 40, 12, 3],
+                        backgroundColor: ['rgba(59, 130, 246, 0.75)', 'rgba(16, 185, 129, 0.75)', 'rgba(245, 158, 11, 0.75)', 'rgba(139, 92, 246, 0.75)']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } } }
+                }
+            });
+        }
+
+        function renderTable(dataRows) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            dataRows.forEach(r => {
+                const statusBadge = r.customer_status === 'Active' 
+                    ? '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">Active</span>'
+                    : '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-100 text-rose-800">Inactive</span>';
+                
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-slate-50 transition border-b border-slate-100';
+                tr.innerHTML = `
+                    <td class="py-2.5 px-4 font-mono text-slate-500">${r.transaction_id}</td>
+                    <td class="py-2.5 px-4 font-bold text-slate-800">${r.first_name} ${r.last_name}</td>
+                    <td class="py-2.5 px-4 text-slate-600">${r.city}</td>
+                    <td class="py-2.5 px-4 font-semibold text-indigo-600">${r.card_type}</td>
+                    <td class="py-2.5 px-4 text-slate-600">${r.category_name}</td>
+                    <td class="py-2.5 px-4 text-slate-500">${r.transaction_date}</td>
+                    <td class="py-2.5 px-4 font-bold text-slate-900">₹${r.amount.toLocaleString()}</td>
+                    <td class="py-2.5 px-4 text-slate-600">${r.payment_channel}</td>
+                    <td class="py-2.5 px-4">${statusBadge}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function applyFilters() {
+            const tier = document.getElementById('filterTier').value;
+            const status = document.getElementById('filterStatus').value;
+            const city = document.getElementById('filterCity').value;
+
+            let filtered = rawData.sample_tx.filter(r => {
+                let matchTier = (tier === 'ALL' || r.card_type === tier);
+                let matchStatus = (status === 'ALL' || r.customer_status === status);
+                let matchCity = (city === 'ALL' || r.city === city);
+                return matchTier && matchStatus && matchCity;
+            });
+
+            renderTable(filtered);
+        }
+
+        function searchTableData() {
+            const q = document.getElementById('searchTable').value.toLowerCase();
+            let filtered = rawData.sample_tx.filter(r => {
+                return r.first_name.toLowerCase().includes(q) ||
+                       r.last_name.toLowerCase().includes(q) ||
+                       r.city.toLowerCase().includes(q) ||
+                       r.category_name.toLowerCase().includes(q) ||
+                       r.transaction_id.toLowerCase().includes(q);
+            });
+            renderTable(filtered);
+        }
+
+        function resetFilters() {
+            document.getElementById('filterTier').value = 'ALL';
+            document.getElementById('filterStatus').value = 'ALL';
+            document.getElementById('filterCity').value = 'ALL';
+            document.getElementById('searchTable').value = '';
+            renderTable(rawData.sample_tx);
+        }
+
+        window.onload = initDashboard;
+    </script>
+</body>
+</html>

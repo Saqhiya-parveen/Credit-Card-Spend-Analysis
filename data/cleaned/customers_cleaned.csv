@@ -1,0 +1,1201 @@
+customer_id,first_name,last_name,gender,age,city,state,income_tier,annual_income,credit_score,join_date,customer_status
+CUST00001,Aarav,Singh,Male,44,Hyderabad,Telangana,Middle,1042000.0,720,2024-10-17,Active
+CUST00002,Deepak,Choudhury,Male,46,Mumbai,Maharashtra,Lower-Middle,366000.0,730,2023-11-01,Active
+CUST00003,Arjun,Choudhury,Male,36,Hyderabad,Telangana,Middle,767000.0,716,2021-01-14,Active
+CUST00004,Arjun,Choudhury,Male,56,Kolkata,West Bengal,Middle,729000.0,751,2022-11-21,Inactive
+CUST00005,Priya,Joshi,Female,33,Lucknow,Uttar Pradesh,Middle,1084000.0,743,2023-07-30,Active
+CUST00006,Priya,Gupta,Female,33,Lucknow,Uttar Pradesh,Upper-Middle,1670000.0,756,2022-01-29,Active
+CUST00007,Nikhil,Khan,Male,41,Chennai,Tamil Nadu,High-Net-Worth,5494000.0,762,2021-07-26,Active
+CUST00008,Shreya,Joshi,Female,21,Delhi,Delhi,Middle,726000.0,705,2022-07-01,Active
+CUST00009,Deepak,Nair,Male,27,Jaipur,Rajasthan,Upper-Middle,1412000.0,779,2023-02-17,Active
+CUST00010,Nikhil,Rao,Male,29,Mumbai,Maharashtra,Middle,619000.0,675,2022-10-09,Active
+CUST00011,Aditya,Rao,Male,55,Lucknow,Uttar Pradesh,Upper-Middle,1714000.0,763,2024-08-09,Active
+CUST00012,Ananya,Khan,Female,39,Jaipur,Rajasthan,Middle,941000.0,675,2023-05-28,Active
+CUST00013,Divya,Khan,Female,33,Delhi,Delhi,Middle,655000.0,728,2021-04-07,Active
+CUST00014,Nikhil,Nair,Male,26,Pune,Maharashtra,Middle,831000.0,738,2024-05-05,Active
+CUST00015,Meera,Sharma,Female,32,Bengaluru,Karnataka,Upper-Middle,1898000.0,761,2022-07-01,Active
+CUST00016,Priya,Gupta,Female,32,Pune,Maharashtra,Lower-Middle,301000.0,744,2022-06-24,Active
+CUST00017,Manish,Reddy,Male,38,Chennai,Tamil Nadu,Upper-Middle,1860000.0,738,2022-02-12,Inactive
+CUST00018,Manish,Sharma,Male,48,Lucknow,Uttar Pradesh,Middle,612000.0,682,2023-01-14,Active
+CUST00019,Sneha,Verma,Female,41,Hyderabad,Telangana,Upper-Middle,2431000.0,711,2021-06-25,Active
+CUST00020,Praveen,Mehta,Male,24,Delhi,Delhi,Upper-Middle,2431000.0,775,2021-12-05,Active
+CUST00021,Sneha,Iyer,Female,47,Chennai,Tamil Nadu,Middle,1003000.0,730,2023-02-04,Active
+CUST00022,Priya,Khan,Female,37,Hyderabad,Telangana,Lower-Middle,306000.0,657,2024-02-09,Active
+CUST00023,Aarav,Patel,Male,22,Mumbai,Maharashtra,Middle,1143000.0,699,2022-11-08,Inactive
+CUST00024,Rahul,Kulkarni,Male,33,Hyderabad,Telangana,Middle,1034000.0,761,2024-03-15,Active
+CUST00025,Praveen,Kulkarni,Male,42,Pune,Maharashtra,Lower-Middle,329000.0,599,2023-06-02,Active
+CUST00026,Ritu,Verma,Female,42,Bengaluru,Karnataka,Lower-Middle,518000.0,654,2021-08-12,Active
+CUST00027,Manish,Bose,Male,31,Delhi,Delhi,Middle,767000.0,746,2022-05-27,Active
+CUST00028,Suresh,Reddy,Male,50,Mumbai,Maharashtra,Upper-Middle,1903000.0,797,2021-01-31,Active
+CUST00029,Vikram,Choudhury,Male,29,Ahmedabad,Gujarat,Middle,1119000.0,714,2021-05-01,Inactive
+CUST00030,Amit,Singh,Male,42,Ahmedabad,Gujarat,Middle,1018000.0,759,2024-02-13,Active
+CUST00031,Ananya,Iyer,Female,33,Chennai,Tamil Nadu,Middle,635000.0,718,2024-01-16,Inactive
+CUST00032,Pooja,Verma,Female,26,Lucknow,Uttar Pradesh,Middle,1152000.0,683,2023-12-24,Inactive
+CUST00033,Karthik,Nair,Male,47,Bengaluru,Karnataka,Middle,941000.0,772,2022-04-27,Active
+CUST00034,Deepak,Verma,Male,38,Lucknow,Uttar Pradesh,Lower-Middle,497000.0,710,2024-03-03,Active
+CUST00035,Sneha,Rao,Female,42,Hyderabad,Telangana,Middle,679000.0,702,2024-08-14,Active
+CUST00036,Aarti,Patel,Female,42,Mumbai,Maharashtra,Middle,1199000.0,778,2021-07-24,Inactive
+CUST00037,Manish,Singh,Male,38,Delhi,Delhi,High-Net-Worth,5583000.0,849,2022-05-16,Active
+CUST00038,Suresh,Gupta,Male,21,Lucknow,Uttar Pradesh,High-Net-Worth,5325000.0,830,2023-12-20,Inactive
+CUST00039,Aarti,Reddy,Female,39,Delhi,Delhi,Middle,1134000.0,714,2024-02-08,Inactive
+CUST00040,Swati,Iyer,Female,40,Lucknow,Uttar Pradesh,Middle,981000.0,655,2022-06-25,Active
+CUST00041,Aarti,Verma,Female,36,Bengaluru,Karnataka,Middle,941000.0,737,2021-04-01,Inactive
+CUST00042,Nikhil,Singh,Male,55,Delhi,Delhi,Upper-Middle,1917000.0,754,2023-05-26,Active
+CUST00043,Rohan,Mehta,Male,30,Jaipur,Rajasthan,Lower-Middle,411000.0,649,2024-02-06,Inactive
+CUST00044,Aarav,Gupta,Male,49,Kolkata,West Bengal,Upper-Middle,2235000.0,779,2021-03-23,Active
+CUST00045,Nikhil,Khan,Male,33,Bengaluru,Karnataka,Middle,936000.0,742,2023-04-13,Active
+CUST00046,Siddharth,Khan,Male,40,Delhi,Delhi,High-Net-Worth,5338000.0,834,2023-04-25,Inactive
+CUST00047,Sunita,Choudhury,Female,31,Hyderabad,Telangana,Middle,1072000.0,713,2021-08-10,Active
+CUST00048,Karthik,Kulkarni,Male,34,Hyderabad,Telangana,Lower-Middle,576000.0,611,2022-12-18,Active
+CUST00049,Aditya,Sharma,Male,42,Hyderabad,Telangana,Middle,767000.0,734,2021-05-23,Active
+CUST00050,Divya,Das,Female,39,Jaipur,Rajasthan,Middle,617000.0,716,2022-06-19,Inactive
+CUST00051,Pooja,Reddy,Female,23,Lucknow,Uttar Pradesh,Middle,1037000.0,710,2022-10-05,Active
+CUST00052,Amit,Iyer,Male,35,Chennai,Tamil Nadu,Lower-Middle,431000.0,637,2023-12-01,Active
+CUST00053,Kunal,Choudhury,Male,37,Bengaluru,Karnataka,High-Net-Worth,5723000.0,820,2024-06-30,Active
+CUST00054,Arjun,Gupta,Male,59,Jaipur,Rajasthan,Middle,845000.0,731,2023-04-05,Active
+CUST00055,Aditya,Choudhury,Male,41,Pune,Maharashtra,Upper-Middle,2374000.0,767,2024-06-14,Active
+CUST00056,Meera,Sharma,Female,21,Chennai,Tamil Nadu,Middle,858000.0,724,2024-04-02,Active
+CUST00057,Ritu,Bose,Female,39,Ahmedabad,Gujarat,Upper-Middle,1865000.0,843,2021-12-14,Active
+CUST00058,Meera,Rao,Female,36,Bengaluru,Karnataka,Upper-Middle,2176000.0,779,2024-10-09,Active
+CUST00059,Vikram,Sharma,Male,38,Mumbai,Maharashtra,Middle,885000.0,684,2021-05-30,Active
+CUST00060,Arjun,Das,Male,51,Ahmedabad,Gujarat,Middle,689000.0,751,2021-01-12,Active
+CUST00061,Praveen,Choudhury,Male,47,Hyderabad,Telangana,Lower-Middle,587000.0,633,2023-11-27,Active
+CUST00062,Siddharth,Reddy,Male,54,Lucknow,Uttar Pradesh,Lower-Middle,439000.0,613,2023-12-24,Active
+CUST00063,Sunita,Bose,Female,45,Lucknow,Uttar Pradesh,Upper-Middle,2360000.0,835,2023-05-24,Active
+CUST00064,Aarti,Nair,Female,28,Ahmedabad,Gujarat,Middle,1051000.0,705,2024-07-29,Active
+CUST00065,Shreya,Khan,Female,40,Chennai,Tamil Nadu,Middle,1028000.0,707,2022-04-26,Active
+CUST00066,Aarti,Patel,Female,21,Delhi,Delhi,Lower-Middle,415000.0,672,2021-11-09,Active
+CUST00067,Amit,Choudhury,Male,27,Kolkata,West Bengal,Middle,849000.0,741,2022-02-28,Active
+CUST00068,Aarti,Sharma,Female,28,Lucknow,Uttar Pradesh,Middle,604000.0,779,2022-12-22,Active
+CUST00069,Simran,Choudhury,Female,30,Jaipur,Rajasthan,Upper-Middle,1910000.0,760,2024-05-20,Active
+CUST00070,Sneha,Singh,Female,47,Pune,Maharashtra,Middle,833000.0,681,2024-10-01,Active
+CUST00071,Tanvi,Nair,Female,41,Ahmedabad,Gujarat,High-Net-Worth,5933000.0,842,2023-12-30,Inactive
+CUST00072,Swati,Sharma,Female,21,Bengaluru,Karnataka,Middle,681000.0,731,2023-08-04,Inactive
+CUST00073,Kavita,Rao,Female,41,Hyderabad,Telangana,Middle,803000.0,752,2023-02-16,Active
+CUST00074,Neha,Patel,Female,25,Ahmedabad,Gujarat,Lower-Middle,462000.0,617,2022-12-18,Active
+CUST00075,Praveen,Verma,Male,44,Mumbai,Maharashtra,High-Net-Worth,3198000.0,817,2021-02-11,Active
+CUST00076,Vikram,Kulkarni,Male,41,Bengaluru,Karnataka,Middle,731000.0,737,2022-06-09,Active
+CUST00077,Deepak,Reddy,Male,31,Delhi,Delhi,High-Net-Worth,2878000.0,815,2021-02-22,Active
+CUST00078,Kavita,Iyer,Female,42,Bengaluru,Karnataka,Middle,1098000.0,699,2022-05-13,Inactive
+CUST00079,Simran,Reddy,Female,59,Lucknow,Uttar Pradesh,Upper-Middle,1651000.0,784,2023-05-28,Active
+CUST00080,Manish,Rao,Male,25,Mumbai,Maharashtra,Upper-Middle,2269000.0,789,2021-08-05,Active
+CUST00081,Shreya,Bose,Female,28,Delhi,Delhi,Middle,1040000.0,752,2024-08-25,Active
+CUST00082,Ritu,Choudhury,Female,51,Lucknow,Uttar Pradesh,Middle,1111000.0,696,2021-06-27,Active
+CUST00083,Sneha,Bose,Female,49,Lucknow,Uttar Pradesh,Middle,827000.0,739,2021-02-28,Active
+CUST00084,Ananya,Kulkarni,Female,48,Hyderabad,Telangana,Middle,755000.0,791,2022-07-27,Active
+CUST00085,Meera,Sharma,Female,36,Jaipur,Rajasthan,High-Net-Worth,4234000.0,791,2023-04-13,Active
+CUST00086,Arjun,Kulkarni,Male,29,Ahmedabad,Gujarat,Middle,610000.0,696,2022-08-26,Active
+CUST00087,Rahul,Joshi,Male,38,Ahmedabad,Gujarat,Middle,806000.0,736,2024-02-02,Active
+CUST00088,Neha,Gupta,Female,42,Chennai,Tamil Nadu,Middle,1033000.0,753,2022-10-09,Inactive
+CUST00089,Aditya,Iyer,Male,39,Ahmedabad,Gujarat,Middle,954000.0,775,2023-12-11,Active
+CUST00090,Karthik,Iyer,Male,36,Chennai,Tamil Nadu,Middle,708000.0,820,2021-01-29,Active
+CUST00091,Rahul,Verma,Male,45,Mumbai,Maharashtra,Middle,1018000.0,694,2021-09-16,Active
+CUST00092,Priya,Sharma,Female,27,Lucknow,Uttar Pradesh,Middle,887000.0,741,2022-11-29,Inactive
+CUST00093,Rahul,Kulkarni,Male,36,Bengaluru,Karnataka,Upper-Middle,1721000.0,791,2021-06-01,Active
+CUST00094,Vikram,Mehta,Male,44,Lucknow,Uttar Pradesh,High-Net-Worth,2798000.0,808,2022-05-24,Inactive
+CUST00095,Swati,Khan,Female,29,Jaipur,Rajasthan,Middle,1145000.0,671,2022-09-01,Active
+CUST00096,Neha,Verma,Female,34,Lucknow,Uttar Pradesh,High-Net-Worth,2847000.0,831,2022-03-02,Active
+CUST00097,Shreya,Patel,Female,41,Delhi,Delhi,Middle,931000.0,681,2021-11-17,Inactive
+CUST00098,Tanvi,Kulkarni,Female,40,Chennai,Tamil Nadu,Lower-Middle,386000.0,685,2022-08-03,Active
+CUST00099,Priya,Khan,Female,29,Chennai,Tamil Nadu,Upper-Middle,2013000.0,774,2024-09-16,Active
+CUST00100,Amit,Reddy,Male,39,Jaipur,Rajasthan,Middle,689000.0,684,2022-06-29,Active
+CUST00101,Aarav,Nair,Male,42,Chennai,Tamil Nadu,Middle,1095000.0,744,2022-08-15,Active
+CUST00102,Tanvi,Gupta,Female,50,Pune,Maharashtra,High-Net-Worth,4252000.0,836,2023-10-09,Active
+CUST00103,Siddharth,Choudhury,Male,23,Kolkata,West Bengal,Middle,616000.0,692,2022-04-14,Active
+CUST00104,Praveen,Singh,Male,44,Lucknow,Uttar Pradesh,Lower-Middle,527000.0,690,2023-08-22,Active
+CUST00105,Aarti,Singh,Female,44,Delhi,Delhi,High-Net-Worth,4026000.0,850,2023-10-05,Active
+CUST00106,Divya,Choudhury,Female,45,Kolkata,West Bengal,Middle,663000.0,764,2021-11-26,Active
+CUST00107,Neha,Das,Female,49,Lucknow,Uttar Pradesh,Lower-Middle,326000.0,696,2022-06-01,Active
+CUST00108,Simran,Sharma,Female,35,Jaipur,Rajasthan,Middle,633000.0,751,2023-11-28,Active
+CUST00109,Shreya,Bose,Female,30,Mumbai,Maharashtra,Middle,930000.0,716,2022-08-13,Active
+CUST00110,Priya,Sharma,Female,33,Lucknow,Uttar Pradesh,Upper-Middle,2123000.0,772,2022-09-29,Active
+CUST00111,Priya,Khan,Female,64,Bengaluru,Karnataka,Middle,670000.0,659,2021-11-12,Active
+CUST00112,Meera,Singh,Female,46,Pune,Maharashtra,Upper-Middle,2474000.0,721,2022-05-15,Active
+CUST00113,Amit,Iyer,Male,33,Lucknow,Uttar Pradesh,Middle,1128000.0,763,2021-05-23,Active
+CUST00114,Divya,Singh,Female,39,Mumbai,Maharashtra,Middle,779000.0,687,2024-04-17,Active
+CUST00115,Simran,Mehta,Female,31,Ahmedabad,Gujarat,Middle,807000.0,748,2024-02-05,Active
+CUST00116,Ritu,Rao,Female,30,Hyderabad,Telangana,High-Net-Worth,3336000.0,815,2023-02-24,Active
+CUST00117,Pooja,Rao,Female,39,Ahmedabad,Gujarat,Upper-Middle,2255000.0,750,2023-03-02,Active
+CUST00118,Suresh,Verma,Male,62,Delhi,Delhi,Middle,954000.0,747,2021-07-25,Active
+CUST00119,Priya,Bose,Female,21,Mumbai,Maharashtra,Upper-Middle,1733000.0,775,2024-09-02,Active
+CUST00120,Suresh,Singh,Male,31,Kolkata,West Bengal,Middle,838000.0,754,2021-06-14,Active
+CUST00121,Divya,Kulkarni,Female,30,Jaipur,Rajasthan,Lower-Middle,321000.0,665,2024-07-16,Active
+CUST00122,Sneha,Patel,Female,44,Pune,Maharashtra,High-Net-Worth,5161000.0,831,2021-07-25,Active
+CUST00123,Aarti,Sharma,Female,25,Mumbai,Maharashtra,Middle,634000.0,713,2023-01-05,Active
+CUST00124,Aditya,Choudhury,Male,33,Lucknow,Uttar Pradesh,Upper-Middle,1434000.0,750,2021-12-25,Inactive
+CUST00125,Swati,Khan,Female,58,Ahmedabad,Gujarat,High-Net-Worth,3001000.0,820,2023-08-03,Active
+CUST00126,Neha,Sharma,Female,25,Ahmedabad,Gujarat,High-Net-Worth,4872000.0,832,2021-11-20,Inactive
+CUST00127,Swati,Gupta,Female,62,Pune,Maharashtra,Upper-Middle,1794000.0,800,2022-09-11,Active
+CUST00128,Simran,Kulkarni,Female,22,Bengaluru,Karnataka,Middle,943000.0,708,2024-03-23,Active
+CUST00129,Pooja,Das,Female,52,Chennai,Tamil Nadu,Lower-Middle,560000.0,641,2021-04-11,Active
+CUST00130,Simran,Gupta,Female,43,Hyderabad,Telangana,Middle,811000.0,752,2024-07-27,Active
+CUST00131,Shreya,Mehta,Female,28,Bengaluru,Karnataka,High-Net-Worth,4762000.0,808,2022-09-25,Active
+CUST00132,Deepak,Joshi,Male,21,Delhi,Delhi,Lower-Middle,389000.0,629,2023-05-01,Inactive
+CUST00133,Praveen,Joshi,Male,36,Jaipur,Rajasthan,Middle,764000.0,681,2021-12-03,Active
+CUST00134,Sunita,Gupta,Female,56,Kolkata,West Bengal,Upper-Middle,1851500.0,727,2021-06-04,Inactive
+CUST00135,Karthik,Das,Male,34,Jaipur,Rajasthan,Middle,1074000.0,729,2021-01-29,Active
+CUST00136,Suresh,Joshi,Male,54,Chennai,Tamil Nadu,Middle,1093000.0,674,2023-01-31,Inactive
+CUST00137,Suresh,Sharma,Male,51,Lucknow,Uttar Pradesh,Upper-Middle,1930000.0,770,2024-06-03,Active
+CUST00138,Nikhil,Bose,Male,28,Chennai,Tamil Nadu,Middle,670000.0,741,2021-04-03,Active
+CUST00139,Ritu,Reddy,Female,41,Bengaluru,Karnataka,Middle,923000.0,703,2023-03-07,Active
+CUST00140,Swati,Mehta,Female,39,Pune,Maharashtra,Upper-Middle,2284000.0,758,2024-06-14,Active
+CUST00141,Pooja,Joshi,Female,40,Hyderabad,Telangana,Middle,1170000.0,748,2023-01-13,Inactive
+CUST00142,Meera,Joshi,Female,56,Mumbai,Maharashtra,Middle,714000.0,681,2021-09-08,Active
+CUST00143,Priya,Iyer,Female,62,Lucknow,Uttar Pradesh,High-Net-Worth,2677000.0,761,2022-11-15,Active
+CUST00144,Praveen,Iyer,Male,37,Bengaluru,Karnataka,Upper-Middle,1920000.0,787,2024-04-15,Active
+CUST00145,Kunal,Mehta,Male,42,Lucknow,Uttar Pradesh,Lower-Middle,558000.0,645,2021-10-24,Active
+CUST00146,Sunita,Nair,Female,36,Bengaluru,Karnataka,Upper-Middle,1234000.0,755,2021-01-31,Active
+CUST00147,Deepak,Rao,Male,32,Mumbai,Maharashtra,Lower-Middle,316000.0,703,2023-05-13,Active
+CUST00148,Suresh,Bose,Male,42,Kolkata,West Bengal,Middle,665000.0,700,2023-10-29,Active
+CUST00149,Arjun,Gupta,Male,48,Ahmedabad,Gujarat,Middle,619000.0,735,2023-09-08,Active
+CUST00150,Shreya,Reddy,Female,47,Ahmedabad,Gujarat,Upper-Middle,1777000.0,788,2021-06-15,Active
+CUST00151,Rohan,Mehta,Male,29,Chennai,Tamil Nadu,Middle,951000.0,705,2022-10-28,Active
+CUST00152,Ritu,Choudhury,Female,47,Bengaluru,Karnataka,Upper-Middle,1349000.0,788,2024-09-02,Active
+CUST00153,Amit,Bose,Male,38,Hyderabad,Telangana,Middle,1096000.0,729,2023-03-28,Active
+CUST00154,Kunal,Choudhury,Male,53,Kolkata,West Bengal,Upper-Middle,1851500.0,752,2021-11-09,Active
+CUST00155,Priya,Patel,Female,45,Bengaluru,Karnataka,Lower-Middle,329000.0,661,2023-02-03,Active
+CUST00156,Deepak,Rao,Male,36,Bengaluru,Karnataka,Middle,1124000.0,763,2023-05-17,Active
+CUST00157,Rahul,Gupta,Male,48,Kolkata,West Bengal,Lower-Middle,452000.0,702,2021-11-13,Active
+CUST00158,Karthik,Reddy,Male,53,Kolkata,West Bengal,Upper-Middle,1678000.0,770,2022-07-25,Active
+CUST00159,Simran,Sharma,Female,46,Lucknow,Uttar Pradesh,High-Net-Worth,5403000.0,802,2022-07-02,Inactive
+CUST00160,Tanvi,Gupta,Female,42,Kolkata,West Bengal,Middle,709000.0,720,2021-10-21,Active
+CUST00161,Priya,Mehta,Female,40,Mumbai,Maharashtra,Lower-Middle,459000.0,693,2023-02-10,Active
+CUST00162,Ananya,Joshi,Female,29,Chennai,Tamil Nadu,Upper-Middle,2210000.0,832,2024-03-08,Active
+CUST00163,Vikram,Nair,Male,27,Lucknow,Uttar Pradesh,Lower-Middle,324000.0,621,2023-06-27,Active
+CUST00164,Swati,Bose,Female,51,Pune,Maharashtra,Middle,1053000.0,752,2021-08-22,Active
+CUST00165,Rahul,Kulkarni,Male,45,Jaipur,Rajasthan,Upper-Middle,1259000.0,788,2023-03-21,Active
+CUST00166,Aarav,Iyer,Male,38,Chennai,Tamil Nadu,High-Net-Worth,5186000.0,787,2022-06-08,Active
+CUST00167,Aarav,Kulkarni,Male,39,Pune,Maharashtra,Lower-Middle,414000.0,642,2022-04-17,Active
+CUST00168,Priya,Das,Female,49,Mumbai,Maharashtra,Middle,876000.0,719,2021-06-09,Active
+CUST00169,Swati,Das,Female,29,Pune,Maharashtra,Middle,941000.0,713,2022-10-28,Inactive
+CUST00170,Simran,Joshi,Female,43,Bengaluru,Karnataka,Middle,664000.0,705,2023-06-12,Active
+CUST00171,Amit,Gupta,Male,29,Kolkata,West Bengal,Middle,1067000.0,733,2021-06-06,Active
+CUST00172,Manish,Iyer,Male,41,Kolkata,West Bengal,Middle,1175000.0,707,2024-08-14,Active
+CUST00173,Rohan,Mehta,Male,33,Chennai,Tamil Nadu,Lower-Middle,481000.0,679,2024-09-04,Inactive
+CUST00174,Ritu,Bose,Female,23,Lucknow,Uttar Pradesh,Middle,1192000.0,675,2022-10-24,Active
+CUST00175,Ananya,Bose,Female,31,Bengaluru,Karnataka,Middle,979000.0,717,2022-07-17,Active
+CUST00176,Meera,Patel,Female,42,Chennai,Tamil Nadu,Middle,623000.0,776,2023-01-26,Active
+CUST00177,Nikhil,Patel,Male,48,Lucknow,Uttar Pradesh,Middle,831000.0,719,2024-04-03,Active
+CUST00178,Suresh,Iyer,Male,38,Kolkata,West Bengal,Middle,901000.0,689,2021-05-07,Active
+CUST00179,Tanvi,Patel,Female,38,Jaipur,Rajasthan,Middle,623000.0,714,2023-06-16,Active
+CUST00180,Kunal,Joshi,Male,42,Chennai,Tamil Nadu,Middle,1065000.0,696,2024-10-22,Active
+CUST00181,Priya,Rao,Female,44,Bengaluru,Karnataka,Middle,832000.0,778,2022-06-01,Active
+CUST00182,Kunal,Patel,Male,37,Lucknow,Uttar Pradesh,Upper-Middle,2392000.0,782,2022-09-28,Active
+CUST00183,Ananya,Patel,Female,46,Chennai,Tamil Nadu,Middle,986000.0,710,2022-11-04,Active
+CUST00184,Nikhil,Choudhury,Male,41,Jaipur,Rajasthan,Middle,818000.0,725,2022-01-05,Active
+CUST00185,Sunita,Kulkarni,Female,40,Hyderabad,Telangana,Middle,683000.0,697,2021-06-08,Active
+CUST00186,Manish,Verma,Male,39,Kolkata,West Bengal,Upper-Middle,2003000.0,784,2024-05-08,Active
+CUST00187,Vikram,Nair,Male,54,Ahmedabad,Gujarat,Lower-Middle,409000.0,708,2022-05-02,Active
+CUST00188,Sunita,Bose,Female,62,Hyderabad,Telangana,Middle,786000.0,698,2023-08-19,Active
+CUST00189,Kunal,Bose,Male,48,Ahmedabad,Gujarat,Upper-Middle,2212000.0,775,2023-10-27,Active
+CUST00190,Karthik,Iyer,Male,63,Lucknow,Uttar Pradesh,Lower-Middle,375000.0,637,2024-08-06,Active
+CUST00191,Meera,Reddy,Female,29,Jaipur,Rajasthan,Upper-Middle,1571000.0,752,2021-11-25,Active
+CUST00192,Karthik,Choudhury,Male,21,Bengaluru,Karnataka,High-Net-Worth,3277000.0,796,2023-07-13,Active
+CUST00193,Amit,Verma,Male,30,Pune,Maharashtra,Middle,741000.0,730,2021-06-17,Active
+CUST00194,Kunal,Reddy,Male,42,Kolkata,West Bengal,Upper-Middle,1379000.0,826,2022-08-11,Active
+CUST00195,Tanvi,Mehta,Female,49,Ahmedabad,Gujarat,Middle,603000.0,704,2021-06-12,Inactive
+CUST00196,Karthik,Mehta,Male,29,Jaipur,Rajasthan,High-Net-Worth,4631000.0,822,2023-05-17,Inactive
+CUST00197,Sneha,Gupta,Female,24,Bengaluru,Karnataka,Lower-Middle,426000.0,743,2024-06-29,Active
+CUST00198,Karthik,Kulkarni,Male,51,Lucknow,Uttar Pradesh,Middle,979000.0,708,2024-03-23,Active
+CUST00199,Rahul,Choudhury,Male,21,Mumbai,Maharashtra,Middle,744000.0,772,2023-05-04,Active
+CUST00200,Manish,Joshi,Male,37,Bengaluru,Karnataka,High-Net-Worth,4404000.0,840,2023-11-06,Active
+CUST00201,Simran,Kulkarni,Female,21,Mumbai,Maharashtra,Middle,1189000.0,704,2022-06-04,Active
+CUST00202,Sunita,Patel,Female,39,Kolkata,West Bengal,Middle,994000.0,726,2021-08-01,Active
+CUST00203,Ananya,Verma,Female,34,Kolkata,West Bengal,Middle,1088000.0,746,2021-12-25,Active
+CUST00204,Tanvi,Kulkarni,Female,27,Delhi,Delhi,Upper-Middle,1282000.0,765,2023-07-27,Inactive
+CUST00205,Aarav,Iyer,Male,40,Mumbai,Maharashtra,Middle,786000.0,743,2023-03-27,Active
+CUST00206,Neha,Verma,Female,46,Hyderabad,Telangana,Middle,1117000.0,685,2021-04-08,Active
+CUST00207,Neha,Reddy,Female,22,Kolkata,West Bengal,Middle,840000.0,769,2023-06-20,Active
+CUST00208,Divya,Nair,Female,42,Ahmedabad,Gujarat,Upper-Middle,1678000.0,747,2023-11-30,Active
+CUST00209,Arjun,Choudhury,Male,56,Bengaluru,Karnataka,Middle,1197000.0,729,2022-01-05,Active
+CUST00210,Priya,Patel,Female,51,Kolkata,West Bengal,Upper-Middle,1598000.0,772,2024-05-19,Active
+CUST00211,Arjun,Bose,Male,61,Kolkata,West Bengal,Middle,1036000.0,786,2022-12-24,Active
+CUST00212,Neha,Verma,Female,36,Bengaluru,Karnataka,Upper-Middle,1728000.0,799,2023-11-17,Active
+CUST00213,Aarav,Mehta,Male,46,Lucknow,Uttar Pradesh,Upper-Middle,1770000.0,811,2021-09-16,Inactive
+CUST00214,Divya,Das,Female,28,Lucknow,Uttar Pradesh,Lower-Middle,346000.0,697,2023-07-11,Active
+CUST00215,Ritu,Patel,Female,50,Lucknow,Uttar Pradesh,Lower-Middle,410000.0,599,2022-10-06,Active
+CUST00216,Rohan,Sharma,Male,25,Delhi,Delhi,Middle,832000.0,653,2024-02-25,Inactive
+CUST00217,Tanvi,Bose,Female,36,Hyderabad,Telangana,High-Net-Worth,3500000.0,827,2023-10-03,Active
+CUST00218,Karthik,Patel,Male,55,Ahmedabad,Gujarat,Lower-Middle,514000.0,672,2021-06-29,Active
+CUST00219,Shreya,Joshi,Female,56,Bengaluru,Karnataka,Middle,774000.0,676,2022-09-07,Active
+CUST00220,Praveen,Joshi,Male,21,Jaipur,Rajasthan,Middle,1191000.0,723,2021-10-12,Active
+CUST00221,Pooja,Joshi,Female,43,Jaipur,Rajasthan,Middle,880000.0,723,2024-02-04,Inactive
+CUST00222,Rohan,Gupta,Male,21,Pune,Maharashtra,High-Net-Worth,5016000.0,807,2023-12-13,Active
+CUST00223,Simran,Patel,Female,24,Delhi,Delhi,High-Net-Worth,4748000.0,826,2023-07-11,Active
+CUST00224,Ananya,Nair,Female,43,Delhi,Delhi,Middle,1146000.0,692,2021-04-24,Active
+CUST00225,Rahul,Nair,Male,33,Delhi,Delhi,Middle,1026000.0,687,2022-12-10,Active
+CUST00226,Simran,Patel,Female,38,Chennai,Tamil Nadu,Lower-Middle,587000.0,708,2022-07-17,Inactive
+CUST00227,Swati,Patel,Female,28,Jaipur,Rajasthan,Middle,955000.0,742,2024-04-04,Inactive
+CUST00228,Simran,Verma,Female,33,Mumbai,Maharashtra,Lower-Middle,585000.0,638,2024-03-27,Active
+CUST00229,Praveen,Choudhury,Male,37,Lucknow,Uttar Pradesh,Middle,899000.0,688,2024-07-08,Active
+CUST00230,Ritu,Khan,Female,32,Pune,Maharashtra,Middle,644000.0,683,2021-05-03,Inactive
+CUST00231,Ritu,Bose,Female,60,Hyderabad,Telangana,Middle,686000.0,726,2022-10-16,Active
+CUST00232,Kavita,Mehta,Female,31,Kolkata,West Bengal,Middle,664000.0,732,2022-05-11,Active
+CUST00233,Ritu,Khan,Female,37,Delhi,Delhi,Lower-Middle,387000.0,661,2023-02-26,Active
+CUST00234,Sneha,Nair,Female,45,Lucknow,Uttar Pradesh,High-Net-Worth,5024000.0,828,2022-01-24,Active
+CUST00235,Meera,Bose,Female,33,Ahmedabad,Gujarat,Upper-Middle,1847000.0,752,2021-07-04,Active
+CUST00236,Sneha,Iyer,Female,35,Lucknow,Uttar Pradesh,Middle,630000.0,644,2023-10-11,Active
+CUST00237,Neha,Sharma,Female,22,Bengaluru,Karnataka,Middle,1129000.0,772,2023-01-20,Active
+CUST00238,Pooja,Das,Female,57,Mumbai,Maharashtra,Middle,717000.0,716,2024-02-08,Active
+CUST00239,Meera,Bose,Female,45,Jaipur,Rajasthan,Middle,1193000.0,735,2024-10-25,Active
+CUST00240,Rohan,Das,Male,72,Kolkata,West Bengal,Upper-Middle,1641000.0,803,2023-01-19,Active
+CUST00241,Deepak,Das,Male,37,Jaipur,Rajasthan,Lower-Middle,312000.0,631,2022-11-14,Active
+CUST00242,Ananya,Mehta,Female,21,Kolkata,West Bengal,High-Net-Worth,3615000.0,815,2023-03-16,Active
+CUST00243,Swati,Rao,Female,30,Jaipur,Rajasthan,Upper-Middle,1892000.0,727,2024-02-27,Active
+CUST00244,Kunal,Rao,Male,31,Bengaluru,Karnataka,High-Net-Worth,4543000.0,782,2024-07-12,Inactive
+CUST00245,Neha,Khan,Female,57,Mumbai,Maharashtra,Middle,702000.0,755,2024-07-12,Active
+CUST00246,Ananya,Khan,Female,38,Mumbai,Maharashtra,Middle,1020000.0,776,2022-01-26,Inactive
+CUST00247,Kavita,Mehta,Female,39,Pune,Maharashtra,Upper-Middle,1733000.0,744,2024-06-06,Active
+CUST00248,Arjun,Mehta,Male,55,Jaipur,Rajasthan,Middle,941000.0,743,2024-09-18,Active
+CUST00249,Divya,Nair,Female,27,Ahmedabad,Gujarat,High-Net-Worth,3698000.0,805,2022-12-27,Active
+CUST00250,Swati,Kulkarni,Female,29,Hyderabad,Telangana,High-Net-Worth,3477000.0,775,2022-09-04,Active
+CUST00251,Sunita,Gupta,Female,49,Hyderabad,Telangana,Upper-Middle,1836000.0,827,2023-09-10,Active
+CUST00252,Neha,Reddy,Female,23,Lucknow,Uttar Pradesh,Upper-Middle,1694000.0,786,2023-03-20,Active
+CUST00253,Rahul,Verma,Male,31,Chennai,Tamil Nadu,High-Net-Worth,2777000.0,797,2023-06-25,Active
+CUST00254,Sneha,Iyer,Female,32,Jaipur,Rajasthan,Middle,937000.0,694,2022-07-11,Inactive
+CUST00255,Aditya,Verma,Male,39,Jaipur,Rajasthan,Middle,740000.0,695,2021-07-25,Active
+CUST00256,Priya,Mehta,Female,41,Mumbai,Maharashtra,High-Net-Worth,5923000.0,808,2021-11-20,Active
+CUST00257,Ritu,Iyer,Female,36,Chennai,Tamil Nadu,Middle,988000.0,693,2021-07-03,Active
+CUST00258,Manish,Verma,Male,32,Delhi,Delhi,Middle,1103000.0,751,2021-03-16,Active
+CUST00259,Sunita,Kulkarni,Female,44,Delhi,Delhi,High-Net-Worth,5867000.0,785,2022-08-16,Active
+CUST00260,Rahul,Reddy,Male,40,Kolkata,West Bengal,Middle,1193000.0,751,2024-01-18,Active
+CUST00261,Karthik,Bose,Male,21,Chennai,Tamil Nadu,Lower-Middle,334000.0,691,2021-11-29,Active
+CUST00262,Tanvi,Nair,Female,31,Mumbai,Maharashtra,Upper-Middle,2228000.0,787,2024-03-08,Active
+CUST00263,Vikram,Das,Male,30,Pune,Maharashtra,Middle,652000.0,661,2024-10-02,Inactive
+CUST00264,Suresh,Rao,Male,21,Hyderabad,Telangana,Lower-Middle,415000.0,671,2023-07-04,Active
+CUST00265,Neha,Sharma,Female,41,Chennai,Tamil Nadu,Upper-Middle,2101000.0,742,2021-05-08,Active
+CUST00266,Neha,Nair,Female,46,Pune,Maharashtra,Upper-Middle,2400000.0,720,2022-09-29,Active
+CUST00267,Divya,Khan,Female,38,Hyderabad,Telangana,High-Net-Worth,4174000.0,779,2023-07-21,Active
+CUST00268,Kavita,Kulkarni,Female,31,Jaipur,Rajasthan,Upper-Middle,2273000.0,771,2022-05-22,Active
+CUST00269,Manish,Bose,Male,29,Jaipur,Rajasthan,Upper-Middle,1302000.0,758,2024-03-01,Inactive
+CUST00270,Deepak,Mehta,Male,50,Delhi,Delhi,Middle,912000.0,704,2021-08-27,Active
+CUST00271,Priya,Bose,Female,48,Mumbai,Maharashtra,Middle,908000.0,685,2023-07-25,Active
+CUST00272,Shreya,Gupta,Female,44,Mumbai,Maharashtra,Middle,1090000.0,775,2022-03-23,Active
+CUST00273,Amit,Joshi,Male,21,Bengaluru,Karnataka,Middle,636000.0,697,2021-05-22,Active
+CUST00274,Pooja,Gupta,Female,45,Pune,Maharashtra,Lower-Middle,341000.0,661,2024-08-06,Active
+CUST00275,Divya,Das,Female,43,Ahmedabad,Gujarat,Upper-Middle,2379000.0,751,2023-02-09,Inactive
+CUST00276,Nikhil,Joshi,Male,39,Bengaluru,Karnataka,Lower-Middle,461000.0,663,2023-12-20,Inactive
+CUST00277,Karthik,Sharma,Male,51,Mumbai,Maharashtra,High-Net-Worth,4121000.0,816,2024-01-21,Active
+CUST00278,Simran,Khan,Female,42,Hyderabad,Telangana,Middle,693000.0,710,2022-01-22,Active
+CUST00279,Aarav,Choudhury,Male,33,Lucknow,Uttar Pradesh,Upper-Middle,2349000.0,757,2021-02-02,Active
+CUST00280,Rohan,Verma,Male,43,Ahmedabad,Gujarat,Middle,1022000.0,710,2021-04-10,Active
+CUST00281,Amit,Bose,Male,42,Hyderabad,Telangana,Middle,1053000.0,797,2021-04-26,Inactive
+CUST00282,Sneha,Rao,Female,48,Lucknow,Uttar Pradesh,Middle,1004000.0,713,2022-10-19,Active
+CUST00283,Nikhil,Khan,Male,52,Pune,Maharashtra,Middle,637000.0,710,2024-04-26,Active
+CUST00284,Nikhil,Choudhury,Male,21,Jaipur,Rajasthan,Middle,1183000.0,689,2024-08-10,Active
+CUST00285,Tanvi,Choudhury,Female,21,Pune,Maharashtra,Lower-Middle,413000.0,655,2024-01-07,Active
+CUST00286,Rahul,Mehta,Male,39,Ahmedabad,Gujarat,High-Net-Worth,4468000.0,850,2023-05-04,Active
+CUST00287,Amit,Khan,Male,42,Chennai,Tamil Nadu,Middle,988000.0,717,2023-07-11,Active
+CUST00288,Manish,Iyer,Male,48,Mumbai,Maharashtra,Middle,1004000.0,647,2024-05-19,Inactive
+CUST00289,Aditya,Iyer,Male,41,Ahmedabad,Gujarat,Middle,1144000.0,751,2022-09-13,Active
+CUST00290,Aditya,Iyer,Male,22,Bengaluru,Karnataka,Upper-Middle,1851500.0,804,2022-05-12,Active
+CUST00291,Amit,Khan,Male,42,Jaipur,Rajasthan,Middle,770000.0,710,2023-08-13,Active
+CUST00292,Neha,Singh,Female,45,Kolkata,West Bengal,Middle,898000.0,804,2021-07-21,Active
+CUST00293,Sunita,Rao,Female,41,Hyderabad,Telangana,Middle,848000.0,733,2024-02-27,Active
+CUST00294,Aarav,Singh,Male,33,Jaipur,Rajasthan,High-Net-Worth,4234000.0,788,2023-05-06,Active
+CUST00295,Kunal,Khan,Male,48,Pune,Maharashtra,Middle,747000.0,695,2024-02-02,Active
+CUST00296,Neha,Kulkarni,Female,39,Ahmedabad,Gujarat,Middle,1040000.0,708,2022-12-23,Inactive
+CUST00297,Ananya,Verma,Female,44,Jaipur,Rajasthan,Lower-Middle,554000.0,683,2024-09-30,Inactive
+CUST00298,Amit,Mehta,Male,50,Hyderabad,Telangana,Lower-Middle,345000.0,649,2022-03-24,Active
+CUST00299,Pooja,Kulkarni,Female,36,Ahmedabad,Gujarat,Lower-Middle,460000.0,630,2023-04-23,Inactive
+CUST00300,Meera,Gupta,Female,34,Mumbai,Maharashtra,Middle,1019000.0,738,2023-06-01,Active
+CUST00301,Rohan,Reddy,Male,47,Jaipur,Rajasthan,Lower-Middle,358000.0,633,2023-12-15,Active
+CUST00302,Neha,Das,Female,48,Bengaluru,Karnataka,Middle,844000.0,772,2024-03-03,Active
+CUST00303,Rahul,Patel,Male,43,Mumbai,Maharashtra,Lower-Middle,414000.0,745,2024-02-06,Active
+CUST00304,Arjun,Nair,Male,30,Bengaluru,Karnataka,Middle,860000.0,681,2022-11-10,Active
+CUST00305,Siddharth,Verma,Male,21,Hyderabad,Telangana,Middle,1121000.0,777,2024-03-06,Active
+CUST00306,Siddharth,Patel,Male,46,Chennai,Tamil Nadu,Upper-Middle,1851500.0,768,2021-03-09,Inactive
+CUST00307,Pooja,Iyer,Female,42,Lucknow,Uttar Pradesh,Lower-Middle,546000.0,624,2023-03-27,Active
+CUST00308,Ananya,Khan,Female,65,Lucknow,Uttar Pradesh,Upper-Middle,1706000.0,773,2024-01-13,Active
+CUST00309,Praveen,Patel,Male,40,Jaipur,Rajasthan,Upper-Middle,1650000.0,791,2021-07-20,Active
+CUST00310,Kunal,Das,Male,44,Kolkata,West Bengal,Lower-Middle,382000.0,678,2023-07-12,Active
+CUST00311,Meera,Das,Female,30,Pune,Maharashtra,Lower-Middle,476000.0,688,2023-02-18,Inactive
+CUST00312,Sunita,Khan,Female,59,Bengaluru,Karnataka,Lower-Middle,346000.0,723,2024-07-22,Inactive
+CUST00313,Divya,Joshi,Female,56,Bengaluru,Karnataka,Lower-Middle,583000.0,649,2023-06-30,Active
+CUST00314,Priya,Mehta,Female,28,Bengaluru,Karnataka,Lower-Middle,435000.0,664,2024-02-11,Active
+CUST00315,Aarav,Patel,Male,39,Kolkata,West Bengal,Middle,958000.0,763,2022-10-27,Active
+CUST00316,Rahul,Choudhury,Male,21,Pune,Maharashtra,Upper-Middle,2142000.0,815,2024-02-20,Active
+CUST00317,Deepak,Nair,Male,37,Pune,Maharashtra,Lower-Middle,381000.0,652,2022-07-04,Active
+CUST00318,Vikram,Choudhury,Male,27,Chennai,Tamil Nadu,Middle,891000.0,667,2021-06-07,Active
+CUST00319,Arjun,Kulkarni,Male,48,Lucknow,Uttar Pradesh,Middle,875000.0,727,2021-10-05,Active
+CUST00320,Divya,Das,Female,24,Kolkata,West Bengal,Middle,858000.0,679,2024-08-26,Active
+CUST00321,Rahul,Rao,Male,35,Lucknow,Uttar Pradesh,High-Net-Worth,3203000.0,850,2022-10-06,Inactive
+CUST00322,Divya,Gupta,Female,36,Ahmedabad,Gujarat,High-Net-Worth,5237000.0,772,2022-10-30,Active
+CUST00323,Divya,Reddy,Female,36,Lucknow,Uttar Pradesh,Lower-Middle,599000.0,659,2022-01-04,Active
+CUST00324,Arjun,Bose,Male,21,Hyderabad,Telangana,Middle,775000.0,723,2021-05-22,Active
+CUST00325,Shreya,Kulkarni,Female,36,Delhi,Delhi,Middle,745000.0,749,2024-09-10,Inactive
+CUST00326,Sunita,Das,Female,59,Bengaluru,Karnataka,Middle,959000.0,764,2024-04-07,Active
+CUST00327,Meera,Verma,Female,36,Kolkata,West Bengal,Upper-Middle,2256000.0,736,2024-05-01,Active
+CUST00328,Rohan,Khan,Male,67,Kolkata,West Bengal,Lower-Middle,484000.0,672,2024-02-28,Active
+CUST00329,Sunita,Rao,Female,39,Pune,Maharashtra,Lower-Middle,330000.0,669,2022-03-31,Active
+CUST00330,Suresh,Joshi,Male,41,Pune,Maharashtra,Middle,1008000.0,719,2023-10-22,Inactive
+CUST00331,Suresh,Reddy,Male,32,Chennai,Tamil Nadu,Middle,1177000.0,705,2021-08-26,Active
+CUST00332,Kunal,Gupta,Male,38,Kolkata,West Bengal,Middle,724000.0,705,2023-09-17,Active
+CUST00333,Suresh,Bose,Male,31,Kolkata,West Bengal,Lower-Middle,313000.0,674,2021-08-24,Inactive
+CUST00334,Shreya,Reddy,Female,36,Delhi,Delhi,High-Net-Worth,5092000.0,847,2023-11-23,Inactive
+CUST00335,Kunal,Choudhury,Male,21,Lucknow,Uttar Pradesh,Middle,843000.0,763,2022-01-13,Active
+CUST00336,Kavita,Sharma,Female,52,Lucknow,Uttar Pradesh,Upper-Middle,1784000.0,707,2023-05-30,Active
+CUST00337,Aditya,Singh,Male,35,Bengaluru,Karnataka,Middle,1080000.0,711,2024-01-05,Active
+CUST00338,Sneha,Bose,Female,23,Bengaluru,Karnataka,Middle,1118000.0,697,2023-12-17,Active
+CUST00339,Swati,Das,Female,26,Lucknow,Uttar Pradesh,Middle,669000.0,786,2022-12-22,Active
+CUST00340,Karthik,Gupta,Male,49,Lucknow,Uttar Pradesh,Middle,1003000.0,769,2022-10-04,Inactive
+CUST00341,Priya,Nair,Female,46,Kolkata,West Bengal,Upper-Middle,1851500.0,736,2023-05-07,Active
+CUST00342,Kavita,Nair,Female,33,Ahmedabad,Gujarat,Middle,941000.0,742,2024-08-14,Active
+CUST00343,Manish,Nair,Male,25,Ahmedabad,Gujarat,Middle,712000.0,749,2023-07-13,Active
+CUST00344,Pooja,Kulkarni,Female,36,Delhi,Delhi,Lower-Middle,415000.0,655,2024-02-25,Active
+CUST00345,Kavita,Kulkarni,Female,46,Pune,Maharashtra,Upper-Middle,1777000.0,783,2021-12-09,Inactive
+CUST00346,Praveen,Khan,Male,35,Chennai,Tamil Nadu,Lower-Middle,367000.0,716,2022-08-15,Inactive
+CUST00347,Swati,Kulkarni,Female,27,Jaipur,Rajasthan,Middle,944000.0,746,2022-07-03,Active
+CUST00348,Meera,Verma,Female,45,Ahmedabad,Gujarat,Middle,1194000.0,714,2021-07-29,Active
+CUST00349,Rahul,Verma,Male,42,Ahmedabad,Gujarat,Middle,1117000.0,681,2021-06-28,Active
+CUST00350,Praveen,Khan,Male,49,Hyderabad,Telangana,Upper-Middle,1964000.0,764,2022-12-20,Active
+CUST00351,Ananya,Mehta,Female,33,Hyderabad,Telangana,Upper-Middle,2247000.0,801,2024-03-13,Active
+CUST00352,Swati,Nair,Female,31,Kolkata,West Bengal,High-Net-Worth,3524000.0,774,2024-03-18,Active
+CUST00353,Vikram,Choudhury,Male,21,Mumbai,Maharashtra,High-Net-Worth,5535000.0,825,2021-09-17,Active
+CUST00354,Aditya,Mehta,Male,24,Kolkata,West Bengal,Upper-Middle,2190000.0,822,2024-10-16,Active
+CUST00355,Deepak,Singh,Male,21,Pune,Maharashtra,Middle,645000.0,784,2021-07-10,Active
+CUST00356,Tanvi,Joshi,Female,41,Ahmedabad,Gujarat,High-Net-Worth,3646000.0,807,2021-01-06,Active
+CUST00357,Arjun,Bose,Male,33,Kolkata,West Bengal,Upper-Middle,2234000.0,781,2023-03-26,Active
+CUST00358,Simran,Iyer,Female,38,Ahmedabad,Gujarat,Middle,1097000.0,763,2022-11-23,Active
+CUST00359,Deepak,Kulkarni,Male,40,Kolkata,West Bengal,Upper-Middle,2191000.0,774,2021-04-05,Inactive
+CUST00360,Pooja,Reddy,Female,35,Delhi,Delhi,Middle,600000.0,723,2023-05-27,Active
+CUST00361,Siddharth,Gupta,Male,42,Delhi,Delhi,Upper-Middle,2340000.0,718,2021-07-11,Active
+CUST00362,Priya,Joshi,Female,24,Delhi,Delhi,Lower-Middle,488000.0,699,2022-04-25,Active
+CUST00363,Arjun,Reddy,Male,40,Mumbai,Maharashtra,Middle,647000.0,718,2024-04-30,Active
+CUST00364,Pooja,Sharma,Female,39,Kolkata,West Bengal,Upper-Middle,2485000.0,780,2023-05-15,Active
+CUST00365,Priya,Khan,Female,33,Pune,Maharashtra,Lower-Middle,542000.0,638,2021-07-31,Active
+CUST00366,Ananya,Das,Female,41,Delhi,Delhi,Middle,1006000.0,690,2021-05-21,Active
+CUST00367,Deepak,Nair,Male,43,Ahmedabad,Gujarat,Middle,728000.0,665,2021-11-07,Active
+CUST00368,Simran,Iyer,Female,50,Bengaluru,Karnataka,Upper-Middle,1382000.0,784,2021-09-10,Active
+CUST00369,Divya,Choudhury,Female,41,Kolkata,West Bengal,Upper-Middle,1522000.0,799,2024-08-13,Inactive
+CUST00370,Sunita,Sharma,Female,57,Chennai,Tamil Nadu,Middle,964000.0,760,2022-01-22,Active
+CUST00371,Shreya,Verma,Female,21,Hyderabad,Telangana,Middle,668000.0,680,2023-10-21,Active
+CUST00372,Manish,Sharma,Male,32,Kolkata,West Bengal,High-Net-Worth,2962000.0,810,2024-03-10,Active
+CUST00373,Praveen,Kulkarni,Male,44,Bengaluru,Karnataka,Lower-Middle,320000.0,640,2022-06-21,Active
+CUST00374,Praveen,Das,Male,41,Jaipur,Rajasthan,Middle,1028000.0,698,2023-05-01,Active
+CUST00375,Priya,Mehta,Female,32,Chennai,Tamil Nadu,Lower-Middle,324000.0,613,2022-02-21,Active
+CUST00376,Manish,Rao,Male,28,Pune,Maharashtra,Middle,1058000.0,677,2024-08-23,Active
+CUST00377,Rahul,Choudhury,Male,28,Hyderabad,Telangana,Lower-Middle,326000.0,712,2023-06-09,Inactive
+CUST00378,Rahul,Nair,Male,28,Bengaluru,Karnataka,Lower-Middle,341000.0,775,2021-01-24,Inactive
+CUST00379,Meera,Singh,Female,44,Delhi,Delhi,Middle,1050000.0,731,2022-07-05,Active
+CUST00380,Praveen,Sharma,Male,29,Kolkata,West Bengal,Upper-Middle,1554000.0,791,2021-05-11,Active
+CUST00381,Suresh,Bose,Male,32,Jaipur,Rajasthan,Middle,900000.0,729,2024-03-06,Inactive
+CUST00382,Rahul,Reddy,Male,67,Lucknow,Uttar Pradesh,Upper-Middle,1350000.0,767,2023-11-09,Inactive
+CUST00383,Aditya,Verma,Male,51,Ahmedabad,Gujarat,Middle,1152000.0,700,2022-01-02,Active
+CUST00384,Manish,Choudhury,Male,38,Hyderabad,Telangana,Middle,850000.0,786,2022-10-18,Active
+CUST00385,Deepak,Joshi,Male,32,Bengaluru,Karnataka,Middle,1141000.0,788,2022-01-03,Active
+CUST00386,Amit,Patel,Male,46,Ahmedabad,Gujarat,Upper-Middle,2206000.0,753,2022-09-29,Active
+CUST00387,Pooja,Joshi,Female,45,Hyderabad,Telangana,Middle,1071000.0,759,2024-06-29,Active
+CUST00388,Swati,Kulkarni,Female,45,Hyderabad,Telangana,Upper-Middle,1911000.0,722,2022-05-18,Inactive
+CUST00389,Pooja,Khan,Female,31,Jaipur,Rajasthan,Middle,1104000.0,716,2021-01-20,Active
+CUST00390,Praveen,Das,Male,38,Chennai,Tamil Nadu,Lower-Middle,459000.0,694,2022-05-03,Active
+CUST00391,Vikram,Singh,Male,40,Bengaluru,Karnataka,Lower-Middle,369000.0,616,2023-12-01,Active
+CUST00392,Ritu,Patel,Female,43,Lucknow,Uttar Pradesh,Lower-Middle,340000.0,694,2023-03-19,Inactive
+CUST00393,Amit,Mehta,Male,45,Hyderabad,Telangana,Middle,1111000.0,762,2023-03-16,Active
+CUST00394,Divya,Bose,Female,48,Chennai,Tamil Nadu,Middle,1166000.0,741,2021-10-06,Active
+CUST00395,Vikram,Reddy,Male,38,Delhi,Delhi,Middle,788000.0,666,2021-09-05,Active
+CUST00396,Suresh,Gupta,Male,43,Ahmedabad,Gujarat,Middle,672000.0,732,2021-11-19,Active
+CUST00397,Simran,Verma,Female,41,Lucknow,Uttar Pradesh,Upper-Middle,1626000.0,731,2021-07-06,Active
+CUST00398,Kavita,Verma,Female,27,Chennai,Tamil Nadu,Middle,1194000.0,761,2021-03-05,Active
+CUST00399,Meera,Khan,Female,38,Bengaluru,Karnataka,Middle,1082000.0,748,2021-10-14,Inactive
+CUST00400,Karthik,Khan,Male,39,Delhi,Delhi,Lower-Middle,420000.0,671,2024-07-14,Active
+CUST00401,Deepak,Singh,Male,49,Bengaluru,Karnataka,Lower-Middle,319000.0,649,2024-08-15,Active
+CUST00402,Rohan,Rao,Male,40,Bengaluru,Karnataka,Lower-Middle,438000.0,651,2021-12-11,Active
+CUST00403,Simran,Das,Female,34,Ahmedabad,Gujarat,Lower-Middle,505000.0,657,2021-12-20,Active
+CUST00404,Rahul,Singh,Male,41,Ahmedabad,Gujarat,Upper-Middle,1245000.0,755,2024-06-22,Active
+CUST00405,Ritu,Choudhury,Female,52,Jaipur,Rajasthan,Middle,653000.0,693,2023-02-24,Inactive
+CUST00406,Nikhil,Khan,Male,36,Lucknow,Uttar Pradesh,Upper-Middle,2486000.0,756,2023-01-06,Active
+CUST00407,Divya,Rao,Female,54,Pune,Maharashtra,Middle,616000.0,731,2024-05-07,Active
+CUST00408,Pooja,Kulkarni,Female,50,Jaipur,Rajasthan,Middle,941000.0,673,2022-04-22,Active
+CUST00409,Aditya,Khan,Male,41,Chennai,Tamil Nadu,Middle,1075000.0,756,2021-04-25,Active
+CUST00410,Deepak,Das,Male,39,Kolkata,West Bengal,High-Net-Worth,5970000.0,836,2021-12-22,Inactive
+CUST00411,Sunita,Joshi,Female,33,Lucknow,Uttar Pradesh,Lower-Middle,510000.0,726,2024-03-08,Active
+CUST00412,Karthik,Kulkarni,Male,64,Jaipur,Rajasthan,Middle,894000.0,712,2021-07-04,Inactive
+CUST00413,Aarav,Kulkarni,Male,34,Mumbai,Maharashtra,Middle,968000.0,775,2021-09-25,Active
+CUST00414,Siddharth,Rao,Male,56,Mumbai,Maharashtra,Lower-Middle,476000.0,649,2021-10-18,Active
+CUST00415,Priya,Joshi,Female,34,Pune,Maharashtra,Middle,802000.0,715,2022-10-23,Inactive
+CUST00416,Arjun,Choudhury,Male,24,Ahmedabad,Gujarat,Middle,705000.0,692,2024-02-25,Active
+CUST00417,Sneha,Nair,Female,27,Pune,Maharashtra,Middle,1013000.0,698,2021-09-18,Inactive
+CUST00418,Arjun,Das,Male,38,Lucknow,Uttar Pradesh,Lower-Middle,481000.0,679,2024-06-06,Active
+CUST00419,Siddharth,Kulkarni,Male,56,Delhi,Delhi,Middle,647000.0,690,2022-12-12,Active
+CUST00420,Nikhil,Patel,Male,49,Kolkata,West Bengal,Middle,759000.0,717,2022-05-27,Active
+CUST00421,Neha,Reddy,Female,38,Mumbai,Maharashtra,Lower-Middle,431000.0,696,2023-05-10,Active
+CUST00422,Ritu,Das,Female,26,Kolkata,West Bengal,Middle,661000.0,738,2023-09-09,Active
+CUST00423,Vikram,Bose,Male,40,Bengaluru,Karnataka,Upper-Middle,1243000.0,784,2021-02-11,Active
+CUST00424,Rohan,Rao,Male,42,Delhi,Delhi,Upper-Middle,1409000.0,843,2021-06-03,Active
+CUST00425,Kunal,Kulkarni,Male,31,Mumbai,Maharashtra,Middle,992000.0,706,2024-05-28,Active
+CUST00426,Aarav,Reddy,Male,32,Kolkata,West Bengal,Middle,941000.0,705,2024-02-09,Active
+CUST00427,Shreya,Gupta,Female,31,Chennai,Tamil Nadu,Middle,630000.0,766,2024-03-16,Active
+CUST00428,Ananya,Verma,Female,54,Kolkata,West Bengal,Lower-Middle,326000.0,647,2024-09-17,Active
+CUST00429,Sneha,Reddy,Female,29,Mumbai,Maharashtra,Middle,983000.0,741,2021-06-17,Active
+CUST00430,Rahul,Das,Male,32,Ahmedabad,Gujarat,Middle,997000.0,747,2021-07-06,Active
+CUST00431,Ananya,Joshi,Female,41,Pune,Maharashtra,Middle,867000.0,671,2022-06-24,Active
+CUST00432,Sneha,Singh,Female,56,Lucknow,Uttar Pradesh,Lower-Middle,526000.0,741,2024-09-28,Inactive
+CUST00433,Sunita,Choudhury,Female,32,Lucknow,Uttar Pradesh,Middle,637000.0,711,2023-03-04,Active
+CUST00434,Meera,Kulkarni,Female,42,Lucknow,Uttar Pradesh,Upper-Middle,1819000.0,780,2021-06-11,Active
+CUST00435,Manish,Mehta,Male,46,Bengaluru,Karnataka,High-Net-Worth,4072000.0,850,2021-12-09,Active
+CUST00436,Vikram,Verma,Male,37,Pune,Maharashtra,Lower-Middle,505000.0,638,2022-02-18,Active
+CUST00437,Karthik,Singh,Male,23,Kolkata,West Bengal,High-Net-Worth,5700000.0,791,2021-05-18,Inactive
+CUST00438,Meera,Rao,Female,38,Chennai,Tamil Nadu,Middle,1150000.0,787,2021-01-26,Active
+CUST00439,Priya,Choudhury,Female,33,Delhi,Delhi,Lower-Middle,476000.0,678,2021-07-25,Active
+CUST00440,Praveen,Gupta,Male,38,Jaipur,Rajasthan,Upper-Middle,2341000.0,805,2022-06-25,Active
+CUST00441,Swati,Kulkarni,Female,66,Mumbai,Maharashtra,Lower-Middle,421000.0,648,2024-06-20,Active
+CUST00442,Pooja,Das,Female,33,Kolkata,West Bengal,Upper-Middle,1264000.0,801,2023-09-01,Active
+CUST00443,Pooja,Rao,Female,46,Chennai,Tamil Nadu,Middle,1106000.0,789,2021-07-21,Active
+CUST00444,Vikram,Gupta,Male,45,Ahmedabad,Gujarat,Upper-Middle,1617000.0,759,2023-05-04,Active
+CUST00445,Aditya,Bose,Male,45,Hyderabad,Telangana,High-Net-Worth,3925000.0,837,2023-09-20,Active
+CUST00446,Simran,Verma,Female,48,Jaipur,Rajasthan,Upper-Middle,1285000.0,785,2023-11-04,Active
+CUST00447,Vikram,Iyer,Male,50,Hyderabad,Telangana,Upper-Middle,1524000.0,805,2023-07-24,Inactive
+CUST00448,Tanvi,Iyer,Female,54,Chennai,Tamil Nadu,Middle,879000.0,747,2023-03-24,Active
+CUST00449,Nikhil,Sharma,Male,37,Hyderabad,Telangana,Middle,956000.0,730,2021-12-30,Active
+CUST00450,Swati,Joshi,Female,52,Kolkata,West Bengal,Lower-Middle,568000.0,637,2021-07-05,Active
+CUST00451,Pooja,Nair,Female,43,Lucknow,Uttar Pradesh,Upper-Middle,1479000.0,758,2022-03-30,Active
+CUST00452,Rahul,Choudhury,Male,39,Jaipur,Rajasthan,Lower-Middle,534000.0,721,2024-10-29,Inactive
+CUST00453,Nikhil,Nair,Male,41,Lucknow,Uttar Pradesh,Upper-Middle,1491000.0,771,2024-05-30,Active
+CUST00454,Tanvi,Singh,Female,24,Pune,Maharashtra,Upper-Middle,2307000.0,792,2023-07-30,Active
+CUST00455,Neha,Das,Female,46,Lucknow,Uttar Pradesh,Lower-Middle,453000.0,756,2024-09-18,Active
+CUST00456,Meera,Gupta,Female,35,Chennai,Tamil Nadu,Upper-Middle,1851500.0,776,2022-11-20,Active
+CUST00457,Simran,Singh,Female,41,Chennai,Tamil Nadu,Upper-Middle,2438000.0,817,2024-08-27,Active
+CUST00458,Manish,Khan,Male,37,Mumbai,Maharashtra,Upper-Middle,2243000.0,778,2024-05-13,Active
+CUST00459,Shreya,Mehta,Female,45,Mumbai,Maharashtra,Upper-Middle,2497000.0,775,2022-06-16,Active
+CUST00460,Kavita,Verma,Female,34,Lucknow,Uttar Pradesh,Upper-Middle,1944000.0,775,2022-01-24,Active
+CUST00461,Nikhil,Kulkarni,Male,50,Kolkata,West Bengal,Middle,1107000.0,689,2024-09-08,Active
+CUST00462,Rahul,Reddy,Male,40,Ahmedabad,Gujarat,Lower-Middle,378000.0,641,2024-02-19,Active
+CUST00463,Nikhil,Rao,Male,52,Bengaluru,Karnataka,Middle,734000.0,671,2022-09-21,Active
+CUST00464,Divya,Singh,Female,32,Lucknow,Uttar Pradesh,Middle,1111000.0,738,2023-08-22,Inactive
+CUST00465,Suresh,Iyer,Male,56,Jaipur,Rajasthan,Lower-Middle,504000.0,667,2023-12-22,Active
+CUST00466,Karthik,Mehta,Male,32,Delhi,Delhi,High-Net-Worth,3699000.0,850,2024-03-12,Active
+CUST00467,Ananya,Rao,Female,23,Delhi,Delhi,Upper-Middle,1834000.0,704,2024-07-16,Active
+CUST00468,Shreya,Verma,Female,43,Mumbai,Maharashtra,Middle,726000.0,707,2021-12-12,Active
+CUST00469,Suresh,Patel,Male,27,Delhi,Delhi,Middle,980000.0,749,2023-04-07,Active
+CUST00470,Kavita,Sharma,Female,41,Mumbai,Maharashtra,Middle,1038000.0,705,2021-01-29,Active
+CUST00471,Aarav,Sharma,Male,24,Hyderabad,Telangana,Middle,1126000.0,755,2022-10-02,Inactive
+CUST00472,Meera,Gupta,Female,46,Delhi,Delhi,Lower-Middle,314000.0,666,2022-08-19,Active
+CUST00473,Kavita,Mehta,Female,59,Kolkata,West Bengal,High-Net-Worth,4216000.0,783,2022-01-21,Inactive
+CUST00474,Pooja,Khan,Female,22,Hyderabad,Telangana,Upper-Middle,1371000.0,749,2021-02-14,Active
+CUST00475,Rohan,Joshi,Male,38,Mumbai,Maharashtra,Middle,984000.0,733,2024-01-01,Active
+CUST00476,Nikhil,Reddy,Male,36,Mumbai,Maharashtra,Lower-Middle,335000.0,684,2023-06-29,Active
+CUST00477,Ritu,Mehta,Female,25,Hyderabad,Telangana,Upper-Middle,2019000.0,813,2022-09-09,Active
+CUST00478,Nikhil,Singh,Male,38,Lucknow,Uttar Pradesh,Middle,682000.0,764,2021-08-03,Active
+CUST00479,Rahul,Reddy,Male,42,Bengaluru,Karnataka,Middle,965000.0,740,2022-06-23,Active
+CUST00480,Kunal,Choudhury,Male,45,Chennai,Tamil Nadu,Lower-Middle,464000.0,687,2022-03-02,Active
+CUST00481,Divya,Khan,Female,46,Mumbai,Maharashtra,Lower-Middle,327000.0,723,2021-08-15,Active
+CUST00482,Ananya,Patel,Female,41,Jaipur,Rajasthan,Lower-Middle,517000.0,698,2022-06-09,Active
+CUST00483,Neha,Singh,Female,38,Ahmedabad,Gujarat,Lower-Middle,544000.0,727,2021-03-22,Active
+CUST00484,Sunita,Rao,Female,31,Pune,Maharashtra,Upper-Middle,1323000.0,824,2021-04-04,Inactive
+CUST00485,Nikhil,Nair,Male,38,Kolkata,West Bengal,Middle,863000.0,674,2024-06-27,Active
+CUST00486,Kunal,Rao,Male,40,Delhi,Delhi,Lower-Middle,420000.0,642,2023-07-24,Active
+CUST00487,Tanvi,Kulkarni,Female,48,Pune,Maharashtra,Middle,1078000.0,702,2021-08-20,Inactive
+CUST00488,Karthik,Nair,Male,34,Bengaluru,Karnataka,Middle,954000.0,658,2024-03-11,Active
+CUST00489,Deepak,Das,Male,34,Kolkata,West Bengal,Middle,1118000.0,640,2021-09-25,Active
+CUST00490,Priya,Choudhury,Female,21,Ahmedabad,Gujarat,Lower-Middle,378000.0,700,2022-10-06,Inactive
+CUST00491,Nikhil,Rao,Male,47,Jaipur,Rajasthan,Middle,1020000.0,739,2021-07-15,Active
+CUST00492,Suresh,Joshi,Male,28,Pune,Maharashtra,Lower-Middle,548000.0,668,2024-06-09,Inactive
+CUST00493,Manish,Kulkarni,Male,38,Ahmedabad,Gujarat,Upper-Middle,1297000.0,735,2023-10-04,Active
+CUST00494,Neha,Verma,Female,55,Jaipur,Rajasthan,Middle,986000.0,755,2023-04-06,Active
+CUST00495,Suresh,Bose,Male,36,Lucknow,Uttar Pradesh,Middle,1114000.0,725,2023-07-05,Active
+CUST00496,Tanvi,Sharma,Female,41,Bengaluru,Karnataka,Middle,621000.0,653,2024-01-30,Inactive
+CUST00497,Praveen,Gupta,Male,36,Jaipur,Rajasthan,Middle,993000.0,701,2023-07-24,Active
+CUST00498,Simran,Verma,Female,27,Hyderabad,Telangana,Upper-Middle,1632000.0,761,2024-06-23,Active
+CUST00499,Tanvi,Bose,Female,58,Bengaluru,Karnataka,Lower-Middle,498000.0,695,2021-01-05,Active
+CUST00500,Meera,Joshi,Female,32,Bengaluru,Karnataka,Lower-Middle,349000.0,692,2021-10-15,Active
+CUST00501,Priya,Singh,Female,54,Lucknow,Uttar Pradesh,Lower-Middle,336000.0,706,2023-03-16,Active
+CUST00502,Arjun,Rao,Male,39,Bengaluru,Karnataka,Upper-Middle,1260000.0,750,2024-07-20,Active
+CUST00503,Praveen,Bose,Male,46,Ahmedabad,Gujarat,Upper-Middle,1851500.0,781,2021-10-03,Active
+CUST00504,Manish,Verma,Male,48,Jaipur,Rajasthan,High-Net-Worth,5436000.0,825,2023-09-17,Active
+CUST00505,Arjun,Nair,Male,50,Delhi,Delhi,Lower-Middle,497000.0,648,2024-05-26,Active
+CUST00506,Kavita,Khan,Female,53,Chennai,Tamil Nadu,Middle,806000.0,731,2022-08-26,Active
+CUST00507,Vikram,Choudhury,Male,61,Lucknow,Uttar Pradesh,Upper-Middle,2173000.0,749,2022-09-05,Active
+CUST00508,Tanvi,Iyer,Female,58,Hyderabad,Telangana,Middle,1029000.0,731,2022-12-09,Active
+CUST00509,Arjun,Nair,Male,31,Jaipur,Rajasthan,Middle,982000.0,708,2021-08-25,Active
+CUST00510,Swati,Choudhury,Female,35,Jaipur,Rajasthan,Middle,941000.0,739,2021-01-27,Active
+CUST00511,Amit,Mehta,Male,44,Mumbai,Maharashtra,Upper-Middle,1460000.0,752,2021-11-26,Active
+CUST00512,Ananya,Verma,Female,38,Chennai,Tamil Nadu,Middle,925000.0,799,2023-01-05,Active
+CUST00513,Deepak,Khan,Male,58,Jaipur,Rajasthan,Middle,907000.0,740,2022-08-13,Active
+CUST00514,Siddharth,Das,Male,39,Pune,Maharashtra,Middle,1073000.0,729,2022-10-03,Active
+CUST00515,Aarav,Singh,Male,45,Hyderabad,Telangana,Middle,1069000.0,689,2023-06-27,Active
+CUST00516,Sunita,Iyer,Female,36,Hyderabad,Telangana,Middle,706000.0,666,2024-10-30,Inactive
+CUST00517,Arjun,Reddy,Male,43,Pune,Maharashtra,Lower-Middle,384000.0,695,2022-06-26,Inactive
+CUST00518,Pooja,Rao,Female,33,Ahmedabad,Gujarat,Upper-Middle,1401000.0,817,2021-11-11,Active
+CUST00519,Praveen,Gupta,Male,25,Ahmedabad,Gujarat,Upper-Middle,1915000.0,726,2021-05-30,Active
+CUST00520,Meera,Khan,Female,41,Delhi,Delhi,Middle,1072000.0,761,2021-11-23,Active
+CUST00521,Priya,Joshi,Female,57,Hyderabad,Telangana,Upper-Middle,2062000.0,756,2022-11-10,Active
+CUST00522,Praveen,Kulkarni,Male,50,Jaipur,Rajasthan,Upper-Middle,2475000.0,768,2021-01-19,Inactive
+CUST00523,Ritu,Khan,Female,37,Lucknow,Uttar Pradesh,High-Net-Worth,3353000.0,832,2021-03-23,Active
+CUST00524,Kavita,Reddy,Female,46,Pune,Maharashtra,Middle,1034000.0,669,2021-02-20,Active
+CUST00525,Meera,Bose,Female,55,Lucknow,Uttar Pradesh,Lower-Middle,569000.0,725,2022-01-30,Active
+CUST00526,Rohan,Nair,Male,32,Jaipur,Rajasthan,Middle,941000.0,738,2022-03-08,Active
+CUST00527,Karthik,Choudhury,Male,44,Bengaluru,Karnataka,Middle,1097000.0,734,2023-06-11,Active
+CUST00528,Arjun,Mehta,Male,32,Mumbai,Maharashtra,Middle,799000.0,701,2021-06-29,Inactive
+CUST00529,Praveen,Singh,Male,38,Jaipur,Rajasthan,Lower-Middle,546000.0,716,2022-06-14,Active
+CUST00530,Shreya,Das,Female,44,Pune,Maharashtra,Middle,834000.0,712,2021-08-31,Active
+CUST00531,Praveen,Verma,Male,47,Bengaluru,Karnataka,Middle,902000.0,625,2022-08-17,Active
+CUST00532,Swati,Patel,Female,51,Chennai,Tamil Nadu,Upper-Middle,1769000.0,717,2023-03-21,Active
+CUST00533,Suresh,Nair,Male,35,Jaipur,Rajasthan,Middle,1048000.0,685,2024-01-23,Active
+CUST00534,Rahul,Joshi,Male,24,Mumbai,Maharashtra,Middle,933000.0,765,2021-09-10,Inactive
+CUST00535,Meera,Patel,Female,33,Chennai,Tamil Nadu,Middle,1045000.0,737,2022-12-06,Active
+CUST00536,Vikram,Nair,Male,38,Hyderabad,Telangana,Middle,752000.0,741,2021-08-23,Inactive
+CUST00537,Karthik,Bose,Male,39,Jaipur,Rajasthan,Lower-Middle,502000.0,618,2022-05-29,Inactive
+CUST00538,Divya,Joshi,Female,49,Delhi,Delhi,Upper-Middle,1505000.0,755,2022-08-07,Active
+CUST00539,Kunal,Kulkarni,Male,21,Ahmedabad,Gujarat,Middle,996000.0,710,2024-04-11,Inactive
+CUST00540,Sunita,Rao,Female,55,Pune,Maharashtra,Lower-Middle,394000.0,704,2022-03-30,Active
+CUST00541,Neha,Joshi,Female,35,Delhi,Delhi,Upper-Middle,1631000.0,759,2023-09-10,Active
+CUST00542,Sunita,Gupta,Female,35,Ahmedabad,Gujarat,Middle,705000.0,797,2024-05-27,Inactive
+CUST00543,Simran,Mehta,Female,43,Jaipur,Rajasthan,Lower-Middle,520000.0,687,2024-07-07,Inactive
+CUST00544,Siddharth,Sharma,Male,50,Jaipur,Rajasthan,Middle,1088000.0,733,2024-03-31,Active
+CUST00545,Siddharth,Verma,Male,36,Jaipur,Rajasthan,Middle,1136000.0,718,2024-01-11,Active
+CUST00546,Kunal,Das,Male,38,Hyderabad,Telangana,Upper-Middle,1966000.0,768,2022-08-19,Inactive
+CUST00547,Amit,Joshi,Male,47,Jaipur,Rajasthan,Lower-Middle,372000.0,672,2024-06-11,Active
+CUST00548,Suresh,Nair,Male,47,Delhi,Delhi,Middle,939000.0,722,2021-10-27,Active
+CUST00549,Divya,Verma,Female,39,Hyderabad,Telangana,Upper-Middle,1501000.0,710,2022-06-26,Active
+CUST00550,Nikhil,Iyer,Male,49,Jaipur,Rajasthan,High-Net-Worth,3764000.0,818,2023-08-20,Active
+CUST00551,Aarav,Rao,Male,49,Bengaluru,Karnataka,Upper-Middle,1878000.0,683,2022-07-15,Active
+CUST00552,Swati,Nair,Female,61,Pune,Maharashtra,Upper-Middle,1675000.0,765,2024-08-31,Active
+CUST00553,Manish,Singh,Male,51,Pune,Maharashtra,High-Net-Worth,3280000.0,784,2023-04-12,Active
+CUST00554,Ritu,Kulkarni,Female,45,Lucknow,Uttar Pradesh,Lower-Middle,565000.0,627,2023-06-20,Inactive
+CUST00555,Manish,Singh,Male,32,Hyderabad,Telangana,Lower-Middle,347000.0,746,2024-05-17,Active
+CUST00556,Nikhil,Khan,Male,36,Pune,Maharashtra,Upper-Middle,2136000.0,776,2023-09-14,Active
+CUST00557,Sneha,Nair,Female,48,Pune,Maharashtra,Lower-Middle,313000.0,689,2024-03-20,Active
+CUST00558,Nikhil,Verma,Male,40,Lucknow,Uttar Pradesh,Lower-Middle,350000.0,684,2022-01-04,Active
+CUST00559,Swati,Sharma,Female,65,Chennai,Tamil Nadu,High-Net-Worth,3258000.0,808,2024-05-27,Active
+CUST00560,Ananya,Khan,Female,41,Pune,Maharashtra,Middle,1077000.0,761,2022-01-08,Active
+CUST00561,Ananya,Rao,Female,51,Ahmedabad,Gujarat,Middle,641000.0,766,2023-02-14,Active
+CUST00562,Aarav,Iyer,Male,46,Jaipur,Rajasthan,Upper-Middle,1856000.0,735,2023-05-10,Active
+CUST00563,Vikram,Kulkarni,Male,56,Lucknow,Uttar Pradesh,Middle,1127000.0,684,2023-12-25,Active
+CUST00564,Rohan,Kulkarni,Male,42,Delhi,Delhi,High-Net-Worth,4388000.0,791,2021-01-03,Active
+CUST00565,Meera,Choudhury,Female,38,Kolkata,West Bengal,Upper-Middle,2107000.0,779,2023-05-29,Active
+CUST00566,Sunita,Das,Female,42,Kolkata,West Bengal,Middle,1045000.0,739,2024-03-25,Inactive
+CUST00567,Rahul,Kulkarni,Male,56,Hyderabad,Telangana,High-Net-Worth,2793000.0,821,2024-05-10,Active
+CUST00568,Neha,Iyer,Female,36,Mumbai,Maharashtra,Upper-Middle,2226000.0,798,2024-03-29,Active
+CUST00569,Amit,Iyer,Male,52,Kolkata,West Bengal,Middle,664000.0,682,2023-05-23,Active
+CUST00570,Neha,Choudhury,Female,45,Lucknow,Uttar Pradesh,Middle,765000.0,749,2024-10-25,Active
+CUST00571,Amit,Kulkarni,Male,35,Delhi,Delhi,Middle,933000.0,773,2022-06-04,Active
+CUST00572,Sunita,Das,Female,37,Delhi,Delhi,Upper-Middle,2057000.0,773,2022-04-16,Active
+CUST00573,Rohan,Iyer,Male,37,Jaipur,Rajasthan,Middle,803000.0,725,2024-02-02,Active
+CUST00574,Vikram,Das,Male,26,Mumbai,Maharashtra,Upper-Middle,2270000.0,726,2023-08-24,Active
+CUST00575,Priya,Patel,Female,56,Chennai,Tamil Nadu,Middle,648000.0,695,2021-03-19,Active
+CUST00576,Swati,Gupta,Female,28,Lucknow,Uttar Pradesh,Lower-Middle,532000.0,583,2021-12-25,Active
+CUST00577,Pooja,Iyer,Female,31,Jaipur,Rajasthan,Middle,620000.0,678,2024-05-12,Active
+CUST00578,Deepak,Nair,Male,57,Mumbai,Maharashtra,Middle,993000.0,760,2021-11-19,Inactive
+CUST00579,Sunita,Das,Female,31,Kolkata,West Bengal,Upper-Middle,1727000.0,837,2022-02-15,Active
+CUST00580,Siddharth,Patel,Male,49,Jaipur,Rajasthan,Middle,1098000.0,713,2024-04-08,Active
+CUST00581,Sneha,Iyer,Female,21,Ahmedabad,Gujarat,High-Net-Worth,4512000.0,850,2022-06-19,Inactive
+CUST00582,Manish,Patel,Male,23,Jaipur,Rajasthan,Middle,1168000.0,667,2023-11-18,Active
+CUST00583,Tanvi,Bose,Female,50,Pune,Maharashtra,Middle,1062000.0,810,2022-11-27,Active
+CUST00584,Shreya,Bose,Female,54,Lucknow,Uttar Pradesh,Upper-Middle,1827000.0,786,2022-06-13,Inactive
+CUST00585,Nikhil,Khan,Male,45,Kolkata,West Bengal,Middle,812000.0,754,2024-01-03,Inactive
+CUST00586,Sneha,Gupta,Female,47,Bengaluru,Karnataka,Middle,1049000.0,734,2022-12-02,Inactive
+CUST00587,Suresh,Rao,Male,40,Kolkata,West Bengal,Middle,944000.0,722,2022-01-10,Active
+CUST00588,Suresh,Iyer,Male,30,Hyderabad,Telangana,Upper-Middle,1851500.0,761,2022-02-28,Active
+CUST00589,Karthik,Joshi,Male,21,Delhi,Delhi,Upper-Middle,1356000.0,767,2021-06-10,Active
+CUST00590,Swati,Sharma,Female,28,Jaipur,Rajasthan,High-Net-Worth,5468000.0,782,2023-01-31,Active
+CUST00591,Aarti,Singh,Female,40,Ahmedabad,Gujarat,Lower-Middle,529000.0,725,2023-11-13,Active
+CUST00592,Praveen,Mehta,Male,49,Mumbai,Maharashtra,Middle,854000.0,670,2024-01-13,Inactive
+CUST00593,Kavita,Nair,Female,28,Ahmedabad,Gujarat,High-Net-Worth,4944000.0,833,2023-08-01,Active
+CUST00594,Aarav,Iyer,Male,28,Pune,Maharashtra,Middle,795000.0,717,2024-06-08,Active
+CUST00595,Manish,Singh,Male,45,Lucknow,Uttar Pradesh,Middle,1175000.0,691,2022-12-04,Active
+CUST00596,Kavita,Iyer,Female,40,Pune,Maharashtra,Upper-Middle,1684000.0,729,2023-04-01,Active
+CUST00597,Deepak,Mehta,Male,32,Lucknow,Uttar Pradesh,Upper-Middle,2258000.0,779,2022-07-07,Active
+CUST00598,Simran,Das,Female,21,Hyderabad,Telangana,Lower-Middle,588000.0,687,2021-11-03,Active
+CUST00599,Vikram,Choudhury,Male,38,Ahmedabad,Gujarat,Lower-Middle,568000.0,692,2024-07-15,Active
+CUST00600,Sunita,Kulkarni,Female,41,Chennai,Tamil Nadu,Middle,1115000.0,772,2021-04-08,Active
+CUST00601,Aarav,Iyer,Male,40,Chennai,Tamil Nadu,Middle,978000.0,709,2023-07-11,Active
+CUST00602,Divya,Joshi,Female,40,Jaipur,Rajasthan,Middle,1086000.0,744,2022-12-06,Inactive
+CUST00603,Kunal,Iyer,Male,39,Lucknow,Uttar Pradesh,Middle,989000.0,726,2021-12-24,Active
+CUST00604,Divya,Rao,Female,31,Jaipur,Rajasthan,Middle,1042000.0,701,2021-06-10,Active
+CUST00605,Ritu,Mehta,Female,23,Delhi,Delhi,Middle,1157000.0,786,2023-05-14,Active
+CUST00606,Simran,Patel,Female,25,Bengaluru,Karnataka,Lower-Middle,368000.0,642,2022-10-11,Active
+CUST00607,Swati,Das,Female,31,Chennai,Tamil Nadu,Upper-Middle,2215000.0,796,2023-01-14,Active
+CUST00608,Kavita,Nair,Female,35,Delhi,Delhi,Upper-Middle,1363000.0,807,2022-04-26,Active
+CUST00609,Aditya,Nair,Male,31,Pune,Maharashtra,Lower-Middle,319000.0,681,2023-08-28,Active
+CUST00610,Praveen,Das,Male,29,Jaipur,Rajasthan,Upper-Middle,1308000.0,834,2022-06-22,Active
+CUST00611,Nikhil,Das,Male,25,Chennai,Tamil Nadu,Middle,1043000.0,735,2023-06-27,Active
+CUST00612,Manish,Nair,Male,45,Mumbai,Maharashtra,Lower-Middle,407000.0,686,2022-10-29,Active
+CUST00613,Simran,Singh,Female,36,Jaipur,Rajasthan,Middle,1182000.0,720,2024-01-10,Inactive
+CUST00614,Shreya,Choudhury,Female,39,Jaipur,Rajasthan,Middle,920000.0,719,2022-12-13,Active
+CUST00615,Praveen,Patel,Male,49,Ahmedabad,Gujarat,Middle,847000.0,802,2021-11-15,Active
+CUST00616,Manish,Mehta,Male,32,Kolkata,West Bengal,Middle,921000.0,677,2023-10-05,Active
+CUST00617,Neha,Sharma,Female,38,Pune,Maharashtra,Upper-Middle,1976000.0,847,2021-01-15,Active
+CUST00618,Amit,Choudhury,Male,30,Pune,Maharashtra,Middle,1029000.0,782,2024-08-15,Active
+CUST00619,Sneha,Singh,Female,57,Bengaluru,Karnataka,Middle,744000.0,705,2024-06-09,Active
+CUST00620,Neha,Singh,Female,45,Pune,Maharashtra,Lower-Middle,321000.0,735,2021-10-07,Active
+CUST00621,Swati,Bose,Female,34,Chennai,Tamil Nadu,Upper-Middle,1840000.0,763,2022-10-19,Inactive
+CUST00622,Manish,Sharma,Male,32,Delhi,Delhi,High-Net-Worth,3487000.0,784,2021-09-14,Active
+CUST00623,Aditya,Patel,Male,31,Delhi,Delhi,Lower-Middle,365000.0,621,2023-05-11,Active
+CUST00624,Divya,Bose,Female,39,Mumbai,Maharashtra,Middle,1106000.0,698,2021-10-27,Inactive
+CUST00625,Priya,Kulkarni,Female,41,Delhi,Delhi,Lower-Middle,552000.0,607,2023-02-21,Active
+CUST00626,Praveen,Khan,Male,42,Pune,Maharashtra,Upper-Middle,1776000.0,795,2021-03-10,Active
+CUST00627,Manish,Iyer,Male,21,Ahmedabad,Gujarat,Middle,1177000.0,738,2022-10-24,Inactive
+CUST00628,Arjun,Reddy,Male,52,Chennai,Tamil Nadu,Middle,779000.0,682,2023-01-09,Active
+CUST00629,Rohan,Khan,Male,57,Pune,Maharashtra,Middle,700000.0,739,2022-07-20,Active
+CUST00630,Sunita,Khan,Female,31,Mumbai,Maharashtra,High-Net-Worth,4534000.0,808,2023-09-01,Active
+CUST00631,Kunal,Patel,Male,45,Hyderabad,Telangana,Lower-Middle,327000.0,673,2024-06-20,Active
+CUST00632,Aarav,Joshi,Male,44,Delhi,Delhi,Upper-Middle,2229000.0,742,2021-09-15,Active
+CUST00633,Meera,Joshi,Female,40,Ahmedabad,Gujarat,Upper-Middle,1228000.0,727,2023-02-13,Active
+CUST00634,Rahul,Verma,Male,37,Ahmedabad,Gujarat,Upper-Middle,1927000.0,742,2024-01-17,Active
+CUST00635,Deepak,Nair,Male,30,Jaipur,Rajasthan,Middle,1039000.0,768,2022-07-18,Active
+CUST00636,Rohan,Mehta,Male,51,Ahmedabad,Gujarat,Middle,758000.0,746,2023-01-22,Active
+CUST00637,Tanvi,Nair,Female,26,Mumbai,Maharashtra,Middle,818000.0,713,2024-06-24,Active
+CUST00638,Nikhil,Das,Male,52,Hyderabad,Telangana,Middle,899000.0,729,2024-02-04,Inactive
+CUST00639,Divya,Choudhury,Female,64,Kolkata,West Bengal,Lower-Middle,457000.0,685,2021-05-17,Inactive
+CUST00640,Vikram,Verma,Male,41,Hyderabad,Telangana,Lower-Middle,357000.0,657,2021-03-07,Active
+CUST00641,Shreya,Kulkarni,Female,40,Jaipur,Rajasthan,Middle,954000.0,719,2021-04-11,Active
+CUST00642,Aarav,Iyer,Male,46,Ahmedabad,Gujarat,High-Net-Worth,5412000.0,833,2023-08-17,Active
+CUST00643,Kunal,Choudhury,Male,30,Kolkata,West Bengal,Upper-Middle,1276000.0,730,2024-06-17,Active
+CUST00644,Arjun,Patel,Male,21,Chennai,Tamil Nadu,Lower-Middle,365000.0,690,2023-11-30,Inactive
+CUST00645,Manish,Das,Male,26,Hyderabad,Telangana,Lower-Middle,497000.0,583,2024-03-13,Active
+CUST00646,Manish,Choudhury,Male,43,Bengaluru,Karnataka,Upper-Middle,1950000.0,844,2024-10-13,Active
+CUST00647,Aarti,Reddy,Female,38,Delhi,Delhi,Upper-Middle,1915000.0,795,2023-10-31,Active
+CUST00648,Manish,Bose,Male,39,Kolkata,West Bengal,High-Net-Worth,4425000.0,807,2022-10-27,Active
+CUST00649,Sunita,Choudhury,Female,49,Kolkata,West Bengal,Middle,938000.0,714,2022-03-15,Active
+CUST00650,Divya,Bose,Female,41,Ahmedabad,Gujarat,High-Net-Worth,2501000.0,818,2021-03-12,Active
+CUST00651,Manish,Mehta,Male,31,Chennai,Tamil Nadu,Lower-Middle,595000.0,709,2022-03-16,Active
+CUST00652,Praveen,Singh,Male,37,Jaipur,Rajasthan,Middle,942000.0,698,2024-03-16,Inactive
+CUST00653,Suresh,Joshi,Male,44,Delhi,Delhi,Lower-Middle,410000.0,634,2024-04-07,Active
+CUST00654,Sunita,Gupta,Female,39,Bengaluru,Karnataka,Middle,941000.0,724,2022-03-22,Active
+CUST00655,Sunita,Kulkarni,Female,50,Delhi,Delhi,Middle,1139000.0,741,2024-03-26,Active
+CUST00656,Deepak,Gupta,Male,38,Mumbai,Maharashtra,Upper-Middle,1949000.0,794,2021-06-10,Active
+CUST00657,Divya,Choudhury,Female,54,Pune,Maharashtra,High-Net-Worth,2922000.0,823,2022-04-10,Active
+CUST00658,Nikhil,Das,Male,39,Mumbai,Maharashtra,Middle,625000.0,679,2024-01-11,Active
+CUST00659,Meera,Khan,Female,27,Delhi,Delhi,Lower-Middle,519000.0,657,2023-03-16,Active
+CUST00660,Aditya,Choudhury,Male,32,Chennai,Tamil Nadu,Upper-Middle,1392000.0,764,2022-11-20,Inactive
+CUST00661,Manish,Das,Male,39,Chennai,Tamil Nadu,Lower-Middle,451000.0,691,2021-09-25,Active
+CUST00662,Meera,Iyer,Female,38,Ahmedabad,Gujarat,Middle,943000.0,742,2024-02-24,Active
+CUST00663,Aditya,Patel,Male,39,Chennai,Tamil Nadu,Upper-Middle,1620000.0,710,2024-03-25,Inactive
+CUST00664,Kavita,Joshi,Female,28,Kolkata,West Bengal,Lower-Middle,403000.0,664,2024-09-04,Inactive
+CUST00665,Ananya,Joshi,Female,25,Lucknow,Uttar Pradesh,Upper-Middle,2244000.0,787,2024-06-30,Inactive
+CUST00666,Siddharth,Khan,Male,55,Hyderabad,Telangana,Upper-Middle,1403000.0,806,2021-06-25,Inactive
+CUST00667,Aditya,Mehta,Male,36,Chennai,Tamil Nadu,Lower-Middle,508000.0,729,2021-08-16,Active
+CUST00668,Pooja,Rao,Female,40,Hyderabad,Telangana,Upper-Middle,1475000.0,759,2024-01-25,Active
+CUST00669,Meera,Kulkarni,Female,32,Lucknow,Uttar Pradesh,Upper-Middle,1384000.0,760,2024-09-30,Inactive
+CUST00670,Rahul,Nair,Male,34,Mumbai,Maharashtra,Middle,1074000.0,730,2024-06-19,Active
+CUST00671,Shreya,Sharma,Female,40,Bengaluru,Karnataka,Middle,763000.0,725,2024-09-13,Active
+CUST00672,Aarav,Gupta,Male,43,Pune,Maharashtra,Middle,828000.0,766,2021-07-23,Active
+CUST00673,Simran,Patel,Female,49,Delhi,Delhi,Lower-Middle,590000.0,610,2024-02-23,Active
+CUST00674,Aarav,Khan,Male,21,Jaipur,Rajasthan,Middle,894000.0,757,2021-11-18,Inactive
+CUST00675,Divya,Gupta,Female,23,Hyderabad,Telangana,High-Net-Worth,5925000.0,804,2022-07-19,Active
+CUST00676,Aarti,Das,Female,26,Mumbai,Maharashtra,High-Net-Worth,5822000.0,764,2022-04-07,Inactive
+CUST00677,Shreya,Mehta,Female,44,Lucknow,Uttar Pradesh,Upper-Middle,1877000.0,792,2024-10-20,Active
+CUST00678,Amit,Khan,Male,32,Lucknow,Uttar Pradesh,Lower-Middle,591000.0,566,2024-05-24,Active
+CUST00679,Aditya,Mehta,Male,32,Lucknow,Uttar Pradesh,Middle,1080000.0,738,2021-10-10,Active
+CUST00680,Amit,Mehta,Male,22,Lucknow,Uttar Pradesh,High-Net-Worth,3611000.0,814,2024-02-16,Active
+CUST00681,Vikram,Rao,Male,38,Delhi,Delhi,Upper-Middle,2195000.0,787,2023-04-28,Active
+CUST00682,Ritu,Singh,Female,40,Delhi,Delhi,Upper-Middle,1339000.0,740,2022-01-14,Inactive
+CUST00683,Swati,Khan,Female,52,Lucknow,Uttar Pradesh,Middle,1012000.0,719,2023-01-06,Inactive
+CUST00684,Ananya,Kulkarni,Female,38,Kolkata,West Bengal,Lower-Middle,416000.0,632,2023-08-29,Inactive
+CUST00685,Aditya,Verma,Male,34,Pune,Maharashtra,Upper-Middle,1220000.0,743,2022-07-07,Active
+CUST00686,Arjun,Iyer,Male,37,Hyderabad,Telangana,Lower-Middle,578000.0,738,2023-06-19,Active
+CUST00687,Tanvi,Rao,Female,23,Ahmedabad,Gujarat,Upper-Middle,1756000.0,721,2021-03-27,Active
+CUST00688,Tanvi,Rao,Female,55,Pune,Maharashtra,Middle,1045000.0,717,2024-05-01,Active
+CUST00689,Manish,Reddy,Male,31,Lucknow,Uttar Pradesh,Middle,1127000.0,761,2022-05-19,Active
+CUST00690,Tanvi,Verma,Female,32,Jaipur,Rajasthan,Middle,1059000.0,788,2021-04-11,Active
+CUST00691,Kavita,Gupta,Female,46,Chennai,Tamil Nadu,Middle,853000.0,707,2024-06-09,Active
+CUST00692,Suresh,Bose,Male,62,Bengaluru,Karnataka,Upper-Middle,1347000.0,751,2024-04-13,Active
+CUST00693,Amit,Choudhury,Male,47,Lucknow,Uttar Pradesh,Middle,707000.0,735,2024-04-23,Active
+CUST00694,Siddharth,Bose,Male,53,Bengaluru,Karnataka,Middle,1015000.0,779,2021-12-02,Active
+CUST00695,Rohan,Reddy,Male,39,Ahmedabad,Gujarat,Middle,651000.0,698,2023-02-26,Active
+CUST00696,Amit,Das,Male,44,Mumbai,Maharashtra,Upper-Middle,2386000.0,749,2024-03-04,Active
+CUST00697,Vikram,Mehta,Male,61,Delhi,Delhi,Upper-Middle,1267000.0,774,2022-09-23,Active
+CUST00698,Neha,Nair,Female,34,Bengaluru,Karnataka,Upper-Middle,1851500.0,775,2021-01-08,Active
+CUST00699,Pooja,Bose,Female,24,Ahmedabad,Gujarat,Upper-Middle,1907000.0,740,2021-01-12,Active
+CUST00700,Sneha,Iyer,Female,52,Lucknow,Uttar Pradesh,Upper-Middle,1790000.0,750,2023-06-24,Inactive
+CUST00701,Aditya,Singh,Male,27,Lucknow,Uttar Pradesh,Middle,1092000.0,743,2022-03-02,Inactive
+CUST00702,Aarav,Joshi,Male,52,Mumbai,Maharashtra,Lower-Middle,310000.0,698,2024-03-29,Active
+CUST00703,Divya,Patel,Female,49,Mumbai,Maharashtra,Lower-Middle,598000.0,639,2021-11-27,Active
+CUST00704,Suresh,Joshi,Male,23,Mumbai,Maharashtra,Lower-Middle,390000.0,730,2023-01-25,Active
+CUST00705,Praveen,Choudhury,Male,35,Jaipur,Rajasthan,Lower-Middle,441000.0,659,2021-09-07,Active
+CUST00706,Divya,Choudhury,Female,53,Jaipur,Rajasthan,Middle,725000.0,744,2021-04-30,Inactive
+CUST00707,Suresh,Gupta,Male,44,Pune,Maharashtra,Middle,941000.0,800,2023-12-13,Active
+CUST00708,Aarti,Mehta,Female,31,Lucknow,Uttar Pradesh,Middle,941000.0,757,2024-07-18,Active
+CUST00709,Siddharth,Khan,Male,39,Chennai,Tamil Nadu,High-Net-Worth,2506000.0,816,2021-02-19,Active
+CUST00710,Arjun,Iyer,Male,55,Lucknow,Uttar Pradesh,High-Net-Worth,3949000.0,822,2022-11-15,Active
+CUST00711,Aarav,Iyer,Male,44,Chennai,Tamil Nadu,Middle,641000.0,762,2022-09-07,Active
+CUST00712,Sunita,Sharma,Female,34,Bengaluru,Karnataka,Upper-Middle,1644000.0,744,2024-03-11,Active
+CUST00713,Karthik,Nair,Male,27,Hyderabad,Telangana,Middle,803000.0,656,2024-10-09,Active
+CUST00714,Sunita,Verma,Female,61,Delhi,Delhi,Middle,976000.0,686,2024-01-05,Active
+CUST00715,Sunita,Choudhury,Female,36,Mumbai,Maharashtra,Upper-Middle,1589000.0,761,2024-10-20,Active
+CUST00716,Aditya,Rao,Male,42,Kolkata,West Bengal,Lower-Middle,345000.0,702,2021-03-05,Active
+CUST00717,Shreya,Nair,Female,48,Lucknow,Uttar Pradesh,Middle,712000.0,704,2021-08-28,Active
+CUST00718,Tanvi,Rao,Female,37,Mumbai,Maharashtra,Middle,652000.0,734,2022-05-02,Active
+CUST00719,Sneha,Gupta,Female,36,Lucknow,Uttar Pradesh,Lower-Middle,535000.0,734,2022-02-18,Active
+CUST00720,Meera,Sharma,Female,44,Ahmedabad,Gujarat,High-Net-Worth,3039000.0,828,2022-11-28,Active
+CUST00721,Sunita,Rao,Female,46,Delhi,Delhi,Upper-Middle,1328000.0,805,2023-11-24,Active
+CUST00722,Aditya,Verma,Male,40,Lucknow,Uttar Pradesh,Middle,1119000.0,679,2021-08-26,Inactive
+CUST00723,Nikhil,Patel,Male,43,Kolkata,West Bengal,Middle,628000.0,702,2023-12-03,Active
+CUST00724,Pooja,Gupta,Female,33,Hyderabad,Telangana,Middle,716000.0,745,2022-07-21,Active
+CUST00725,Shreya,Reddy,Female,52,Chennai,Tamil Nadu,Lower-Middle,382000.0,670,2021-02-01,Active
+CUST00726,Aditya,Joshi,Male,42,Jaipur,Rajasthan,Middle,685000.0,784,2022-08-04,Active
+CUST00727,Rohan,Gupta,Male,41,Lucknow,Uttar Pradesh,Upper-Middle,1903000.0,848,2021-04-14,Inactive
+CUST00728,Aarti,Verma,Female,45,Bengaluru,Karnataka,Middle,652000.0,663,2023-03-14,Inactive
+CUST00729,Swati,Joshi,Female,47,Chennai,Tamil Nadu,Middle,719000.0,738,2024-10-05,Active
+CUST00730,Siddharth,Bose,Male,53,Lucknow,Uttar Pradesh,Lower-Middle,544000.0,696,2023-08-18,Inactive
+CUST00731,Shreya,Bose,Female,37,Ahmedabad,Gujarat,Middle,734000.0,682,2024-06-17,Active
+CUST00732,Kavita,Nair,Female,36,Kolkata,West Bengal,Upper-Middle,2347000.0,744,2023-07-18,Active
+CUST00733,Suresh,Reddy,Male,32,Lucknow,Uttar Pradesh,Middle,1107000.0,745,2022-08-02,Active
+CUST00734,Manish,Reddy,Male,57,Pune,Maharashtra,Upper-Middle,2236000.0,781,2022-10-30,Active
+CUST00735,Praveen,Gupta,Male,25,Jaipur,Rajasthan,Middle,954000.0,740,2022-05-04,Active
+CUST00736,Suresh,Das,Male,52,Bengaluru,Karnataka,Middle,1088000.0,703,2024-04-25,Active
+CUST00737,Swati,Rao,Female,37,Jaipur,Rajasthan,Upper-Middle,1425000.0,770,2024-10-03,Inactive
+CUST00738,Priya,Bose,Female,30,Kolkata,West Bengal,Middle,1093000.0,747,2021-12-27,Active
+CUST00739,Priya,Reddy,Female,37,Lucknow,Uttar Pradesh,Upper-Middle,1693000.0,782,2023-10-10,Active
+CUST00740,Rohan,Iyer,Male,29,Delhi,Delhi,Upper-Middle,2374000.0,756,2024-07-26,Active
+CUST00741,Nikhil,Mehta,Male,46,Ahmedabad,Gujarat,Middle,834000.0,711,2024-03-29,Active
+CUST00742,Nikhil,Rao,Male,57,Chennai,Tamil Nadu,Middle,1148000.0,711,2022-09-16,Active
+CUST00743,Tanvi,Joshi,Female,41,Bengaluru,Karnataka,Middle,967000.0,757,2023-11-12,Active
+CUST00744,Karthik,Gupta,Male,23,Mumbai,Maharashtra,Middle,929000.0,663,2021-04-19,Inactive
+CUST00745,Priya,Gupta,Female,22,Mumbai,Maharashtra,Middle,1021000.0,769,2023-03-19,Active
+CUST00746,Kavita,Das,Female,32,Pune,Maharashtra,Middle,997000.0,814,2023-08-31,Inactive
+CUST00747,Simran,Joshi,Female,32,Pune,Maharashtra,Lower-Middle,599000.0,677,2024-10-04,Inactive
+CUST00748,Rohan,Sharma,Male,55,Delhi,Delhi,Upper-Middle,1833000.0,830,2023-06-14,Active
+CUST00749,Rohan,Mehta,Male,61,Pune,Maharashtra,Upper-Middle,2362000.0,806,2024-05-22,Active
+CUST00750,Suresh,Choudhury,Male,50,Jaipur,Rajasthan,Upper-Middle,1851500.0,787,2022-04-08,Active
+CUST00751,Deepak,Kulkarni,Male,47,Hyderabad,Telangana,Upper-Middle,1550000.0,753,2024-01-24,Active
+CUST00752,Aarav,Kulkarni,Male,29,Kolkata,West Bengal,Lower-Middle,444000.0,669,2021-06-13,Inactive
+CUST00753,Ritu,Patel,Female,37,Jaipur,Rajasthan,Upper-Middle,1315000.0,756,2023-08-26,Active
+CUST00754,Nikhil,Gupta,Male,46,Lucknow,Uttar Pradesh,Lower-Middle,403000.0,708,2021-01-23,Active
+CUST00755,Swati,Rao,Female,39,Pune,Maharashtra,Middle,1187000.0,776,2022-08-27,Active
+CUST00756,Arjun,Gupta,Male,26,Lucknow,Uttar Pradesh,Middle,941000.0,718,2024-03-30,Inactive
+CUST00757,Nikhil,Gupta,Male,31,Lucknow,Uttar Pradesh,Lower-Middle,445000.0,595,2021-09-17,Active
+CUST00758,Neha,Mehta,Female,38,Lucknow,Uttar Pradesh,Middle,1115000.0,720,2021-01-30,Active
+CUST00759,Siddharth,Mehta,Male,55,Ahmedabad,Gujarat,Middle,705000.0,747,2022-04-29,Active
+CUST00760,Kunal,Patel,Male,27,Delhi,Delhi,Middle,1093000.0,789,2023-10-13,Active
+CUST00761,Sunita,Das,Female,52,Hyderabad,Telangana,Upper-Middle,2144000.0,787,2021-12-09,Active
+CUST00762,Pooja,Singh,Female,36,Bengaluru,Karnataka,Lower-Middle,439000.0,631,2023-09-03,Active
+CUST00763,Amit,Das,Male,34,Ahmedabad,Gujarat,Middle,918000.0,763,2023-06-10,Inactive
+CUST00764,Kavita,Rao,Female,59,Jaipur,Rajasthan,Upper-Middle,1253000.0,816,2023-12-25,Active
+CUST00765,Swati,Singh,Female,33,Kolkata,West Bengal,Middle,1081000.0,685,2022-06-07,Active
+CUST00766,Ritu,Khan,Female,40,Lucknow,Uttar Pradesh,Upper-Middle,1876000.0,716,2024-10-19,Active
+CUST00767,Kunal,Sharma,Male,42,Mumbai,Maharashtra,Upper-Middle,1216000.0,765,2021-07-20,Active
+CUST00768,Divya,Khan,Female,33,Chennai,Tamil Nadu,Middle,620000.0,669,2024-06-22,Inactive
+CUST00769,Deepak,Reddy,Male,44,Bengaluru,Karnataka,Lower-Middle,481000.0,648,2023-02-09,Active
+CUST00770,Siddharth,Reddy,Male,26,Delhi,Delhi,Middle,880000.0,624,2021-06-05,Active
+CUST00771,Sunita,Choudhury,Female,38,Kolkata,West Bengal,Middle,1068000.0,787,2022-07-22,Active
+CUST00772,Kavita,Rao,Female,57,Mumbai,Maharashtra,Middle,1088000.0,709,2021-12-31,Active
+CUST00773,Aarti,Iyer,Female,32,Lucknow,Uttar Pradesh,Middle,987000.0,741,2021-08-11,Inactive
+CUST00774,Sneha,Reddy,Female,28,Ahmedabad,Gujarat,Upper-Middle,1334000.0,779,2021-05-30,Inactive
+CUST00775,Sunita,Bose,Female,47,Mumbai,Maharashtra,Upper-Middle,1394000.0,806,2024-08-04,Inactive
+CUST00776,Nikhil,Das,Male,37,Chennai,Tamil Nadu,Lower-Middle,399000.0,661,2023-03-13,Active
+CUST00777,Ritu,Choudhury,Female,29,Pune,Maharashtra,Upper-Middle,2215000.0,745,2021-05-24,Active
+CUST00778,Amit,Kulkarni,Male,36,Bengaluru,Karnataka,Middle,1161000.0,737,2023-01-06,Active
+CUST00779,Kavita,Verma,Female,49,Bengaluru,Karnataka,Middle,1112000.0,696,2022-11-28,Inactive
+CUST00780,Sunita,Gupta,Female,55,Hyderabad,Telangana,Lower-Middle,312000.0,659,2023-02-26,Active
+CUST00781,Tanvi,Das,Female,38,Bengaluru,Karnataka,Middle,816000.0,698,2021-06-23,Active
+CUST00782,Tanvi,Iyer,Female,21,Delhi,Delhi,Lower-Middle,308000.0,705,2024-04-29,Active
+CUST00783,Priya,Gupta,Female,47,Ahmedabad,Gujarat,Middle,1101000.0,715,2023-07-10,Active
+CUST00784,Aarav,Rao,Male,39,Mumbai,Maharashtra,Middle,1033000.0,743,2023-04-11,Inactive
+CUST00785,Shreya,Mehta,Female,21,Lucknow,Uttar Pradesh,Middle,643000.0,706,2021-10-17,Active
+CUST00786,Suresh,Verma,Male,47,Hyderabad,Telangana,Upper-Middle,1370000.0,732,2021-12-19,Active
+CUST00787,Simran,Reddy,Female,42,Ahmedabad,Gujarat,Middle,1101000.0,677,2021-05-11,Active
+CUST00788,Rohan,Kulkarni,Male,44,Lucknow,Uttar Pradesh,Upper-Middle,1487000.0,768,2022-02-20,Active
+CUST00789,Divya,Reddy,Female,21,Lucknow,Uttar Pradesh,Middle,793000.0,765,2022-03-13,Active
+CUST00790,Kunal,Patel,Male,30,Bengaluru,Karnataka,Middle,1055000.0,696,2021-12-11,Active
+CUST00791,Suresh,Khan,Male,41,Lucknow,Uttar Pradesh,Lower-Middle,330000.0,715,2024-07-18,Active
+CUST00792,Aarav,Kulkarni,Male,27,Bengaluru,Karnataka,Lower-Middle,354000.0,672,2021-07-02,Active
+CUST00793,Kavita,Kulkarni,Female,43,Delhi,Delhi,Middle,984000.0,749,2023-12-08,Active
+CUST00794,Vikram,Verma,Male,40,Lucknow,Uttar Pradesh,Lower-Middle,450000.0,655,2021-06-30,Active
+CUST00795,Divya,Choudhury,Female,29,Mumbai,Maharashtra,Middle,715000.0,728,2023-12-22,Active
+CUST00796,Simran,Khan,Female,27,Ahmedabad,Gujarat,Upper-Middle,2057000.0,682,2022-07-21,Inactive
+CUST00797,Praveen,Mehta,Male,43,Ahmedabad,Gujarat,Middle,696000.0,756,2021-03-30,Inactive
+CUST00798,Neha,Iyer,Female,21,Pune,Maharashtra,Middle,970000.0,689,2023-07-18,Inactive
+CUST00799,Siddharth,Nair,Male,45,Delhi,Delhi,Upper-Middle,1831000.0,831,2021-08-26,Inactive
+CUST00800,Arjun,Bose,Male,39,Lucknow,Uttar Pradesh,Middle,851000.0,699,2024-10-18,Active
+CUST00801,Praveen,Reddy,Male,36,Kolkata,West Bengal,Middle,742000.0,773,2023-04-25,Active
+CUST00802,Aarti,Khan,Female,31,Lucknow,Uttar Pradesh,Middle,891000.0,697,2023-06-12,Inactive
+CUST00803,Ananya,Das,Female,33,Kolkata,West Bengal,Lower-Middle,516000.0,631,2024-07-18,Active
+CUST00804,Sneha,Rao,Female,40,Delhi,Delhi,Lower-Middle,471000.0,734,2022-07-29,Inactive
+CUST00805,Ritu,Choudhury,Female,42,Delhi,Delhi,Upper-Middle,1486000.0,762,2022-08-28,Active
+CUST00806,Deepak,Khan,Male,35,Bengaluru,Karnataka,Middle,913000.0,670,2022-03-20,Active
+CUST00807,Neha,Sharma,Female,48,Pune,Maharashtra,Upper-Middle,1521000.0,767,2022-11-02,Active
+CUST00808,Siddharth,Mehta,Male,37,Lucknow,Uttar Pradesh,Upper-Middle,1743000.0,850,2021-04-01,Inactive
+CUST00809,Tanvi,Verma,Female,42,Pune,Maharashtra,Middle,888000.0,698,2021-07-20,Active
+CUST00810,Rohan,Sharma,Male,34,Pune,Maharashtra,High-Net-Worth,2964000.0,838,2022-08-29,Active
+CUST00811,Aarav,Kulkarni,Male,40,Chennai,Tamil Nadu,Lower-Middle,438000.0,612,2024-03-14,Active
+CUST00812,Suresh,Bose,Male,49,Delhi,Delhi,Upper-Middle,1727000.0,749,2023-01-29,Active
+CUST00813,Karthik,Patel,Male,59,Pune,Maharashtra,Upper-Middle,1633000.0,802,2021-03-08,Active
+CUST00814,Tanvi,Iyer,Female,34,Bengaluru,Karnataka,Middle,801000.0,769,2021-04-23,Active
+CUST00815,Aarti,Verma,Female,39,Bengaluru,Karnataka,Middle,879000.0,754,2021-03-25,Active
+CUST00816,Nikhil,Patel,Male,44,Jaipur,Rajasthan,Upper-Middle,1466000.0,744,2022-11-17,Active
+CUST00817,Nikhil,Kulkarni,Male,31,Lucknow,Uttar Pradesh,Upper-Middle,2114000.0,800,2022-04-07,Active
+CUST00818,Meera,Choudhury,Female,35,Chennai,Tamil Nadu,Lower-Middle,412000.0,653,2023-07-16,Active
+CUST00819,Suresh,Gupta,Male,28,Ahmedabad,Gujarat,Middle,1080000.0,739,2021-05-15,Active
+CUST00820,Priya,Patel,Female,61,Pune,Maharashtra,Upper-Middle,1575000.0,737,2021-06-07,Inactive
+CUST00821,Priya,Mehta,Female,39,Ahmedabad,Gujarat,Lower-Middle,361000.0,726,2024-07-08,Inactive
+CUST00822,Shreya,Mehta,Female,38,Ahmedabad,Gujarat,Middle,866000.0,740,2024-08-13,Inactive
+CUST00823,Rohan,Sharma,Male,27,Hyderabad,Telangana,Upper-Middle,1876000.0,782,2022-11-19,Active
+CUST00824,Shreya,Rao,Female,36,Ahmedabad,Gujarat,Middle,1018000.0,759,2024-01-29,Active
+CUST00825,Swati,Mehta,Female,52,Chennai,Tamil Nadu,Lower-Middle,378000.0,773,2023-09-19,Active
+CUST00826,Sunita,Verma,Female,45,Delhi,Delhi,Middle,874000.0,736,2021-12-07,Active
+CUST00827,Arjun,Gupta,Male,41,Delhi,Delhi,High-Net-Worth,5438000.0,801,2024-09-26,Active
+CUST00828,Aditya,Reddy,Male,42,Mumbai,Maharashtra,High-Net-Worth,4511000.0,802,2023-06-22,Active
+CUST00829,Aditya,Verma,Male,40,Kolkata,West Bengal,High-Net-Worth,3018000.0,842,2023-07-08,Active
+CUST00830,Manish,Gupta,Male,27,Bengaluru,Karnataka,High-Net-Worth,3916000.0,838,2023-10-20,Active
+CUST00831,Aarti,Rao,Female,53,Delhi,Delhi,Lower-Middle,522000.0,665,2023-11-06,Active
+CUST00832,Ritu,Gupta,Female,21,Lucknow,Uttar Pradesh,Upper-Middle,2239000.0,751,2023-06-25,Active
+CUST00833,Arjun,Kulkarni,Male,53,Mumbai,Maharashtra,Lower-Middle,465000.0,669,2022-09-23,Inactive
+CUST00834,Suresh,Joshi,Male,28,Bengaluru,Karnataka,Middle,965000.0,707,2022-02-04,Active
+CUST00835,Praveen,Singh,Male,48,Hyderabad,Telangana,Lower-Middle,462000.0,691,2023-07-02,Active
+CUST00836,Manish,Das,Male,36,Hyderabad,Telangana,Middle,962000.0,712,2023-11-14,Active
+CUST00837,Kavita,Mehta,Female,34,Pune,Maharashtra,Middle,824000.0,692,2022-08-06,Active
+CUST00838,Ritu,Patel,Female,56,Hyderabad,Telangana,Upper-Middle,1777000.0,760,2023-05-02,Active
+CUST00839,Ananya,Choudhury,Female,52,Pune,Maharashtra,Lower-Middle,476000.0,730,2021-06-26,Inactive
+CUST00840,Ritu,Rao,Female,49,Bengaluru,Karnataka,High-Net-Worth,4567000.0,799,2023-02-09,Inactive
+CUST00841,Shreya,Singh,Female,43,Pune,Maharashtra,Lower-Middle,439000.0,669,2024-03-09,Active
+CUST00842,Aditya,Nair,Male,29,Pune,Maharashtra,Middle,894000.0,736,2022-09-11,Active
+CUST00843,Ritu,Bose,Female,26,Lucknow,Uttar Pradesh,Lower-Middle,301000.0,717,2022-06-22,Active
+CUST00844,Priya,Gupta,Female,33,Pune,Maharashtra,Lower-Middle,572000.0,678,2024-08-13,Active
+CUST00845,Praveen,Singh,Male,42,Ahmedabad,Gujarat,High-Net-Worth,2734000.0,803,2023-01-11,Active
+CUST00846,Simran,Singh,Female,45,Ahmedabad,Gujarat,High-Net-Worth,5364000.0,798,2023-02-04,Active
+CUST00847,Karthik,Singh,Male,48,Delhi,Delhi,Middle,688000.0,677,2023-08-03,Active
+CUST00848,Kunal,Nair,Male,40,Mumbai,Maharashtra,Middle,852000.0,792,2022-12-31,Inactive
+CUST00849,Meera,Patel,Female,27,Jaipur,Rajasthan,Lower-Middle,488000.0,642,2021-07-13,Active
+CUST00850,Manish,Rao,Male,44,Kolkata,West Bengal,Upper-Middle,2090000.0,775,2022-09-09,Active
+CUST00851,Priya,Joshi,Female,42,Delhi,Delhi,Lower-Middle,455000.0,689,2023-02-03,Active
+CUST00852,Divya,Nair,Female,45,Bengaluru,Karnataka,Middle,902000.0,763,2022-01-21,Active
+CUST00853,Amit,Bose,Male,43,Bengaluru,Karnataka,Lower-Middle,339000.0,660,2021-02-05,Active
+CUST00854,Tanvi,Joshi,Female,46,Delhi,Delhi,Upper-Middle,2357000.0,826,2024-05-08,Active
+CUST00855,Ananya,Gupta,Female,37,Mumbai,Maharashtra,Upper-Middle,1354000.0,740,2021-09-21,Active
+CUST00856,Arjun,Khan,Male,51,Chennai,Tamil Nadu,Lower-Middle,339000.0,665,2021-06-10,Active
+CUST00857,Rohan,Sharma,Male,21,Ahmedabad,Gujarat,Upper-Middle,1255000.0,795,2021-08-09,Inactive
+CUST00858,Suresh,Reddy,Male,33,Chennai,Tamil Nadu,Lower-Middle,390000.0,666,2021-01-22,Active
+CUST00859,Siddharth,Iyer,Male,42,Lucknow,Uttar Pradesh,High-Net-Worth,3147000.0,814,2022-12-21,Inactive
+CUST00860,Karthik,Singh,Male,46,Lucknow,Uttar Pradesh,Middle,696000.0,709,2023-10-23,Active
+CUST00861,Manish,Patel,Male,44,Bengaluru,Karnataka,Upper-Middle,1851500.0,762,2023-12-20,Active
+CUST00862,Rahul,Nair,Male,47,Jaipur,Rajasthan,Lower-Middle,518000.0,694,2022-03-15,Active
+CUST00863,Divya,Nair,Female,28,Ahmedabad,Gujarat,Upper-Middle,1340000.0,802,2022-12-28,Active
+CUST00864,Sneha,Khan,Female,33,Pune,Maharashtra,Lower-Middle,595000.0,702,2021-09-11,Active
+CUST00865,Suresh,Joshi,Male,43,Chennai,Tamil Nadu,Middle,624000.0,789,2022-11-03,Active
+CUST00866,Neha,Bose,Female,36,Lucknow,Uttar Pradesh,Upper-Middle,2093000.0,759,2023-06-29,Active
+CUST00867,Neha,Choudhury,Female,38,Hyderabad,Telangana,Upper-Middle,2363000.0,760,2023-09-02,Active
+CUST00868,Ananya,Sharma,Female,47,Ahmedabad,Gujarat,Upper-Middle,1715000.0,721,2023-12-07,Active
+CUST00869,Rohan,Mehta,Male,27,Pune,Maharashtra,Middle,954000.0,687,2021-07-28,Active
+CUST00870,Rohan,Joshi,Male,49,Hyderabad,Telangana,Middle,957000.0,784,2023-04-08,Inactive
+CUST00871,Tanvi,Kulkarni,Female,37,Chennai,Tamil Nadu,Upper-Middle,2196000.0,764,2024-04-30,Active
+CUST00872,Divya,Kulkarni,Female,39,Lucknow,Uttar Pradesh,High-Net-Worth,5956000.0,839,2023-11-14,Active
+CUST00873,Priya,Reddy,Female,28,Chennai,Tamil Nadu,Middle,738000.0,733,2021-10-03,Inactive
+CUST00874,Karthik,Patel,Male,49,Ahmedabad,Gujarat,Upper-Middle,2464000.0,785,2023-02-23,Active
+CUST00875,Ananya,Gupta,Female,41,Lucknow,Uttar Pradesh,Middle,1056000.0,760,2024-09-15,Active
+CUST00876,Sunita,Bose,Female,21,Hyderabad,Telangana,Middle,899000.0,748,2023-10-31,Active
+CUST00877,Sunita,Sharma,Female,31,Mumbai,Maharashtra,High-Net-Worth,5580000.0,764,2021-09-01,Active
+CUST00878,Simran,Das,Female,44,Ahmedabad,Gujarat,Middle,620000.0,773,2024-02-15,Active
+CUST00879,Aarti,Nair,Female,37,Ahmedabad,Gujarat,Middle,787000.0,758,2023-03-08,Active
+CUST00880,Deepak,Kulkarni,Male,56,Jaipur,Rajasthan,Upper-Middle,1944000.0,809,2023-09-02,Active
+CUST00881,Manish,Verma,Male,57,Pune,Maharashtra,Middle,955000.0,750,2023-02-13,Active
+CUST00882,Sunita,Gupta,Female,39,Kolkata,West Bengal,Lower-Middle,477000.0,605,2021-09-20,Active
+CUST00883,Sunita,Sharma,Female,36,Kolkata,West Bengal,Middle,941000.0,695,2023-01-02,Active
+CUST00884,Nikhil,Khan,Male,62,Hyderabad,Telangana,Middle,787000.0,718,2021-06-23,Active
+CUST00885,Karthik,Gupta,Male,40,Bengaluru,Karnataka,Middle,612000.0,744,2022-10-30,Inactive
+CUST00886,Swati,Choudhury,Female,39,Chennai,Tamil Nadu,Lower-Middle,441000.0,737,2021-02-15,Active
+CUST00887,Swati,Das,Female,32,Kolkata,West Bengal,Middle,1085000.0,731,2021-07-24,Active
+CUST00888,Kunal,Kulkarni,Male,30,Jaipur,Rajasthan,Upper-Middle,2068000.0,730,2021-12-08,Active
+CUST00889,Kavita,Iyer,Female,32,Ahmedabad,Gujarat,Middle,1184000.0,723,2021-06-04,Active
+CUST00890,Rahul,Singh,Male,34,Mumbai,Maharashtra,Middle,944000.0,700,2022-04-08,Active
+CUST00891,Arjun,Reddy,Male,23,Lucknow,Uttar Pradesh,Middle,640000.0,722,2023-12-24,Active
+CUST00892,Kunal,Patel,Male,22,Chennai,Tamil Nadu,Middle,780000.0,751,2024-09-20,Active
+CUST00893,Amit,Das,Male,39,Chennai,Tamil Nadu,Middle,872000.0,673,2024-01-27,Inactive
+CUST00894,Nikhil,Nair,Male,35,Lucknow,Uttar Pradesh,Middle,996000.0,698,2023-08-16,Active
+CUST00895,Aarti,Verma,Female,42,Jaipur,Rajasthan,Middle,877000.0,771,2022-05-08,Inactive
+CUST00896,Simran,Choudhury,Female,21,Pune,Maharashtra,Middle,1098000.0,729,2021-05-12,Active
+CUST00897,Neha,Gupta,Female,37,Delhi,Delhi,Middle,961000.0,748,2023-04-12,Active
+CUST00898,Aditya,Sharma,Male,41,Hyderabad,Telangana,Upper-Middle,1604000.0,747,2023-09-22,Active
+CUST00899,Kavita,Verma,Female,35,Hyderabad,Telangana,Lower-Middle,341000.0,638,2022-06-14,Active
+CUST00900,Shreya,Nair,Female,50,Mumbai,Maharashtra,High-Net-Worth,4200000.0,810,2021-02-10,Inactive
+CUST00901,Kunal,Gupta,Male,59,Bengaluru,Karnataka,High-Net-Worth,3925000.0,808,2023-01-15,Active
+CUST00902,Amit,Mehta,Male,31,Hyderabad,Telangana,Lower-Middle,520000.0,609,2021-09-05,Active
+CUST00903,Ritu,Patel,Female,21,Hyderabad,Telangana,Middle,1064000.0,669,2022-10-04,Active
+CUST00904,Sunita,Khan,Female,41,Pune,Maharashtra,Middle,664000.0,742,2022-03-15,Active
+CUST00905,Kavita,Singh,Female,21,Lucknow,Uttar Pradesh,Lower-Middle,460000.0,705,2021-08-20,Active
+CUST00906,Ritu,Khan,Female,33,Chennai,Tamil Nadu,Upper-Middle,2418000.0,774,2023-01-14,Active
+CUST00907,Simran,Gupta,Female,56,Mumbai,Maharashtra,Middle,1143000.0,756,2021-03-13,Active
+CUST00908,Arjun,Khan,Male,36,Chennai,Tamil Nadu,Middle,786000.0,693,2023-01-14,Active
+CUST00909,Manish,Khan,Male,21,Ahmedabad,Gujarat,Middle,1146000.0,699,2023-03-16,Active
+CUST00910,Neha,Patel,Female,36,Hyderabad,Telangana,Middle,1116000.0,690,2021-11-25,Active
+CUST00911,Aarti,Choudhury,Female,37,Mumbai,Maharashtra,Middle,648000.0,727,2023-10-04,Active
+CUST00912,Aarti,Rao,Female,36,Pune,Maharashtra,Upper-Middle,2266000.0,750,2021-11-25,Active
+CUST00913,Kunal,Choudhury,Male,40,Lucknow,Uttar Pradesh,Upper-Middle,1912000.0,783,2022-11-01,Active
+CUST00914,Praveen,Verma,Male,27,Delhi,Delhi,Middle,1075000.0,774,2021-10-06,Inactive
+CUST00915,Nikhil,Gupta,Male,37,Kolkata,West Bengal,Middle,666000.0,725,2022-05-27,Active
+CUST00916,Karthik,Choudhury,Male,46,Kolkata,West Bengal,Middle,1124000.0,733,2021-10-01,Active
+CUST00917,Sunita,Gupta,Female,49,Hyderabad,Telangana,Lower-Middle,410000.0,681,2023-03-17,Active
+CUST00918,Aarav,Sharma,Male,32,Jaipur,Rajasthan,Middle,976000.0,737,2021-07-02,Active
+CUST00919,Rahul,Nair,Male,26,Mumbai,Maharashtra,Middle,857000.0,728,2022-06-17,Inactive
+CUST00920,Ananya,Reddy,Female,38,Mumbai,Maharashtra,Upper-Middle,1766000.0,763,2023-07-19,Active
+CUST00921,Priya,Khan,Female,37,Hyderabad,Telangana,Lower-Middle,559000.0,594,2022-06-30,Active
+CUST00922,Kavita,Mehta,Female,32,Pune,Maharashtra,Upper-Middle,1980000.0,772,2022-08-03,Active
+CUST00923,Amit,Nair,Male,40,Pune,Maharashtra,Upper-Middle,1237000.0,739,2022-06-21,Active
+CUST00924,Aarti,Khan,Female,52,Kolkata,West Bengal,Middle,988000.0,694,2021-06-25,Inactive
+CUST00925,Karthik,Rao,Male,49,Pune,Maharashtra,Upper-Middle,2127000.0,782,2023-05-17,Active
+CUST00926,Priya,Reddy,Female,31,Jaipur,Rajasthan,Lower-Middle,400000.0,741,2022-04-26,Active
+CUST00927,Swati,Verma,Female,25,Mumbai,Maharashtra,Middle,972000.0,757,2022-09-12,Active
+CUST00928,Ananya,Verma,Female,50,Lucknow,Uttar Pradesh,Lower-Middle,351000.0,643,2023-10-07,Active
+CUST00929,Ananya,Patel,Female,54,Kolkata,West Bengal,Upper-Middle,1763000.0,762,2022-06-18,Inactive
+CUST00930,Vikram,Kulkarni,Male,42,Chennai,Tamil Nadu,Upper-Middle,2404000.0,777,2022-08-03,Active
+CUST00931,Swati,Singh,Female,37,Lucknow,Uttar Pradesh,Middle,1136000.0,753,2022-10-09,Active
+CUST00932,Sunita,Mehta,Female,47,Jaipur,Rajasthan,Upper-Middle,2055000.0,717,2023-06-21,Inactive
+CUST00933,Aarav,Khan,Male,53,Delhi,Delhi,Lower-Middle,378000.0,603,2023-08-15,Active
+CUST00934,Pooja,Bose,Female,50,Kolkata,West Bengal,High-Net-Worth,4463000.0,838,2023-07-27,Active
+CUST00935,Rohan,Joshi,Male,26,Bengaluru,Karnataka,Middle,770000.0,710,2021-12-11,Active
+CUST00936,Swati,Iyer,Female,26,Lucknow,Uttar Pradesh,High-Net-Worth,2514000.0,804,2024-03-14,Inactive
+CUST00937,Aditya,Kulkarni,Male,35,Bengaluru,Karnataka,Upper-Middle,1851500.0,793,2024-10-27,Active
+CUST00938,Amit,Joshi,Male,53,Lucknow,Uttar Pradesh,High-Net-Worth,2871000.0,844,2022-10-25,Inactive
+CUST00939,Suresh,Kulkarni,Male,32,Ahmedabad,Gujarat,Middle,762000.0,717,2024-09-09,Inactive
+CUST00940,Nikhil,Bose,Male,21,Kolkata,West Bengal,High-Net-Worth,5999000.0,789,2024-03-11,Inactive
+CUST00941,Praveen,Gupta,Male,49,Kolkata,West Bengal,Upper-Middle,2167000.0,818,2024-01-26,Active
+CUST00942,Priya,Das,Female,25,Chennai,Tamil Nadu,Lower-Middle,590000.0,646,2023-03-28,Inactive
+CUST00943,Vikram,Das,Male,38,Pune,Maharashtra,Middle,1052000.0,734,2024-09-01,Inactive
+CUST00944,Ritu,Choudhury,Female,30,Chennai,Tamil Nadu,High-Net-Worth,4612000.0,820,2023-01-06,Active
+CUST00945,Meera,Iyer,Female,33,Ahmedabad,Gujarat,Middle,833000.0,724,2022-07-04,Active
+CUST00946,Priya,Choudhury,Female,45,Kolkata,West Bengal,Middle,860000.0,725,2023-05-23,Inactive
+CUST00947,Ritu,Khan,Female,34,Delhi,Delhi,High-Net-Worth,4345000.0,807,2024-08-18,Active
+CUST00948,Ritu,Choudhury,Female,38,Bengaluru,Karnataka,High-Net-Worth,4172000.0,800,2021-11-01,Active
+CUST00949,Simran,Khan,Female,36,Jaipur,Rajasthan,Middle,941000.0,780,2024-02-03,Inactive
+CUST00950,Manish,Reddy,Male,45,Jaipur,Rajasthan,Middle,657000.0,714,2024-09-15,Active
+CUST00951,Divya,Singh,Female,46,Lucknow,Uttar Pradesh,Lower-Middle,451000.0,656,2021-08-22,Active
+CUST00952,Ananya,Nair,Female,51,Pune,Maharashtra,Lower-Middle,425000.0,684,2022-09-02,Active
+CUST00953,Sunita,Bose,Female,37,Lucknow,Uttar Pradesh,Upper-Middle,1644000.0,783,2022-01-19,Active
+CUST00954,Arjun,Singh,Male,21,Bengaluru,Karnataka,Middle,941000.0,685,2023-03-20,Inactive
+CUST00955,Nikhil,Kulkarni,Male,25,Ahmedabad,Gujarat,Upper-Middle,2329000.0,774,2024-05-17,Active
+CUST00956,Swati,Joshi,Female,58,Pune,Maharashtra,Upper-Middle,1314000.0,836,2021-10-04,Inactive
+CUST00957,Karthik,Sharma,Male,46,Hyderabad,Telangana,Upper-Middle,1472000.0,785,2024-08-21,Inactive
+CUST00958,Amit,Iyer,Male,21,Bengaluru,Karnataka,Middle,878000.0,706,2023-08-29,Active
+CUST00959,Vikram,Mehta,Male,30,Ahmedabad,Gujarat,High-Net-Worth,4150000.0,794,2023-07-10,Active
+CUST00960,Rahul,Das,Male,37,Mumbai,Maharashtra,Middle,662000.0,708,2023-06-04,Active
+CUST00961,Tanvi,Gupta,Female,21,Mumbai,Maharashtra,Middle,892000.0,751,2024-04-25,Active
+CUST00962,Sneha,Verma,Female,27,Jaipur,Rajasthan,Lower-Middle,473000.0,679,2024-02-08,Inactive
+CUST00963,Aarti,Kulkarni,Female,61,Bengaluru,Karnataka,Middle,1163000.0,692,2022-12-12,Active
+CUST00964,Pooja,Nair,Female,21,Chennai,Tamil Nadu,Upper-Middle,1810000.0,761,2023-06-17,Active
+CUST00965,Deepak,Rao,Male,51,Lucknow,Uttar Pradesh,Upper-Middle,2130000.0,828,2023-08-18,Inactive
+CUST00966,Tanvi,Das,Female,25,Pune,Maharashtra,Upper-Middle,2075000.0,784,2023-01-08,Active
+CUST00967,Deepak,Iyer,Male,33,Chennai,Tamil Nadu,Upper-Middle,1312000.0,766,2023-09-16,Inactive
+CUST00968,Vikram,Kulkarni,Male,68,Bengaluru,Karnataka,Upper-Middle,2426000.0,724,2023-10-09,Active
+CUST00969,Manish,Verma,Male,41,Mumbai,Maharashtra,Middle,756000.0,741,2024-10-18,Inactive
+CUST00970,Praveen,Patel,Male,50,Kolkata,West Bengal,Middle,971000.0,728,2021-09-05,Active
+CUST00971,Neha,Rao,Female,42,Kolkata,West Bengal,Upper-Middle,2201000.0,758,2024-02-15,Active
+CUST00972,Karthik,Reddy,Male,41,Mumbai,Maharashtra,High-Net-Worth,4032000.0,801,2023-07-26,Active
+CUST00973,Rohan,Reddy,Male,45,Jaipur,Rajasthan,Lower-Middle,332000.0,655,2024-07-14,Inactive
+CUST00974,Siddharth,Joshi,Male,43,Delhi,Delhi,Upper-Middle,2121000.0,769,2023-11-03,Active
+CUST00975,Vikram,Joshi,Male,51,Kolkata,West Bengal,Upper-Middle,1360000.0,768,2022-02-18,Active
+CUST00976,Sunita,Sharma,Female,21,Hyderabad,Telangana,Upper-Middle,1816000.0,807,2022-08-11,Active
+CUST00977,Rahul,Joshi,Male,29,Pune,Maharashtra,Middle,999000.0,702,2021-11-07,Active
+CUST00978,Sunita,Khan,Female,32,Delhi,Delhi,Upper-Middle,1737000.0,811,2023-04-19,Active
+CUST00979,Pooja,Bose,Female,21,Delhi,Delhi,Upper-Middle,2133000.0,850,2023-11-26,Active
+CUST00980,Kunal,Rao,Male,50,Pune,Maharashtra,High-Net-Worth,3075000.0,815,2021-05-06,Active
+CUST00981,Nikhil,Mehta,Male,38,Lucknow,Uttar Pradesh,Lower-Middle,489000.0,681,2024-09-14,Active
+CUST00982,Kavita,Das,Female,44,Jaipur,Rajasthan,Upper-Middle,2138000.0,789,2022-10-05,Active
+CUST00983,Karthik,Singh,Male,45,Jaipur,Rajasthan,Middle,688000.0,728,2023-04-08,Active
+CUST00984,Siddharth,Bose,Male,36,Kolkata,West Bengal,Upper-Middle,2216000.0,765,2023-04-09,Active
+CUST00985,Priya,Verma,Female,36,Jaipur,Rajasthan,Middle,1035000.0,764,2021-09-16,Active
+CUST00986,Sneha,Patel,Female,45,Jaipur,Rajasthan,Middle,913000.0,622,2024-07-25,Inactive
+CUST00987,Siddharth,Singh,Male,46,Hyderabad,Telangana,Upper-Middle,1595000.0,775,2023-05-16,Active
+CUST00988,Arjun,Verma,Male,38,Kolkata,West Bengal,Middle,904000.0,711,2021-09-11,Inactive
+CUST00989,Suresh,Gupta,Male,51,Lucknow,Uttar Pradesh,Upper-Middle,1789000.0,798,2022-04-29,Active
+CUST00990,Kunal,Gupta,Male,30,Chennai,Tamil Nadu,Upper-Middle,2260000.0,782,2024-03-19,Active
+CUST00991,Meera,Khan,Female,28,Bengaluru,Karnataka,Middle,949000.0,676,2023-01-10,Active
+CUST00992,Arjun,Choudhury,Male,32,Pune,Maharashtra,Lower-Middle,319000.0,704,2021-09-24,Active
+CUST00993,Priya,Joshi,Female,49,Jaipur,Rajasthan,Middle,935000.0,742,2023-03-20,Active
+CUST00994,Shreya,Choudhury,Female,46,Ahmedabad,Gujarat,Upper-Middle,2432000.0,785,2023-05-04,Active
+CUST00995,Manish,Mehta,Male,31,Ahmedabad,Gujarat,Upper-Middle,1368000.0,782,2023-11-18,Active
+CUST00996,Arjun,Iyer,Male,47,Ahmedabad,Gujarat,Middle,1048000.0,751,2024-02-19,Active
+CUST00997,Deepak,Choudhury,Male,52,Bengaluru,Karnataka,Lower-Middle,472000.0,698,2021-03-24,Active
+CUST00998,Kunal,Gupta,Male,42,Kolkata,West Bengal,Middle,892000.0,762,2021-10-20,Inactive
+CUST00999,Pooja,Gupta,Female,38,Chennai,Tamil Nadu,Middle,1091000.0,694,2023-09-29,Inactive
+CUST01000,Priya,Verma,Female,37,Pune,Maharashtra,Middle,786000.0,698,2023-07-16,Active
+CUST01001,Ritu,Mehta,Female,31,Delhi,Delhi,Middle,877000.0,719,2023-07-11,Active
+CUST01002,Karthik,Rao,Male,30,Bengaluru,Karnataka,Upper-Middle,2064000.0,760,2023-04-19,Active
+CUST01003,Divya,Verma,Female,21,Ahmedabad,Gujarat,Upper-Middle,2040000.0,776,2021-12-06,Active
+CUST01004,Meera,Reddy,Female,39,Jaipur,Rajasthan,Lower-Middle,587000.0,637,2024-01-15,Active
+CUST01005,Deepak,Iyer,Male,46,Ahmedabad,Gujarat,Middle,611000.0,757,2024-09-10,Active
+CUST01006,Aarav,Singh,Male,21,Hyderabad,Telangana,Middle,1023000.0,698,2024-04-01,Active
+CUST01007,Kavita,Verma,Female,30,Ahmedabad,Gujarat,Upper-Middle,1230000.0,741,2023-06-15,Inactive
+CUST01008,Karthik,Rao,Male,48,Pune,Maharashtra,Middle,669000.0,718,2021-07-23,Active
+CUST01009,Ananya,Nair,Female,36,Chennai,Tamil Nadu,Upper-Middle,1400000.0,709,2023-04-15,Active
+CUST01010,Deepak,Rao,Male,45,Delhi,Delhi,Lower-Middle,318000.0,620,2023-03-10,Inactive
+CUST01011,Amit,Rao,Male,39,Chennai,Tamil Nadu,Middle,1097000.0,734,2021-09-05,Inactive
+CUST01012,Praveen,Khan,Male,53,Ahmedabad,Gujarat,Middle,903000.0,679,2021-08-24,Active
+CUST01013,Ritu,Choudhury,Female,21,Bengaluru,Karnataka,Middle,844000.0,731,2022-04-24,Active
+CUST01014,Rahul,Reddy,Male,58,Hyderabad,Telangana,Upper-Middle,2047000.0,807,2021-09-15,Active
+CUST01015,Ritu,Patel,Female,41,Jaipur,Rajasthan,Middle,1181000.0,707,2023-02-04,Active
+CUST01016,Praveen,Khan,Male,47,Jaipur,Rajasthan,High-Net-Worth,5865000.0,785,2024-02-11,Active
+CUST01017,Karthik,Bose,Male,44,Lucknow,Uttar Pradesh,Middle,1183000.0,742,2021-01-02,Inactive
+CUST01018,Neha,Singh,Female,50,Pune,Maharashtra,High-Net-Worth,5449000.0,850,2022-03-12,Active
+CUST01019,Pooja,Nair,Female,43,Jaipur,Rajasthan,Middle,780000.0,707,2023-03-21,Active
+CUST01020,Arjun,Singh,Male,38,Pune,Maharashtra,Middle,903000.0,663,2022-10-14,Active
+CUST01021,Shreya,Singh,Female,31,Ahmedabad,Gujarat,Middle,997000.0,710,2022-10-21,Active
+CUST01022,Swati,Rao,Female,33,Mumbai,Maharashtra,High-Net-Worth,2968000.0,813,2021-01-05,Active
+CUST01023,Siddharth,Sharma,Male,29,Delhi,Delhi,Middle,1137000.0,764,2023-09-29,Active
+CUST01024,Praveen,Patel,Male,39,Jaipur,Rajasthan,Lower-Middle,550000.0,669,2024-10-07,Active
+CUST01025,Kunal,Das,Male,35,Lucknow,Uttar Pradesh,Middle,706000.0,730,2021-01-18,Inactive
+CUST01026,Aarti,Iyer,Female,48,Ahmedabad,Gujarat,Lower-Middle,523000.0,635,2022-07-30,Active
+CUST01027,Sneha,Patel,Female,31,Lucknow,Uttar Pradesh,Middle,1085000.0,714,2022-03-29,Active
+CUST01028,Divya,Verma,Female,24,Chennai,Tamil Nadu,Middle,1022000.0,696,2024-05-26,Active
+CUST01029,Karthik,Das,Male,33,Bengaluru,Karnataka,Upper-Middle,1940000.0,796,2023-10-09,Inactive
+CUST01030,Nikhil,Nair,Male,41,Bengaluru,Karnataka,Middle,1048000.0,731,2021-09-18,Active
+CUST01031,Siddharth,Singh,Male,48,Hyderabad,Telangana,Upper-Middle,1230000.0,765,2024-10-20,Active
+CUST01032,Shreya,Bose,Female,43,Mumbai,Maharashtra,High-Net-Worth,4743000.0,807,2024-08-24,Inactive
+CUST01033,Kavita,Choudhury,Female,41,Chennai,Tamil Nadu,Lower-Middle,455000.0,646,2023-10-12,Active
+CUST01034,Siddharth,Khan,Male,21,Mumbai,Maharashtra,Middle,852000.0,720,2023-07-09,Active
+CUST01035,Sneha,Rao,Female,54,Bengaluru,Karnataka,Upper-Middle,2250000.0,797,2022-04-08,Active
+CUST01036,Priya,Khan,Female,49,Hyderabad,Telangana,Lower-Middle,393000.0,719,2024-07-06,Active
+CUST01037,Suresh,Choudhury,Male,39,Mumbai,Maharashtra,Middle,976000.0,731,2022-11-16,Active
+CUST01038,Rohan,Kulkarni,Male,32,Hyderabad,Telangana,High-Net-Worth,5414000.0,802,2022-11-15,Active
+CUST01039,Rohan,Bose,Male,45,Bengaluru,Karnataka,Middle,947000.0,767,2021-06-25,Active
+CUST01040,Amit,Rao,Male,37,Bengaluru,Karnataka,Upper-Middle,1281000.0,756,2023-06-25,Inactive
+CUST01041,Priya,Reddy,Female,39,Mumbai,Maharashtra,Middle,777000.0,746,2023-02-21,Active
+CUST01042,Sneha,Sharma,Female,23,Ahmedabad,Gujarat,Middle,1077000.0,644,2024-06-24,Active
+CUST01043,Shreya,Sharma,Female,32,Ahmedabad,Gujarat,Middle,953000.0,682,2021-08-10,Inactive
+CUST01044,Deepak,Iyer,Male,33,Lucknow,Uttar Pradesh,Lower-Middle,453000.0,664,2022-12-29,Active
+CUST01045,Ananya,Khan,Female,34,Delhi,Delhi,Upper-Middle,1279000.0,813,2022-10-01,Active
+CUST01046,Neha,Mehta,Female,42,Delhi,Delhi,Middle,962000.0,735,2022-08-20,Active
+CUST01047,Manish,Mehta,Male,45,Mumbai,Maharashtra,Middle,941000.0,685,2024-02-20,Active
+CUST01048,Divya,Iyer,Female,50,Hyderabad,Telangana,Middle,721000.0,722,2021-05-21,Active
+CUST01049,Tanvi,Bose,Female,46,Lucknow,Uttar Pradesh,Upper-Middle,2308000.0,737,2024-03-05,Active
+CUST01050,Kavita,Rao,Female,21,Delhi,Delhi,Lower-Middle,563000.0,702,2021-03-28,Active
+CUST01051,Nikhil,Khan,Male,43,Hyderabad,Telangana,Middle,728000.0,693,2023-09-12,Active
+CUST01052,Sunita,Das,Female,29,Hyderabad,Telangana,Middle,941000.0,764,2021-01-14,Active
+CUST01053,Kunal,Sharma,Male,25,Jaipur,Rajasthan,Lower-Middle,438000.0,735,2022-02-03,Active
+CUST01054,Pooja,Sharma,Female,29,Hyderabad,Telangana,Lower-Middle,352000.0,695,2022-06-21,Active
+CUST01055,Simran,Khan,Female,35,Delhi,Delhi,Lower-Middle,353000.0,694,2022-06-21,Active
+CUST01056,Karthik,Mehta,Male,33,Pune,Maharashtra,Upper-Middle,2351000.0,765,2022-11-25,Active
+CUST01057,Ritu,Khan,Female,39,Kolkata,West Bengal,Upper-Middle,2059000.0,739,2023-12-16,Active
+CUST01058,Aarti,Patel,Female,47,Bengaluru,Karnataka,Lower-Middle,577000.0,649,2022-01-24,Active
+CUST01059,Tanvi,Joshi,Female,36,Kolkata,West Bengal,Middle,1186000.0,690,2022-05-16,Active
+CUST01060,Karthik,Gupta,Male,21,Delhi,Delhi,Middle,632000.0,718,2022-07-28,Active
+CUST01061,Sneha,Patel,Female,65,Ahmedabad,Gujarat,Upper-Middle,1999000.0,793,2021-12-09,Active
+CUST01062,Ritu,Bose,Female,38,Delhi,Delhi,Middle,824000.0,715,2023-09-17,Active
+CUST01063,Ritu,Singh,Female,39,Lucknow,Uttar Pradesh,Middle,1153000.0,744,2024-04-10,Active
+CUST01064,Aditya,Iyer,Male,26,Ahmedabad,Gujarat,Upper-Middle,1715000.0,803,2022-09-19,Active
+CUST01065,Swati,Nair,Female,46,Kolkata,West Bengal,Middle,651000.0,750,2021-06-22,Active
+CUST01066,Sneha,Verma,Female,43,Ahmedabad,Gujarat,Middle,802000.0,725,2023-07-13,Active
+CUST01067,Divya,Kulkarni,Female,46,Kolkata,West Bengal,Middle,941000.0,745,2023-06-24,Active
+CUST01068,Kunal,Patel,Male,35,Chennai,Tamil Nadu,Upper-Middle,1867000.0,752,2024-08-11,Inactive
+CUST01069,Aarti,Khan,Female,40,Bengaluru,Karnataka,Lower-Middle,408000.0,731,2024-01-24,Active
+CUST01070,Nikhil,Rao,Male,25,Chennai,Tamil Nadu,Middle,1089000.0,673,2024-10-31,Active
+CUST01071,Arjun,Mehta,Male,40,Jaipur,Rajasthan,High-Net-Worth,2530000.0,811,2022-09-06,Active
+CUST01072,Sunita,Das,Female,40,Pune,Maharashtra,Upper-Middle,2185000.0,777,2021-01-25,Active
+CUST01073,Karthik,Das,Male,36,Hyderabad,Telangana,Middle,1049000.0,777,2023-08-30,Active
+CUST01074,Tanvi,Bose,Female,21,Kolkata,West Bengal,Upper-Middle,1607000.0,745,2022-01-20,Active
+CUST01075,Sneha,Bose,Female,37,Lucknow,Uttar Pradesh,Upper-Middle,1239000.0,720,2021-10-12,Active
+CUST01076,Rahul,Sharma,Male,37,Ahmedabad,Gujarat,Upper-Middle,2285000.0,819,2022-11-27,Active
+CUST01077,Shreya,Das,Female,39,Jaipur,Rajasthan,Middle,952000.0,733,2024-03-08,Active
+CUST01078,Vikram,Rao,Male,25,Lucknow,Uttar Pradesh,Middle,962000.0,703,2024-05-29,Active
+CUST01079,Kavita,Iyer,Female,34,Pune,Maharashtra,Lower-Middle,416000.0,657,2023-08-31,Inactive
+CUST01080,Shreya,Gupta,Female,53,Bengaluru,Karnataka,Lower-Middle,502000.0,692,2021-12-30,Inactive
+CUST01081,Pooja,Nair,Female,26,Hyderabad,Telangana,Lower-Middle,589000.0,679,2022-08-05,Active
+CUST01082,Shreya,Patel,Female,44,Ahmedabad,Gujarat,Lower-Middle,456000.0,715,2021-12-18,Active
+CUST01083,Kavita,Nair,Female,56,Bengaluru,Karnataka,Lower-Middle,426000.0,629,2021-05-21,Active
+CUST01084,Vikram,Iyer,Male,30,Chennai,Tamil Nadu,Middle,1026000.0,680,2023-08-31,Inactive
+CUST01085,Swati,Iyer,Female,36,Jaipur,Rajasthan,Upper-Middle,1797000.0,783,2022-02-18,Inactive
+CUST01086,Suresh,Patel,Male,49,Pune,Maharashtra,Middle,748000.0,722,2022-11-05,Active
+CUST01087,Ritu,Bose,Female,35,Lucknow,Uttar Pradesh,Lower-Middle,327000.0,676,2024-08-16,Active
+CUST01088,Divya,Gupta,Female,29,Pune,Maharashtra,Middle,1086000.0,798,2021-12-25,Active
+CUST01089,Siddharth,Choudhury,Male,21,Ahmedabad,Gujarat,Middle,995000.0,731,2024-03-10,Inactive
+CUST01090,Aditya,Nair,Male,61,Chennai,Tamil Nadu,Upper-Middle,1899000.0,770,2024-09-27,Active
+CUST01091,Siddharth,Kulkarni,Male,36,Pune,Maharashtra,High-Net-Worth,4435000.0,801,2023-01-26,Inactive
+CUST01092,Manish,Rao,Male,37,Pune,Maharashtra,Middle,752000.0,773,2023-11-03,Inactive
+CUST01093,Rohan,Bose,Male,21,Pune,Maharashtra,Middle,840000.0,778,2022-02-03,Active
+CUST01094,Rahul,Reddy,Male,23,Delhi,Delhi,Middle,1049000.0,715,2023-09-20,Active
+CUST01095,Manish,Khan,Male,34,Ahmedabad,Gujarat,Lower-Middle,546000.0,693,2021-11-27,Inactive
+CUST01096,Deepak,Reddy,Male,21,Delhi,Delhi,Middle,921000.0,741,2023-03-12,Inactive
+CUST01097,Nikhil,Singh,Male,61,Delhi,Delhi,Middle,707000.0,677,2021-03-12,Active
+CUST01098,Suresh,Verma,Male,41,Jaipur,Rajasthan,Middle,1030000.0,701,2021-07-30,Active
+CUST01099,Ritu,Verma,Female,43,Lucknow,Uttar Pradesh,Lower-Middle,532000.0,670,2022-02-18,Active
+CUST01100,Aarti,Khan,Female,31,Hyderabad,Telangana,Lower-Middle,427000.0,689,2021-01-30,Active
+CUST01101,Nikhil,Patel,Male,58,Hyderabad,Telangana,High-Net-Worth,2838000.0,805,2024-09-22,Inactive
+CUST01102,Aarav,Choudhury,Male,46,Jaipur,Rajasthan,Lower-Middle,398000.0,618,2024-02-26,Active
+CUST01103,Siddharth,Das,Male,28,Pune,Maharashtra,Lower-Middle,364000.0,688,2023-01-01,Active
+CUST01104,Amit,Rao,Male,55,Mumbai,Maharashtra,Middle,875000.0,737,2021-05-16,Active
+CUST01105,Shreya,Joshi,Female,35,Mumbai,Maharashtra,Lower-Middle,366000.0,669,2022-09-10,Active
+CUST01106,Priya,Nair,Female,25,Chennai,Tamil Nadu,High-Net-Worth,4600000.0,825,2024-07-16,Active
+CUST01107,Kunal,Nair,Male,48,Kolkata,West Bengal,High-Net-Worth,4234000.0,798,2021-05-19,Active
+CUST01108,Kavita,Khan,Female,33,Jaipur,Rajasthan,Middle,1193000.0,734,2022-04-22,Inactive
+CUST01109,Rahul,Khan,Male,34,Pune,Maharashtra,Upper-Middle,2006000.0,768,2021-05-03,Inactive
+CUST01110,Neha,Iyer,Female,62,Delhi,Delhi,Middle,985000.0,716,2022-05-03,Active
+CUST01111,Tanvi,Rao,Female,35,Delhi,Delhi,Middle,986000.0,702,2021-03-23,Active
+CUST01112,Shreya,Gupta,Female,47,Mumbai,Maharashtra,Middle,1040000.0,718,2022-12-03,Active
+CUST01113,Siddharth,Khan,Male,31,Hyderabad,Telangana,Middle,829000.0,771,2022-10-21,Inactive
+CUST01114,Rohan,Kulkarni,Male,54,Bengaluru,Karnataka,High-Net-Worth,2682000.0,794,2021-10-17,Active
+CUST01115,Rohan,Nair,Male,21,Lucknow,Uttar Pradesh,Middle,941000.0,760,2022-02-23,Active
+CUST01116,Amit,Bose,Male,31,Chennai,Tamil Nadu,Lower-Middle,359000.0,701,2023-05-19,Inactive
+CUST01117,Rahul,Gupta,Male,21,Lucknow,Uttar Pradesh,Middle,981000.0,756,2022-07-11,Active
+CUST01118,Priya,Joshi,Female,25,Pune,Maharashtra,Middle,882000.0,750,2023-05-16,Active
+CUST01119,Sunita,Mehta,Female,39,Ahmedabad,Gujarat,Lower-Middle,414000.0,631,2021-06-20,Active
+CUST01120,Swati,Mehta,Female,34,Jaipur,Rajasthan,Upper-Middle,1534000.0,790,2023-08-08,Active
+CUST01121,Kavita,Kulkarni,Female,40,Bengaluru,Karnataka,Middle,1029000.0,745,2022-02-05,Inactive
+CUST01122,Aarav,Sharma,Male,60,Jaipur,Rajasthan,Upper-Middle,1687000.0,723,2023-04-09,Active
+CUST01123,Tanvi,Joshi,Female,56,Pune,Maharashtra,Middle,985000.0,728,2024-04-19,Inactive
+CUST01124,Siddharth,Reddy,Male,29,Pune,Maharashtra,High-Net-Worth,3068000.0,776,2023-06-13,Active
+CUST01125,Meera,Kulkarni,Female,36,Kolkata,West Bengal,Upper-Middle,2046000.0,797,2023-05-19,Active
+CUST01126,Suresh,Verma,Male,37,Kolkata,West Bengal,Middle,1006000.0,777,2024-09-25,Active
+CUST01127,Swati,Bose,Female,23,Delhi,Delhi,Middle,961000.0,724,2024-09-19,Active
+CUST01128,Rohan,Patel,Male,25,Pune,Maharashtra,Middle,952000.0,737,2021-06-14,Active
+CUST01129,Siddharth,Choudhury,Male,48,Delhi,Delhi,Upper-Middle,1529000.0,757,2022-09-11,Active
+CUST01130,Swati,Gupta,Female,21,Pune,Maharashtra,Upper-Middle,2402000.0,775,2021-07-02,Inactive
+CUST01131,Simran,Mehta,Female,43,Chennai,Tamil Nadu,Upper-Middle,2409000.0,782,2023-03-27,Active
+CUST01132,Vikram,Kulkarni,Male,52,Mumbai,Maharashtra,Lower-Middle,532000.0,627,2023-05-06,Active
+CUST01133,Tanvi,Choudhury,Female,46,Delhi,Delhi,Lower-Middle,356000.0,717,2021-10-03,Active
+CUST01134,Manish,Reddy,Male,21,Ahmedabad,Gujarat,Middle,728000.0,736,2022-02-16,Inactive
+CUST01135,Praveen,Iyer,Male,33,Chennai,Tamil Nadu,High-Net-Worth,5551000.0,807,2023-06-22,Active
+CUST01136,Karthik,Nair,Male,42,Bengaluru,Karnataka,Middle,827000.0,707,2022-07-21,Inactive
+CUST01137,Deepak,Khan,Male,31,Ahmedabad,Gujarat,Middle,1056000.0,726,2021-01-20,Inactive
+CUST01138,Nikhil,Verma,Male,27,Bengaluru,Karnataka,Middle,1075000.0,686,2023-02-09,Active
+CUST01139,Aarti,Kulkarni,Female,46,Ahmedabad,Gujarat,Upper-Middle,1986000.0,735,2022-11-21,Active
+CUST01140,Divya,Khan,Female,46,Kolkata,West Bengal,Upper-Middle,1692000.0,783,2021-04-28,Active
+CUST01141,Sunita,Reddy,Female,21,Mumbai,Maharashtra,Middle,1019000.0,701,2021-10-12,Inactive
+CUST01142,Karthik,Singh,Male,52,Hyderabad,Telangana,Middle,971000.0,690,2024-09-11,Active
+CUST01143,Shreya,Iyer,Female,33,Mumbai,Maharashtra,High-Net-Worth,5851000.0,821,2022-10-22,Inactive
+CUST01144,Simran,Verma,Female,47,Kolkata,West Bengal,Upper-Middle,1504000.0,762,2023-09-20,Active
+CUST01145,Kunal,Choudhury,Male,32,Ahmedabad,Gujarat,High-Net-Worth,5500000.0,845,2021-07-25,Active
+CUST01146,Swati,Iyer,Female,58,Delhi,Delhi,Upper-Middle,2339000.0,799,2023-10-31,Inactive
+CUST01147,Sunita,Patel,Female,39,Chennai,Tamil Nadu,Upper-Middle,2495000.0,745,2023-08-15,Inactive
+CUST01148,Priya,Kulkarni,Female,29,Lucknow,Uttar Pradesh,Middle,727000.0,743,2024-09-13,Active
+CUST01149,Amit,Sharma,Male,43,Delhi,Delhi,High-Net-Worth,3643000.0,845,2023-02-25,Active
+CUST01150,Arjun,Singh,Male,46,Ahmedabad,Gujarat,High-Net-Worth,4847000.0,772,2024-09-24,Inactive
+CUST01151,Priya,Rao,Female,50,Hyderabad,Telangana,High-Net-Worth,5182000.0,785,2024-05-15,Inactive
+CUST01152,Kavita,Das,Female,34,Jaipur,Rajasthan,High-Net-Worth,4029000.0,816,2022-04-23,Active
+CUST01153,Rahul,Patel,Male,60,Bengaluru,Karnataka,Lower-Middle,522000.0,794,2022-01-21,Active
+CUST01154,Deepak,Joshi,Male,45,Delhi,Delhi,Upper-Middle,2440000.0,764,2024-03-27,Active
+CUST01155,Pooja,Iyer,Female,44,Pune,Maharashtra,High-Net-Worth,3619000.0,832,2023-01-18,Active
+CUST01156,Manish,Khan,Male,35,Bengaluru,Karnataka,Middle,923000.0,787,2023-08-02,Active
+CUST01157,Simran,Khan,Female,41,Ahmedabad,Gujarat,Upper-Middle,1392000.0,784,2022-08-04,Inactive
+CUST01158,Deepak,Rao,Male,46,Chennai,Tamil Nadu,Middle,1013000.0,739,2022-07-15,Active
+CUST01159,Shreya,Iyer,Female,48,Ahmedabad,Gujarat,Middle,1180000.0,703,2021-05-01,Active
+CUST01160,Ananya,Iyer,Female,32,Hyderabad,Telangana,Upper-Middle,1268000.0,736,2022-01-02,Active
+CUST01161,Neha,Nair,Female,43,Mumbai,Maharashtra,Middle,802000.0,752,2024-10-20,Active
+CUST01162,Sunita,Das,Female,44,Pune,Maharashtra,Lower-Middle,518000.0,736,2022-08-02,Active
+CUST01163,Arjun,Das,Male,38,Bengaluru,Karnataka,Lower-Middle,526000.0,696,2024-04-03,Active
+CUST01164,Karthik,Gupta,Male,26,Ahmedabad,Gujarat,Upper-Middle,1950000.0,758,2023-06-24,Active
+CUST01165,Aarti,Mehta,Female,46,Hyderabad,Telangana,Middle,1049000.0,754,2024-08-26,Inactive
+CUST01166,Nikhil,Mehta,Male,35,Lucknow,Uttar Pradesh,High-Net-Worth,3995000.0,808,2021-12-11,Active
+CUST01167,Kunal,Kulkarni,Male,22,Delhi,Delhi,High-Net-Worth,2911000.0,801,2023-11-22,Active
+CUST01168,Ananya,Das,Female,48,Hyderabad,Telangana,Lower-Middle,372000.0,693,2023-09-28,Active
+CUST01169,Nikhil,Das,Male,44,Lucknow,Uttar Pradesh,Upper-Middle,2324000.0,771,2024-08-24,Active
+CUST01170,Divya,Sharma,Female,39,Bengaluru,Karnataka,Lower-Middle,337000.0,643,2024-08-06,Active
+CUST01171,Aarav,Kulkarni,Male,46,Chennai,Tamil Nadu,Upper-Middle,1323000.0,782,2024-04-29,Inactive
+CUST01172,Shreya,Choudhury,Female,44,Chennai,Tamil Nadu,Middle,660000.0,706,2021-05-11,Active
+CUST01173,Amit,Sharma,Male,21,Pune,Maharashtra,Middle,922000.0,763,2023-12-22,Active
+CUST01174,Praveen,Iyer,Male,33,Bengaluru,Karnataka,Lower-Middle,480000.0,635,2022-01-04,Inactive
+CUST01175,Sunita,Rao,Female,46,Bengaluru,Karnataka,Lower-Middle,473000.0,654,2024-08-29,Inactive
+CUST01176,Simran,Verma,Female,50,Bengaluru,Karnataka,High-Net-Worth,4272000.0,825,2023-01-15,Active
+CUST01177,Amit,Sharma,Male,46,Hyderabad,Telangana,Middle,1168000.0,677,2023-11-30,Active
+CUST01178,Shreya,Bose,Female,52,Delhi,Delhi,Middle,1017000.0,734,2023-12-07,Active
+CUST01179,Swati,Iyer,Female,34,Bengaluru,Karnataka,Upper-Middle,1258000.0,774,2021-03-17,Active
+CUST01180,Simran,Iyer,Female,21,Delhi,Delhi,Middle,730000.0,739,2023-01-06,Active
+CUST01181,Priya,Singh,Female,27,Chennai,Tamil Nadu,Middle,1142000.0,677,2023-03-31,Active
+CUST01182,Shreya,Choudhury,Female,22,Delhi,Delhi,Middle,642000.0,763,2022-07-06,Active
+CUST01183,Arjun,Joshi,Male,32,Lucknow,Uttar Pradesh,Upper-Middle,2267000.0,816,2024-05-23,Inactive
+CUST01184,Kunal,Choudhury,Male,33,Pune,Maharashtra,Lower-Middle,481000.0,601,2021-06-08,Active
+CUST01185,Nikhil,Choudhury,Male,26,Bengaluru,Karnataka,Middle,653000.0,768,2022-11-15,Active
+CUST01186,Karthik,Khan,Male,37,Chennai,Tamil Nadu,Lower-Middle,413000.0,648,2022-04-01,Active
+CUST01187,Praveen,Reddy,Male,40,Delhi,Delhi,Middle,1125000.0,742,2024-04-20,Active
+CUST01188,Priya,Joshi,Female,51,Lucknow,Uttar Pradesh,Upper-Middle,1917000.0,813,2024-05-29,Inactive
+CUST01189,Vikram,Rao,Male,35,Pune,Maharashtra,Lower-Middle,542000.0,616,2024-10-20,Active
+CUST01190,Ritu,Mehta,Female,34,Chennai,Tamil Nadu,Lower-Middle,454000.0,680,2021-11-15,Active
+CUST01191,Amit,Singh,Male,28,Mumbai,Maharashtra,High-Net-Worth,4737000.0,786,2023-01-29,Active
+CUST01192,Nikhil,Choudhury,Male,42,Ahmedabad,Gujarat,Lower-Middle,596000.0,668,2023-08-18,Active
+CUST01193,Kavita,Khan,Female,39,Chennai,Tamil Nadu,Middle,652000.0,698,2022-09-18,Active
+CUST01194,Simran,Patel,Female,36,Bengaluru,Karnataka,Lower-Middle,372000.0,633,2021-07-11,Inactive
+CUST01195,Rohan,Gupta,Male,48,Jaipur,Rajasthan,High-Net-Worth,5329000.0,835,2021-01-22,Active
+CUST01196,Shreya,Mehta,Female,21,Ahmedabad,Gujarat,Middle,1011000.0,692,2024-10-18,Active
+CUST01197,Amit,Sharma,Male,22,Lucknow,Uttar Pradesh,Lower-Middle,549000.0,643,2021-01-15,Active
+CUST01198,Sneha,Verma,Female,38,Lucknow,Uttar Pradesh,Middle,701000.0,674,2023-12-09,Active
+CUST01199,Rohan,Joshi,Male,28,Delhi,Delhi,Middle,1171000.0,689,2023-05-16,Active
+CUST01200,Kunal,Reddy,Male,41,Kolkata,West Bengal,High-Net-Worth,3374000.0,811,2024-01-10,Active

@@ -1,0 +1,11 @@
+category_id,category_name,department,reward_points_multiplier,risk_category
+CAT01,Groceries & Supermarket,Retail,1.5,Low
+CAT02,Dining & Restaurants,Food & Beverage,2.0,Low
+CAT03,Travel & Airlines,Travel,3.0,Medium
+CAT04,Electronics & Gadgets,Electronics,1.0,Medium
+CAT05,Utilities & Bill Pay,Bills,1.0,Low
+CAT06,Fuel & Transportation,Transport,1.2,Low
+CAT07,Healthcare & Pharmacy,Medical,1.0,Low
+CAT08,Entertainment & Movies,Leisure,2.5,Low
+CAT09,Fashion & Apparel,Retail,2.0,Medium
+CAT10,Jewellery & Luxury,Luxury,1.0,High
